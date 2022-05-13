@@ -75,3 +75,98 @@ They are identified by functional genomics approaches or sequence conservation a
 	Negative selection can be used to identify candidate cancer driving mutations.
 
 \section{Roles for somatic variants in cancer}
+Because cancer genomes contain a higher fraction of structural variants than germline genomes, variant detection becomes challenging.
+The depth of coverage needs to be more than typically used to account for the decreased purity and increased ploidy.
+
+	\subsection{Gain of TF-binding sites}
+	TERT encodes the catalytic subunit of the enzyme telomerase.
+	This allow to lenghtens telomeres, allowing cells to escape apoptosis and become cancerous.
+	TERT expression is typically repressed, but it can be overexpressed in cancer.
+	Recurrent mutation in the promoter of TERT in many different cancer types have been found.
+	These mutations create binding motifs for the ETS family like TCF leading to their binding to TERT and upregulation of its expression.
+	Tumours in tissues with low rates of self-renewal tend to exhibit higher frequencies of TERT promoter mutations.
+	Gain of TF-binding site has been observed for enhancers, an important distal cis-regulatory elements that play a major part in gene transcription.
+
+	\subsection{Fusion events due to genomic rearrangements}
+	Genomic rearrangments can lead to fusion of active regulatory elements with oncogenes.
+	Moreover somatic structural variants juxtapose coding sequences proximal to active enhancers during enhancer hijacking.
+	So in these genomic rearrangements bring oncogenes adjacent to active promoters or enhancers.
+
+	\subsection{ncRNAs and their binding sites}
+	Disregulation of ncRNAs is a cancer signature and it can be due to the presence of somatic variants in them.
+	MALATI or metastasis-associated lung adenocarcinoma transcript 1 is an example of this.
+	Mutation of MALATI might be under positive selection in the tumour.
+	In another example copy number amplification of a lncRNA is thought to contribute to neuroblastoma progression.
+	Mutation in the binding sites of ncRNA are linked to cancer.
+
+	\subsection{Role of pseudogenes in modulating the expression of a parental gene}
+	becase of their resemblance to their parental protein-coding genes, transcribed pseudogenes are thought to have a natura way of affecting and regulating their parental counterparts.
+	Pseudogene deletion or amplification can affect competition ofr miRNA binding.
+
+\section{Roles for germline variants in cancer}
+Most of the non-coding germline variants associated with cancer susceptibility can be analyzed through WGS data from healthy and ill individual.
+Germline-non coding variants can affect gene expression in many different ways: point mutation can distrupt binding motifs.
+GWAS SNPs and the one in LD with them might help to identify the causal variants and shed light on their mechanism of actions.
+
+	\subsection{Promoter mutations}
+	Germline mutation can create binding motifs with functional effects in the tissues where the TF is expressed.
+	Moreover they can upregulate the binding.
+
+	\subsection{SNPs in enhancers}
+	Multiple SNPs in a gene desert can increase the risk of cancer: this can be due to the fact that they happens in regions that act as enhancers .
+	Tissue specificity might be the reason why they are associated with specific cancers.
+	Hormone-regulated cancers have mutation in TF-binding sites that vary with age owing to a differential TF activity during a person lifetime.
+
+	\subsection{Variants in introns}
+	Variants in introns can affect splice sites and cause loss of regulatory repressor elements.
+	Germline CNV spanning intronic inhibitor regulatory elements can lead to the overexpression of target transcripts, modulating cell proliferation or migration.
+
+	\subsection{SNPs in ncRNA and their binding sites}
+	Most cancer-associated polymorphisms are related to increased risk, some of them can be beneficial.
+
+	\subsection{Others}
+	Other methods to identify variants with functional consequences such as ECTS and allele-specific expression analysis have been used to interpret cancer-associated loci identified through GWAS.
+	These reveal germline determinants of gene expression in tumours and help to establish a link between non-coding risk loci and their target coding genes.
+
+\section{Interplay between germline and somatic variants}
+Cancer results from a complex interplay of inherited germline and acquired somatic variants.
+Loss of heterozygosity events affecting non-coding element have been observed.
+Somatic variants disrupt the only functioning copy of the non-coding element.
+One example is the loss of miRNA or lncRNA.
+However some mutation can weaken the effect of a somatic variant.
+
+\section{Computational methods for identifying variants}
+Computational prediction of drivers is a challenging task.
+Driver identification uses detection of signals of positive selection or prediction of mutations with high functional impact.
+Analysis of the recurrence of somatic variants from tumour samples in functional elements to identify regions under positive selection is similar to the burden test strategy.
+Such analysis can be done in a specific cancer type or across multiple cancers.
+In addition tools that try to do this need to account for genomic mutation rate covariats that lead to mutational heterogeneity across the genome.
+Computational identification of non-coding drivers is more challenging than the coding one because of thei complex and varied modes of action.
+Non-coding mutation are also more abundant and the key mutations have to be distinguished from a larger set of passenger events.
+Some methods analyse the recurrence of somatic variants from tumour samples in functional elements.
+Tools exits to annotate and prioritize potentially functional non-coding variants with high impact.
+These tools can interpet SNV and indels or some structural variants.
+Some of them try to interpret the effect of cis-regulatory mutations at a nucleotide level of resolution by computing whether they create new TF-binding motifs.
+Biological networks can provide information about the connectivities of the target genes of non-coding variants.
+High inter and intra-species conservation tend to be an indicator of function.
+
+\section{Experimental approaches for functional validation}
+Experimental approaches to understand the effects of cis-regulatory mutations in promoters and enhancers on cellular functions have main strategies.
+First they require introducing the sequence variants,determining the resulting molecular level effects on transcription using high and low throughput functional assays and demonstrating direct biological significance.
+One way to intrduce sequence variants involves the use of CRISPSR-Cas9 systems.
+Then the effect evaluated through sequencing screening or luciferase reporter assays.
+Analysis of the mutation in a high-throughput manner can be achieved using a modification of cis-regulatory eleemnt analysis by sequencing.
+Synthetic promoter libraries drive the expression of a common reporter gene and a downstream unique barcod sequence that identifies the upstream promoter.
+RNA-seq reveals the effects of promoter variants on the expression levels of their paired barcode sequence.
+The activity of enhancers it independent of their location, so they can be incorporated into high-throughout reporter assays using different reporter construct arrangements.
+In CRE-seq approaches the enhancer is placed upstream of the reporte gene and the barcode.
+The cloned libraries can be transfected into eukaryotic cells in pooled format and RNA-seq is used to asses the resulting expression level of the reporter driven by each variatn element.
+Visible reporte assays using synthetic transcription reporter construct that contain the regulatory sequence of the reporter gene enable direct validation.
+Other approaches are needed to validate variants in ncRNA, UTR and intros.
+Monogene assays can be used to test the effects of intronic variants: the variant sequence is cloned into transcription-competent minigene vectors and transfected into mammalian cells.
+This is followed by examination of the splicing patterns of the transcripts.
+Functional screening help identify the best candidates  but still needs tumour type specific validation.
+Functional valdation requires demonstrating oncogenic properties that are increased owing to the variant in question.
+Wild type and mutants are compared in vitro and in vivo.
+Overall functional validation of non-coding variants is important to understand their biological consequence.
+High-throughput prioritization of putative functional mutations is crucial before testing of the most promising candidates in in vivo systems.
