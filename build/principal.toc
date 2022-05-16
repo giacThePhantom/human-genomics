@@ -66,3 +66,10 @@
 \contentsline {subsection}{\numberline {3.5.1}Alignment and assembly}{17}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}mutations detection}{17}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Validation of mutation and rearrangement calls}{17}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Integrative genomics viewer}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{19}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Tumour heterogeneity and resistance to cancer therapies}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Abstract}{20}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{20}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Causes of intratumoral heterogeneity}{20}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Genomic instability}{20}{subsection.5.2.1}%

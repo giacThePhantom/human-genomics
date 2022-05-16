@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.29)  16 MAY 2022 04:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.20)  17 MAY 2022 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -859,15 +859,23 @@ Chapter 2.
 Chapter 3.
 [14
 
-] [15] [16]) [17] [18] (./build/principal.aux)
+] [15] [16]) (./chapters/papers/03_IGV.tex [17] [18]
+Chapter 4.
+) (./chapters/papers/04_tumour_heterogeneity_resistance.tex [19
+
+]
+Chapter 5.
+) [20
+
+] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 54B9DB817D8A4073581CD37D22537A30;10828.
+(rerunfilecheck)             Checksum: 57EFF6C26EEB1340E5A3662F63BFB7E0;12098.
  ) 
 Here is how much of TeX's memory you used:
- 22424 strings out of 478276
- 410396 string characters out of 5853013
- 733519 words of memory out of 5000000
- 40238 multiletter control sequences out of 15000+600000
+ 22452 strings out of 478276
+ 411074 string characters out of 5853013
+ 733531 words of memory out of 5000000
+ 40251 multiletter control sequences out of 15000+600000
  485167 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,82p,512b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -880,10 +888,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (19 pages, 209923 bytes).
+Output written on ./build/principal.pdf (21 pages, 217584 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 433 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 445 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 489 words of extra memory for PDF output out of 10000 (max. 10000000)
 
