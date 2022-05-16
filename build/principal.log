@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.29)  11 MAY 2022 04:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.29)  16 MAY 2022 04:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,21 +823,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.tocpdfT
+eX warning (ext4): destination with the same identifier (name{page.1}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 ...or functional validation}{12}{section.2.8}
+                                                  % [1
+
+])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
-
-(./chapters/01_introduction.texpdfTeX warning (ext4): destination with the same
- identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Introduction} [1
+ [2] [3
 
 ]
+(./chapters/notes/01_introduction.tex
 Chapter 1.
-[2
+[4
 
 ]
 Overfull \hbox (10.1386pt too wide) in paragraph at lines 67--68
@@ -845,31 +848,42 @@ Overfull \hbox (10.1386pt too wide) in paragraph at lines 67--68
 ass of com-plex so-matic DNA re-ar-range-ments whereby
  []
 
-[3]) [4] (./build/principal.aux)
+[5]) [6] [7
+
+] (./chapters/papers/01_role_non_coding_cancer.tex
+Chapter 2.
+[8
+
+] [9] [10] [11]) (./chapters/papers/02_cancer_genomics_2_gen_seq.tex [12]
+[13]
+Chapter 3.
+[14
+
+] [15] [16]) [17] [18] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 58B6C2AB9FA74AD41CB56BFE2A1EFB03;1299.
+(rerunfilecheck)             Checksum: 54B9DB817D8A4073581CD37D22537A30;10828.
  ) 
 Here is how much of TeX's memory you used:
- 22307 strings out of 478276
- 408357 string characters out of 5853013
- 728477 words of memory out of 5000000
- 40187 multiletter control sequences out of 15000+600000
+ 22424 strings out of 478276
+ 410396 string characters out of 5853013
+ 733519 words of memory out of 5000000
+ 40238 multiletter control sequences out of 15000+600000
  485167 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,82p,386b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,82p,512b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx144
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
-m1200.pfb>
-Output written on ./build/principal.pdf (5 pages, 152593 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx12
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on ./build/principal.pdf (19 pages, 209923 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
