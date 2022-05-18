@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.20)  17 MAY 2022 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  18 MAY 2022 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **principal.tex
 (./principal.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (./prefix.tex
+L3 programming layer <2022-04-10> (./prefix.tex
 (/usr/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/bk10.clo
@@ -303,7 +303,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
+Package: siunitx 2022-04-04 v3.0.50 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen165
 \l__siunitx_angle_marker_box=\box54
 \l__siunitx_angle_unit_box=\box55
@@ -337,10 +337,10 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-02-24 L3 programming layer (loader) 
+Package: expl3 2022-04-10 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box61
 ))
@@ -823,9 +823,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.tocpdfT
-eX warning (ext4): destination with the same identifier (name{page.1}) has been
- already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.49 ...or functional validation}{12}{section.2.8}
@@ -865,20 +865,20 @@ Chapter 4.
 
 ]
 Chapter 5.
-) [20
+[20
 
-] (./build/principal.aux)
+] [21]) [22] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 57EFF6C26EEB1340E5A3662F63BFB7E0;12098.
+(rerunfilecheck)             Checksum: 9E1A24916D6F9DB90344F04BCA059A12;12992.
  ) 
 Here is how much of TeX's memory you used:
- 22452 strings out of 478276
- 411074 string characters out of 5853013
- 733531 words of memory out of 5000000
- 40251 multiletter control sequences out of 15000+600000
+ 22489 strings out of 478238
+ 412043 string characters out of 5850456
+ 735650 words of memory out of 5000000
+ 40308 multiletter control sequences out of 15000+600000
  485167 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,82p,512b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,11n,82p,512b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
@@ -888,10 +888,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ./build/principal.pdf (21 pages, 217584 bytes).
+Output written on ./build/principal.pdf (23 pages, 225201 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 445 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 489 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 478 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 
