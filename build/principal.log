@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  25 MAY 2022 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.19)  25 MAY 2022 07:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -843,13 +843,13 @@ Chapter 1.
 [5
 
 ]
-<chapters/01//relevance.png, id=468, 794.97pt x 738.76pt>
+<chapters/01//relevance.png, id=483, 794.97pt x 738.76pt>
 File: chapters/01//relevance.png Graphic file (type png)
 <use chapters/01//relevance.png>
 Package pdftex.def Info: chapters/01//relevance.png  used on input line 43.
 (pdftex.def)             Requested size: 216.81pt x 201.47437pt.
  [6 <./chapters/01//relevance.png>] [7]
-<chapters/01//igv.png, id=496, 1500.60625pt x 823.075pt>
+<chapters/01//igv.png, id=511, 1500.60625pt x 823.075pt>
 File: chapters/01//igv.png Graphic file (type png)
 <use chapters/01//igv.png>
 Package pdftex.def Info: chapters/01//igv.png  used on input line 137.
@@ -884,15 +884,15 @@ Overfull \hbox (1.24583pt too wide) in paragraph at lines 81--81
 u-mour dereg-
  []
 
-[30]) [31] (./build/principal.aux)
+[30] [31]) [32] (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 043B2D30D695308D83F5170096FDD7FE;17796.
+(rerunfilecheck)             Checksum: 06455C0CDDCB328D7683C8CA76FBBF1B;18655.
  ) 
 Here is how much of TeX's memory you used:
- 22588 strings out of 478238
- 413684 string characters out of 5850456
- 741005 words of memory out of 5000000
- 40362 multiletter control sequences out of 15000+600000
+ 22595 strings out of 478238
+ 413793 string characters out of 5850456
+ 741008 words of memory out of 5000000
+ 40365 multiletter control sequences out of 15000+600000
  489948 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,12n,82p,512b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -914,10 +914,10 @@ xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sfti0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000
 .pfb>
-Output written on ./build/principal.pdf (32 pages, 698578 bytes).
+Output written on ./build/principal.pdf (33 pages, 704332 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 652 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
- 691 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 715 words of extra memory for PDF output out of 10000 (max. 10000000)
 

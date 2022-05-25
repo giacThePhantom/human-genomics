@@ -115,3 +115,33 @@
 	THe timing of dysregulation along the evolutionary paths can be independent across tumour types.
 
 \section{Materials and methods}
+
+	\subsection{CLONET pipeline}
+	SNPs have been extracted from BAM files using an in-hous procedure, SCNAs were detected using SegSeq from tumour and normal sequencing-based data, PM coordinates were as in original corresponding manuscripts and REARRs were identified by means of dRanger and Breakpointer.
+	To avoid germline background effects, genes that intersect significant with known germline copy number variants were filtered out.
+
+	\subsection{CLONET on exome and targeted sequencing data}
+	The analysis of samples with few SCNAs provided that informative SNPs read counts and Log R values are available is enabled.
+	Individual specific informative SNPs can be identified from matched normal DNA samples.
+	Appropriate Log R values can be optained for exome genomi segments with platform specific strategies and provided to CLONET as input.
+	Array-based segemnted data or SCNA segments directly inferred from eome data with recent well-performing tools.
+	CLONET combines segment input with exome-derived read counts to estimate purity and ploidy.
+	Then subclonal aberrations are called based on sequencing data.
+	Copy number calls derived using custom control regions and very hig-coverage allowed for CLONET based clonality estimation even in the case of low tumour content.
+
+	\subsection{Expected distribution of the allelic fraction of a genomic segment}
+	Consider a genomic segment that spans a set of informative SNPs for the individual of intersect.
+	For any of them with coverage $cov$ the total number of reads $r$ supporting the reference base is the sum of the neutral reads $r_n$ and the active reads $r_a$ supporting the reference base.
+	$\beta$ is the ration between neutral reads and the total number of reads spanning the SNP of interest.
+	The probability of having $k$ reference reads is the convolution of the probability of observing $\beta\cdot k$ neutral reads and $(1-\beta)\cdot k$ active reads:
+
+	$$P(r = k, 0\le k\le cov) = Conv(P(r_n = \beta\cdot k), P(r_a = (1-\beta)\cdot k))$$
+
+	$P(r_n = \beta\cdot k)$ is assumed to follow a binomial distribution with trials $\beta\cdot cov$ and probability of success $ps$.
+	All active reads support the reference or the alternative base.
+	$N_{ref}$ is the proportion of informative SNPs within the aberration that carry the SNP reference base in the allele represented by the active reads.
+	$P(r_a = (1-\beta)\cdot k)$ follows a categorical distribution iwth values equal to $N_{ref}$.
+
+	$$P(r = k|cov, \beta, N_{ref}, ps) = (1-N_{ref})\cdot B(k|\beta\cdot cov, ps) + N_{ref}\cdot B(k-(1-\beta)\cdot cov | \beta\cdot cov, ps)$$
+
+	Where $B(m|n, p)$ is the probability mass function of a binomial distribution, the probability of $m$ successes in $n$ trials with success probability $P$.

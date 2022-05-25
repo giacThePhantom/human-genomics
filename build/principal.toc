@@ -100,3 +100,6 @@
 \contentsline {subsection}{\numberline {6.2.4}Comparative analysis reveals different mechanisms of tumour deregulation}{30}{subsection.6.2.4}%
 \contentsline {subsection}{\numberline {6.2.5}Clonal hierarchy of genomic aberrations}{31}{subsection.6.2.5}%
 \contentsline {section}{\numberline {6.3}Materials and methods}{31}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}CLONET pipeline}{31}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}CLONET on exome and targeted sequencing data}{31}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Expected distribution of the allelic fraction of a genomic segment}{31}{subsection.6.3.3}%
