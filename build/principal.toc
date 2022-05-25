@@ -89,3 +89,4 @@
 \contentsline {section}{\numberline {5.4}Noninvasive monitoring of heterogeneity}{25}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Analysis of ctDNA}{25}{subsection.5.4.1}%
 \contentsline {section}{\numberline {5.5}Overcoming heterogeneity}{25}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Unravelling the clonal hierarchy of somatic genomic aberration}{27}{chapter.6}%
