@@ -1,0 +1,117 @@
+\chapter{Unravelling the clonal hierarchy of somatic genomic aberrations}
+
+\section{Introduction}
+
+	\subsection{Abstract}
+	Defining the chronology of molecular alterations may identify milestones in carcinogenesis.
+	The analyses highlight the diversity of clonal evolution within and across tumour types that might be informative for risk stratification and patient selection for targeted therapies.
+
+	\subsection{Background}
+	Cancer arises from clones that undergo intense evolutionary selection during disease progression.
+	THis process may lead to subclonal divergence resulting in genetic and molecular heterogeneity.
+	Several methods have been developed to quantify DNA admixture and ploidy from SNP array data that use the relative abundance of specific allele signal ($B$ allele frequency) and the tumour over normal signal ratio or Log R to measure the complexity of the cellular population.
+	Using gerline heterozyfous SNP loci or informative SNPs tumour purity and ploidy are estimated analyzing allelic fraction values.
+	Subclonal alterations will appear as outliers from the computed admixture and ploidy.
+	Global methods are well-suited fro tumour samples with homogenous genomic aberrations.
+	This approaches are suboptimal with tumour samples with high heterogeneity.
+	Local optimization uses creates estimates of purity and ploidy from few clonal events.
+	The AF values of informative SNPs in a somatic deletion result from the composition of signal from non-tumour cells, tumour cells without the deletion and tumour cells harbouring the deletion.
+	Modelling the probability distribution of the observerd AF, a local estimate of the DNA admixture is computed, accounting for both normal cell admixture and subclonal tumour cell population.
+	After the estimation for all deletions across the genome only selected regions contribute to the computation of the tumour sample global admixture.
+
+\section{Results}
+
+	\subsection{Clonality assessment of aberrations from sequencing reads}
+	The reads mapped into a genomic window can be partitioned into a set containing reads that equally represent parental chromosomes and a set containing reads from only one parent chromosome.
+	There are four steps that from neutral read counts, allow inference of clonality of any genomic window.
+	First the percentage of neutral reads within a genomic segment are estimated independently of its Log R value.
+	Then the Log R value is used to relate the neutral reads with a local estimate of DNA admixture.
+	Local estimates are aggregated to estimate global admixture and clonality of somatic copy number aberrations.
+	Aneuploidy genomes are identified and the analysis corrected accordingly.
+	The analysis  is then extended to point mutations and structural rearrangements.
+	For each genomic semgent $Seg$ the expected $AF$ of the informative SNP has a bimodal distribution that relates to the composition of the DNA sample.
+	The distance between the two modes is proportional to the percentage of neutral reads $\beta$.
+	The expected distribution of the $AF$ varies accordingly with $\beta$ and $N_{ref}$, the proportion of reference base reads in the allele represented by active reads.
+	For each input segment $Seg$, optimization based on swarm intelligence finds a $\beta$ that minimizes the difference between the expected and the observed $AF$ distribution.
+	Then the Log R of $Seg$ allows computing a local estimate of the admixture.
+	If $Seg$ defines a mono-allelic deletion, $\beta$ corresponds to the percentage of reads deriving from cells that do not Harbor the deletion and relates to a local estimate of the percentage of admixed cells:
+
+	$$Adm.local = \frac{\beta}{2-\beta}$$
+
+	Local admixture values are clustered and the lowest median determines the global admixture of the sample.
+	The more the local admixture value differs from the gloval the more $Seg$ is subclonal.
+	The clonality of $Seg$ or $Cl_{Seg}$ is computed as the percentage of tumour cells in a sample harbouring $Seg$.
+	If $Seg$ is a gain $Adm.local$ extends by rescaling the percentage of neutral reads $\beta$ to recover the percentage of reads sequenced from cell that does not harbour the gain of $Seg$.
+	Bi-allelic deletions are treated separately.
+	If the deletion is clonal its $AF$ has binomial distribution $\beta=1$ and represents DNA admixture.
+	In case of subclonality $\beta$ is proportional to the percentage of tumour cells that do not harbour the deletion.
+	Aneuplidy causes a shift in the Log R vs $\beta$ space.
+	In any segment with an empty active reads set each allele has the same number of copies and $\beta=1$.
+	The ploidy of a sample is the shift in the Log R values of the neutral segment that best accounts for the observed Log R values.
+	Log R data are corrected for ploidy and Adm.global to achieve better estimates of the segment copy number.
+	Clonality estimates build on the assumption that reads supporting the alternative allele are representative of the amount of tumour DNA harbouring the mutation.
+	The proportion of reads supporting the alternative allele of a pure and clonal hemizygous PM has symmetric binomial distribution.
+	Adm.global represents the percentage of reads from admixed cells that have to be ignored to compute the correct value of AP.
+	A PM is subclonal when its corrected AP has a low probability to be clonal.
+	The same principle applies to REARRs.
+	The total numberof reads that span both sides of a breakpoint defining a REARR is a proxy of the number of cells harbouring the rearrangement.
+	The difference between the expected and observed proportion of reads supporting the alternative allele is proportional  to the subclonality of the considered REARR.
+
+	\subsection{Inferring the order of mutations in a tumour sample}
+	The assessment of the clonality of each somatic aberration enables the deconvolution of the sequence of oncogenic events that occur during tumour initiation and progression.
+	Assuming that clonal alterations pre-dates subclonal alterations within the same tumour, pairs of genes aberrant in the sample sample and across multiple tumours are considered to determine the directionality of the clonal-subclonal hierarchy.
+	To minimize the number of of false posistives (clonal called subclonal) the estimation uncertaninty around $\beta$ is computed and propagated to clonality values.
+	This enables robust comparison of aberration clonality across different tumour sample data.
+	If a clonal aberration $A_1$ and a subclonal $A_2$ occur within the same sample $S$, $A_1$ has been acquired before $A_2$ in $S$ and $A_1$ precedes $A_2$ in $S$.
+	The same dependency has to be found consistently across samples to derive the rule that links $A_1$ and $A_2$.
+	This can produce an evolution path draft and in the presence of adequate sample size and frequencies of co-occurring aberrations, the statistical significance of the relation between $A_1$ and $A_2$ can be assessed by testing the null hypothesis that the two aberrations are independent and consider a binomial distribution  with number of trials $n$ equals the number of samples where $A_1$ is clonal and $A_2$ is subclonal or vice versa.
+	With
+
+	\subsection{In silico and in situ experimental validation}
+	To assess if the coverage depth typical for large scale sequencing experiments has an effect on clonality estimates miSeq ultra-deep sequencing data was queried.
+	Excellen agreement in downstram clonality calls for deletion was observed.
+	CLONET did not assign clonality values to aberrations in which MiSeq does not confirm AP values.
+	Next studying PMs and assessing high correlation of AP values between WGS adn MiSeq data, suggesting that the study coverage duse not significantly impact the ability to assess aberration clonality.
+	In order to validate the clinality statuse of complex structural genomic aberrations, in situ tests was used.
+	The ability to assess rearrangemnt clonality was deminstrated focusing on well-characterized REARRs.
+	Perfect agreement was demistrantion.
+	Also subclonal bi-allelic deletion was validated by fluorescence.
+	The prediction highlights a small subclonal bi-allelic deletion within a larger clonal mono-allelic deletion, suggesting that selective evolutionary pressure is acting on the genomic region.
+
+	\subsection{Comparative analysis reveals different mechanisms of tumour deregulation}
+	THe mean number of events classified as clonal or subclonal by means of the proportion test with FDR correction.
+	Deletions are more heterogeneous than gains in prostate and lung cancer, while melanoma had the opposite behaviour.
+	Comparing the proportion of clonal/subclonal losses and gains the prostate and lung samples are statistically indistinguishable.
+	This suggests that temporally distinct mechanisms lead to loss and gain across the three tumour types.
+	Prostate cancer in terms of PMs exhibits more subclonal events than melanoma, suggesting a more central role of PMs in melanoma oncogenesis compared with prostate cancer.
+	Aggregated values reflect only part of the story: great variability in the percentage of clonal events within a single combination of tumour and aberration is observed.
+	Then the distribution along the genome of the variability in the clonality status of aberrations was assessed.
+	Commonality beween the three tumour types in some regions can be observed.
+	Then the capability of clonality analysis to highlight tumour specific mechanism of deregulation was investigated.
+	Considering PTEN deletion, which is involved in many cancer types, it was seen how the timing of the alteration is different and may point to differential roles for pathway inactivation.
+	The focal and subclonal deletion in prostate samples suggests that evolutionary pressure is acting later and may promote cancer progression at a later stage.
+	PTEN is homogenously lost in metastatic melanoma.
+	In lung cancer this loss is more rare.
+	CLONET can identify tumour lineage specific subclonality.
+
+	\subsection{Clonal hierarchy of genomic aberrations}
+	The temporal evolution of driver aberrations was analysed to build evolution maps capitalizing on the information from multiple individuals' samples in the absence of multiregion samples.
+	Given the sample size and the mutation frequencies, drafts of evolution maps were built by implementing the following rule.
+	In particular, an arrow from $A_1$ to $A_2$ is drawn if:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item $A_1$ and $A_2$ co-occur in at least two samples.
+			\item $A_1$ preceded $A_2$ in at least one sample.
+			\item $A_2$ does not precede $A_1$ in the considered dataset.
+		\end{itemize}
+	\end{multicols}
+
+	The sensitivity of CLONET allowed the identification of additional genes whose loss precedes the homozygous deletion.
+	No contradictory relations were detected in independent datasets.
+	In order to investigate common patterns of progression across tumour types, a large set of putative cancer genes was interrogated and applied pairwise intersections of identified paths.
+	The evolution of known cancer signalling pathways was explored: both ommon themes across tumour types and tissue-specific patterns emerged.
+	Recurrently deregulated pathways where detected as early drivers.
+	THe timing of dysregulation along the evolutionary paths can be independent across tumour types.
+
+\section{Materials and methods}
