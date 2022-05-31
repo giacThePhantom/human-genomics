@@ -103,3 +103,8 @@
 \contentsline {subsection}{\numberline {6.3.1}CLONET pipeline}{31}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}CLONET on exome and targeted sequencing data}{31}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}Expected distribution of the allelic fraction of a genomic segment}{31}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Estimated proportion of neutral reads for a genomic segment}{32}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}From neutral to non-aberrant reads}{32}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}From aberrant reads to aberrant cells}{32}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}Uncertainty assessment and its propagation to clonality estimates}{33}{subsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.3.8}Clonality of bi-allelic deletion}{33}{subsection.6.3.8}%
