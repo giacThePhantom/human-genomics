@@ -112,3 +112,18 @@
 \contentsline {section}{\numberline {7.1}Abstract}{34}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Introduction}{34}{subsection.7.1.1}%
 \contentsline {section}{\numberline {7.2}Materials and methods}{34}{section.7.2}%
+\contentsline {chapter}{\numberline {8}SNP panel identification assay (SPIA): a genetic-based assay for the identification of cell lines}{36}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Abstract}{36}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{36}{subsection.8.1.1}%
+\contentsline {section}{\numberline {8.2}Material and methods}{36}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Cell lines}{36}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Genotype distance}{36}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}SNP panel selection procedure}{36}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}SPIA probabilistic test on cell line genotype distance}{36}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Sequenom platform for genotyping human cells}{36}{subsection.8.2.5}%
+\contentsline {section}{\numberline {8.3}Result}{36}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}SNP panel selection}{36}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Set of best SNPs}{36}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Comparison of pair-wise distances using multiple SNP panels and implementation of statistical test}{36}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Distance between different cell line passages}{36}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}A genotyping-based assay for tumour sample fingerprinting}{36}{subsection.8.3.5}%
