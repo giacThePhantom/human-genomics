@@ -122,15 +122,23 @@ Sequence specific variants, breakpoints, etc. could not be detected until NGS.
 
 \section{Sequence capture for cancer genomics}
 In the paper \footnote{Meyerson et al., Nature Reviews Genetics 2010} it is described a typical sequence capture for cancer genomics. 
-One of the main realizations is that the test reference genome is the normal (non-cancer) DNA. 
-Intuitively, we align both cancer and normal DNA so that we can detect if an aberration is cancer specific or it is present also in the normal DNA. 
-The \textbf{match normal} is used to distinguish SNV from rare SNPs, but also copy number variation. 
+
+One of the main realizations is that the test reference genome is the normal (non-cancer) DNA.
+Most of the times when studying somatic changes a reference is needed, and the best reference is the individual's own genome, usually retreved from white blood samples. 
+Intuitively, we can align both cancer and normal DNA so that we can detect if an aberration is cancer specific or it is present also in the normal DNA and discover somatic aberration. 
+The \textbf{match normal} is used to distinguish SNV from rare SNPs, somatic and germline indels, but also to make sure that copy number variations are somatic. 
 Baits are nowadays used in the sequencing step, in order to sequence only the exome (usually, money issue). 
-Another concept is the need to sequence \textit{deeply}, to find subclonal events that give the cancer maybe some fitness (escaping immune system), but also because if the sample comes from the tissue, there are both cancer and some healthy cells and we need to able to distinguish them.
+
+Another concept is the need to sequence \textit{deeply}, to find subclonal events that give the cancer maybe some fitness (escaping immune system). Deep sequencing is necessary because not all cells present all the mutations characterizing the subclonal event. But also because if the sample comes from the tissue (tumor tisue), there are both cancer and some healthy cells and we need to able to distinguish them.
+
 A more in depth discussion is provided in *paper*.
 
-\subsection{Single End (SE) and Paired End (PE) reads}
-Paired end useful especially for detecting structural variance. Massive information of relative position of a molecule wrt the reference gneome.
+\subsection{Single End (SE) and Paired End (PE) reads} \label{SE_PE}
+\textit{Discalimer: the difference between PE and SE is not described}\\
+Paired end is useful especially for detecting structural variance. PE gives important information of relative position of a molecule wrt the reference genome, resulting in a necessary choice in deisgning the assay when we need to check for structural aberrations. 
+Interestingly, PE reads can be considered as two single reads from one molecule (PE protocol); but there's a loss of
+structural information.
+PE protocol is, however, twice as expensive!
 
 \begin{figure}[htbp!]
     \centering
@@ -140,9 +148,10 @@ Paired end useful especially for detecting structural variance. Massive informat
 \end{figure}
 
 Figure \ref{fig:igv} gives a nice graphical overview of genomic aberrations detectable by NGS, especially using PE sequencing. 
+
 Important to notice is that performing PE sequencing is like having double the coverage. 
 Both for homozygous and hemizygous deletions and insertions the single most important thing we need to care about is to have enough coverage on the whole experiment to perform significative downstream analysis. 
-An important thing to notice in \ref{fig:igv} is the translocation breakpoint: without PE we would not be able to detect the translocation event. 
+Notice in \ref{fig:igv} the translocation breakpoint: without PE we would not be able to detect the translocation event. 
 
  
 

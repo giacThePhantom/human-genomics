@@ -1,74 +1,146 @@
-\BOOKMARK [-1][-]{part.1}{\376\377\000I\000\040\000N\000o\000t\000e\000s}{}% 1
-\BOOKMARK [0][-]{chapter.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{part.1}% 2
-\BOOKMARK [1][-]{section.1.1}{\376\377\000G\000e\000n\000e\000t\000i\000c\000s\000\040\000v\000s\000\040\000G\000e\000n\000o\000m\000i\000c\000s}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.1}{\376\377\000G\000e\000n\000e\000t\000i\000c\000s}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.2}{\376\377\000G\000e\000n\000o\000m\000i\000c\000s}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.3}{\376\377\000D\000i\000f\000f\000e\000r\000e\000n\000c\000e\000s}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.4}{\376\377\000R\000o\000l\000e\000\040\000o\000f\000\040\000c\000o\000m\000p\000u\000t\000a\000t\000i\000o\000n\000a\000l\000\040\000b\000i\000o\000l\000o\000g\000y}{section.1.1}% 7
-\BOOKMARK [1][-]{section.1.2}{\376\377\000H\000u\000m\000a\000n\000\040\000G\000e\000n\000o\000m\000i\000c\000s\000\040\000-\000\040\000t\000h\000e\000\040\000B\000a\000s\000i\000s}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.2.1}{\376\377\000G\000e\000n\000e\000t\000i\000c\000\040\000M\000a\000k\000e\000-\000U\000p}{section.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2}{\376\377\000I\000n\000h\000e\000r\000i\000t\000e\000d\000\040\000v\000a\000r\000i\000a\000n\000t\000s\000'\000\040\000r\000e\000l\000e\000v\000a\000n\000c\000e}{section.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.2.3}{\376\377\000D\000i\000f\000f\000e\000r\000e\000n\000c\000e\000s\000\040\000i\000n\000\040\000G\000e\000n\000e\000t\000i\000c\000\040\000M\000a\000k\000e\000-\000U\000p\000,\000\040\000a\000n\000\040\000e\000x\000a\000m\000p\000l\000e}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.4}{\376\377\000A\000c\000q\000u\000i\000r\000e\000d\000\040\000D\000N\000A\000\040\000a\000b\000e\000r\000r\000a\000t\000i\000o\000n\000s}{section.1.2}% 12
-\BOOKMARK [1][-]{section.1.3}{\376\377\000E\000x\000p\000e\000r\000i\000m\000e\000n\000t\000a\000l\000\040\000t\000e\000c\000h\000n\000i\000q\000u\000e\000s\000\040\000t\000o\000\040\000d\000e\000t\000e\000c\000t\000\040\000v\000a\000r\000i\000a\000n\000t\000s\000/\000a\000b\000e\000r\000r\000a\000t\000i\000o\000n\000s}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.3.1}{\376\377\000C\000a\000r\000i\000o\000t\000y\000p\000i\000n\000g}{section.1.3}% 14
-\BOOKMARK [1][-]{section.1.4}{\376\377\000S\000e\000q\000u\000e\000n\000c\000e\000\040\000c\000a\000p\000t\000u\000r\000e\000\040\000f\000o\000r\000\040\000c\000a\000n\000c\000e\000r\000\040\000g\000e\000n\000o\000m\000i\000c\000s}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.4.1}{\376\377\000S\000i\000n\000g\000l\000e\000\040\000E\000n\000d\000\040\000\050\000S\000E\000\051\000\040\000a\000n\000d\000\040\000P\000a\000i\000r\000e\000d\000\040\000E\000n\000d\000\040\000\050\000P\000E\000\051\000\040\000r\000e\000a\000d\000s}{section.1.4}% 16
-\BOOKMARK [-1][-]{part.2}{\376\377\000I\000I\000\040\000P\000a\000p\000e\000r\000s}{}% 17
-\BOOKMARK [0][-]{chapter.2}{\376\377\000R\000o\000l\000e\000\040\000o\000f\000\040\000n\000o\000n\000-\000c\000o\000d\000i\000n\000g\000\040\000s\000e\000q\000u\000e\000n\000c\000e\000\040\000v\000a\000r\000i\000a\000n\000t\000s\000\040\000i\000n\000\040\000c\000a\000n\000c\000e\000r}{part.2}% 18
-\BOOKMARK [1][-]{section.2.1}{\376\377\000A\000b\000s\000t\000r\000a\000c\000t}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.1.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{section.2.1}% 20
-\BOOKMARK [1][-]{section.2.2}{\376\377\000G\000e\000n\000o\000m\000i\000c\000\040\000s\000e\000q\000u\000e\000n\000c\000e\000\040\000v\000a\000r\000i\000a\000n\000t\000s}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.3}{\376\377\000N\000o\000n\000-\000c\000o\000d\000i\000n\000g\000\040\000e\000l\000e\000m\000e\000n\000t\000\040\000a\000n\000n\000o\000t\000a\000t\000i\000o\000n}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{\376\377\000C\000i\000s\000\040\000r\000e\000g\000u\000l\000a\000t\000o\000r\000y\000\040\000r\000e\000g\000i\000o\000n\000s}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{\376\377\000D\000i\000s\000t\000a\000l\000\040\000r\000e\000g\000u\000l\000a\000t\000o\000r\000y\000\040\000e\000l\000e\000m\000e\000n\000t\000s}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{\376\377\000R\000N\000A\000-\000s\000e\000q}{section.2.3}% 25
-\BOOKMARK [2][-]{subsection.2.3.4}{\376\377\000T\000r\000a\000n\000s\000c\000r\000i\000b\000e\000d\000\040\000p\000s\000e\000u\000d\000o\000g\000e\000n\000e\000s}{section.2.3}% 26
-\BOOKMARK [2][-]{subsection.2.3.5}{\376\377\000E\000v\000o\000l\000u\000t\000i\000o\000n\000a\000r\000y\000\040\000c\000o\000n\000s\000e\000r\000v\000a\000t\000i\000o\000n}{section.2.3}% 27
-\BOOKMARK [1][-]{section.2.4}{\376\377\000R\000o\000l\000e\000s\000\040\000f\000o\000r\000\040\000s\000o\000m\000a\000t\000i\000c\000\040\000v\000a\000r\000i\000a\000n\000t\000s\000\040\000i\000n\000\040\000c\000a\000n\000c\000e\000r}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.4.1}{\376\377\000G\000a\000i\000n\000\040\000o\000f\000\040\000T\000F\000-\000b\000i\000n\000d\000i\000n\000g\000\040\000s\000i\000t\000e\000s}{section.2.4}% 29
-\BOOKMARK [2][-]{subsection.2.4.2}{\376\377\000F\000u\000s\000i\000o\000n\000\040\000e\000v\000e\000n\000t\000s\000\040\000d\000u\000e\000\040\000t\000o\000\040\000g\000e\000n\000o\000m\000i\000c\000\040\000r\000e\000a\000r\000r\000a\000n\000g\000e\000m\000e\000n\000t\000s}{section.2.4}% 30
-\BOOKMARK [2][-]{subsection.2.4.3}{\376\377\000n\000c\000R\000N\000A\000s\000\040\000a\000n\000d\000\040\000t\000h\000e\000i\000r\000\040\000b\000i\000n\000d\000i\000n\000g\000\040\000s\000i\000t\000e\000s}{section.2.4}% 31
-\BOOKMARK [2][-]{subsection.2.4.4}{\376\377\000R\000o\000l\000e\000\040\000o\000f\000\040\000p\000s\000e\000u\000d\000o\000g\000e\000n\000e\000s\000\040\000i\000n\000\040\000m\000o\000d\000u\000l\000a\000t\000i\000n\000g\000\040\000t\000h\000e\000\040\000e\000x\000p\000r\000e\000s\000s\000i\000o\000n\000\040\000o\000f\000\040\000a\000\040\000p\000a\000r\000e\000n\000t\000a\000l\000\040\000g\000e\000n\000e}{section.2.4}% 32
-\BOOKMARK [1][-]{section.2.5}{\376\377\000R\000o\000l\000e\000s\000\040\000f\000o\000r\000\040\000g\000e\000r\000m\000l\000i\000n\000e\000\040\000v\000a\000r\000i\000a\000n\000t\000s\000\040\000i\000n\000\040\000c\000a\000n\000c\000e\000r}{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.5.1}{\376\377\000P\000r\000o\000m\000o\000t\000e\000r\000\040\000m\000u\000t\000a\000t\000i\000o\000n\000s}{section.2.5}% 34
-\BOOKMARK [2][-]{subsection.2.5.2}{\376\377\000S\000N\000P\000s\000\040\000i\000n\000\040\000e\000n\000h\000a\000n\000c\000e\000r\000s}{section.2.5}% 35
-\BOOKMARK [2][-]{subsection.2.5.3}{\376\377\000V\000a\000r\000i\000a\000n\000t\000s\000\040\000i\000n\000\040\000i\000n\000t\000r\000o\000n\000s}{section.2.5}% 36
-\BOOKMARK [2][-]{subsection.2.5.4}{\376\377\000S\000N\000P\000s\000\040\000i\000n\000\040\000n\000c\000R\000N\000A\000\040\000a\000n\000d\000\040\000t\000h\000e\000i\000r\000\040\000b\000i\000n\000d\000i\000n\000g\000\040\000s\000i\000t\000e\000s}{section.2.5}% 37
-\BOOKMARK [2][-]{subsection.2.5.5}{\376\377\000O\000t\000h\000e\000r\000s}{section.2.5}% 38
-\BOOKMARK [1][-]{section.2.6}{\376\377\000I\000n\000t\000e\000r\000p\000l\000a\000y\000\040\000b\000e\000t\000w\000e\000e\000n\000\040\000g\000e\000r\000m\000l\000i\000n\000e\000\040\000a\000n\000d\000\040\000s\000o\000m\000a\000t\000i\000c\000\040\000v\000a\000r\000i\000a\000n\000t\000s}{chapter.2}% 39
-\BOOKMARK [1][-]{section.2.7}{\376\377\000C\000o\000m\000p\000u\000t\000a\000t\000i\000o\000n\000a\000l\000\040\000m\000e\000t\000h\000o\000d\000s\000\040\000f\000o\000r\000\040\000i\000d\000e\000n\000t\000i\000f\000y\000i\000n\000g\000\040\000v\000a\000r\000i\000a\000n\000t\000s}{chapter.2}% 40
-\BOOKMARK [1][-]{section.2.8}{\376\377\000E\000x\000p\000e\000r\000i\000m\000e\000n\000t\000a\000l\000\040\000a\000p\000p\000r\000o\000a\000c\000h\000e\000s\000\040\000f\000o\000r\000\040\000f\000u\000n\000c\000t\000i\000o\000n\000a\000l\000\040\000v\000a\000l\000i\000d\000a\000t\000i\000o\000n}{chapter.2}% 41
-\BOOKMARK [0][-]{chapter.3}{\376\377\000A\000d\000v\000a\000n\000c\000e\000s\000\040\000i\000n\000\040\000u\000n\000d\000e\000r\000s\000t\000a\000n\000d\000i\000n\000g\000\040\000c\000a\000n\000c\000e\000r\000\040\000g\000e\000n\000o\000m\000i\000c\000s\000\040\000t\000h\000r\000o\000u\000g\000h\000\040\000s\000e\000c\000o\000n\000d\000-\000g\000e\000n\000e\000r\000a\000t\000i\000o\000n\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{part.2}% 42
-\BOOKMARK [1][-]{section.3.1}{\376\377\000A\000b\000s\000t\000r\000a\000c\000t}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.1.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{section.3.1}% 44
-\BOOKMARK [1][-]{section.3.2}{\376\377\000C\000a\000n\000c\000e\000r\000-\000s\000p\000e\000c\000i\000f\000i\000c\000\040\000c\000o\000n\000s\000i\000d\000e\000r\000a\000t\000i\000o\000n}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.2.1}{\376\377\000C\000h\000a\000r\000a\000c\000t\000e\000r\000i\000s\000t\000i\000c\000s\000\040\000o\000f\000\040\000c\000a\000n\000c\000e\000r\000\040\000s\000a\000m\000p\000l\000e\000s\000\040\000f\000o\000r\000\040\000g\000e\000n\000o\000m\000i\000c\000\040\000a\000n\000a\000l\000y\000s\000i\000s}{section.3.2}% 46
-\BOOKMARK [2][-]{subsection.3.2.2}{\376\377\000S\000t\000r\000u\000c\000t\000u\000r\000a\000l\000\040\000v\000a\000r\000i\000a\000b\000i\000l\000i\000t\000y\000\040\000o\000f\000\040\000c\000a\000n\000c\000e\000r\000\040\000g\000e\000n\000o\000m\000e\000s}{section.3.2}% 47
-\BOOKMARK [1][-]{section.3.3}{\376\377\000E\000x\000p\000e\000r\000i\000m\000e\000n\000t\000a\000l\000\040\000a\000p\000p\000r\000o\000a\000c\000h\000e\000s}{chapter.3}% 48
-\BOOKMARK [2][-]{subsection.3.3.1}{\376\377\000W\000h\000o\000l\000e\000\040\000g\000e\000n\000o\000m\000e\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{section.3.3}% 49
-\BOOKMARK [2][-]{subsection.3.3.2}{\376\377\000E\000x\000o\000m\000e\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{section.3.3}% 50
-\BOOKMARK [2][-]{subsection.3.3.3}{\376\377\000T\000r\000a\000n\000s\000c\000r\000i\000p\000t\000o\000m\000e\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{section.3.3}% 51
-\BOOKMARK [1][-]{section.3.4}{\376\377\000D\000e\000t\000e\000c\000t\000i\000n\000g\000\040\000c\000l\000a\000s\000s\000e\000s\000\040\000o\000f\000\040\000g\000e\000n\000o\000m\000e\000\040\000a\000l\000t\000e\000r\000a\000t\000i\000o\000n\000s}{chapter.3}% 52
-\BOOKMARK [2][-]{subsection.3.4.1}{\376\377\000S\000o\000m\000a\000t\000i\000c\000\040\000n\000u\000c\000l\000e\000o\000t\000i\000d\000e\000\040\000s\000u\000b\000s\000t\000i\000t\000u\000t\000i\000o\000n\000s\000\040\000a\000n\000d\000\040\000s\000m\000a\000l\000l\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000\040\000a\000n\000d\000\040\000d\000e\000l\000e\000t\000i\000o\000n\000\040\000m\000u\000t\000a\000t\000i\000o\000n\000s}{section.3.4}% 53
-\BOOKMARK [2][-]{subsection.3.4.2}{\376\377\000C\000o\000p\000y\000\040\000n\000u\000m\000b\000e\000r}{section.3.4}% 54
-\BOOKMARK [2][-]{subsection.3.4.3}{\376\377\000C\000h\000r\000o\000m\000o\000s\000o\000m\000a\000l\000\040\000r\000e\000a\000r\000r\000a\000n\000g\000e\000m\000e\000n\000t\000s}{section.3.4}% 55
-\BOOKMARK [2][-]{subsection.3.4.4}{\376\377\000M\000i\000c\000r\000o\000b\000e\000-\000d\000i\000s\000c\000o\000v\000e\000r\000y\000\040\000m\000e\000t\000h\000o\000d\000s}{section.3.4}% 56
-\BOOKMARK [1][-]{section.3.5}{\376\377\000C\000o\000m\000p\000u\000t\000a\000t\000i\000o\000n\000a\000l\000\040\000i\000s\000s\000u\000e\000s}{chapter.3}% 57
-\BOOKMARK [2][-]{subsection.3.5.1}{\376\377\000A\000l\000i\000g\000n\000m\000e\000n\000t\000\040\000a\000n\000d\000\040\000a\000s\000s\000e\000m\000b\000l\000y}{section.3.5}% 58
-\BOOKMARK [2][-]{subsection.3.5.2}{\376\377\000m\000u\000t\000a\000t\000i\000o\000n\000s\000\040\000d\000e\000t\000e\000c\000t\000i\000o\000n}{section.3.5}% 59
-\BOOKMARK [2][-]{subsection.3.5.3}{\376\377\000V\000a\000l\000i\000d\000a\000t\000i\000o\000n\000\040\000o\000f\000\040\000m\000u\000t\000a\000t\000i\000o\000n\000\040\000a\000n\000d\000\040\000r\000e\000a\000r\000r\000a\000n\000g\000e\000m\000e\000n\000t\000\040\000c\000a\000l\000l\000s}{section.3.5}% 60
-\BOOKMARK [0][-]{chapter.4}{\376\377\000I\000n\000t\000e\000g\000r\000a\000t\000i\000v\000e\000\040\000g\000e\000n\000o\000m\000i\000c\000s\000\040\000v\000i\000e\000w\000e\000r}{part.2}% 61
-\BOOKMARK [1][-]{section.4.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{chapter.4}% 62
-\BOOKMARK [0][-]{chapter.5}{\376\377\000T\000u\000m\000o\000u\000r\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y\000\040\000a\000n\000d\000\040\000r\000e\000s\000i\000s\000t\000a\000n\000c\000e\000\040\000t\000o\000\040\000c\000a\000n\000c\000e\000r\000\040\000t\000h\000e\000r\000a\000p\000i\000e\000s}{part.2}% 63
-\BOOKMARK [1][-]{section.5.1}{\376\377\000A\000b\000s\000t\000r\000a\000c\000t}{chapter.5}% 64
-\BOOKMARK [2][-]{subsection.5.1.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{section.5.1}% 65
-\BOOKMARK [1][-]{section.5.2}{\376\377\000C\000a\000u\000s\000e\000s\000\040\000o\000f\000\040\000i\000n\000t\000r\000a\000t\000u\000m\000o\000r\000a\000l\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{chapter.5}% 66
-\BOOKMARK [2][-]{subsection.5.2.1}{\376\377\000G\000e\000n\000o\000m\000i\000c\000\040\000i\000n\000s\000t\000a\000b\000i\000l\000i\000t\000y}{section.5.2}% 67
-\BOOKMARK [2][-]{subsection.5.2.2}{\376\377\000T\000h\000e\000\040\000c\000l\000o\000n\000a\000l\000\040\000e\000v\000o\000l\000u\000t\000i\000o\000n\000\040\000a\000n\000d\000\040\000s\000e\000l\000e\000c\000t\000i\000o\000n\000\040\000h\000y\000p\000o\000t\000h\000e\000s\000i\000s}{section.5.2}% 68
-\BOOKMARK [1][-]{section.5.3}{\376\377\000T\000h\000e\000\040\000s\000p\000e\000c\000t\000r\000u\000m\000\040\000o\000f\000\040\000t\000u\000m\000o\000u\000r\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{chapter.5}% 69
-\BOOKMARK [2][-]{subsection.5.3.1}{\376\377\000S\000p\000a\000t\000i\000a\000l\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{section.5.3}% 70
-\BOOKMARK [2][-]{subsection.5.3.2}{\376\377\000T\000e\000m\000p\000o\000r\000a\000l\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{section.5.3}% 71
-\BOOKMARK [1][-]{section.5.4}{\376\377\000N\000o\000n\000i\000n\000v\000a\000s\000i\000v\000e\000\040\000m\000o\000n\000i\000t\000o\000r\000i\000n\000g\000\040\000o\000f\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{chapter.5}% 72
-\BOOKMARK [2][-]{subsection.5.4.1}{\376\377\000A\000n\000a\000l\000y\000s\000i\000s\000\040\000o\000f\000\040\000c\000t\000D\000N\000A}{section.5.4}% 73
-\BOOKMARK [1][-]{section.5.5}{\376\377\000O\000v\000e\000r\000c\000o\000m\000i\000n\000g\000\040\000h\000e\000t\000e\000r\000o\000g\000e\000n\000e\000i\000t\000y}{chapter.5}% 74
+\BOOKMARK [-1][-]{part.1}{I Notes}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}% 2
+\BOOKMARK [1][-]{section.1.1}{Genetics vs Genomics}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Genetics}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.2}{Genomics}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.3}{Differences}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.4}{Role of computational biology}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Human Genomics - the Basis}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{Genetic Make-Up}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{Inherited variants' relevance}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.3}{Differences in Genetic Make-Up, an example}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.4}{Acquired DNA aberrations}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{Experimental techniques to detect variants/aberrations}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.3.1}{Cariotyping}{section.1.3}% 14
+\BOOKMARK [1][-]{section.1.4}{Sequence capture for cancer genomics}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.4.1}{Single End \(SE\) and Paired End \(PE\) reads}{section.1.4}% 16
+\BOOKMARK [0][-]{chapter.2}{Coverage}{part.1}% 17
+\BOOKMARK [1][-]{section.2.1}{Local Coverage and Allelic Fraction}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{Mapped reads}{section.2.1}% 19
+\BOOKMARK [1][-]{section.2.2}{When to increase the intended coverage of a NGS assay}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Interpreting Pair Orientations}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.3.1}{Inversion}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.2}{Tandem duplication}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.3}{Inverted duplication}{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Summary}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Genetic Fingerprinting}{part.1}% 26
+\BOOKMARK [1][-]{subsection.3.0.1}{Variants used for genetic testing}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.1}{SNPs features}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Hardy-Weinberg equilibrium and Minor Allele frequency}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Minor Allele Frequency}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.3}{Haplotype Blocks}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.4}{Other SNPs features}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.5}{Number of SNPs to select}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.6}{Some questions}{section.3.1}% 34
+\BOOKMARK [2][-]{subsection.3.1.7}{Further considerations}{section.3.1}% 35
+\BOOKMARK [1][-]{section.3.2}{Building a SNP-based genetic test}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.2.1}{Implementation of a probabilistic test}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.2}{Example 1: Cell line passages}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.3}{Individual's Relatedness \(genotype-distance\)}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.4}{Example 3: Cancer supscettibility test}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.5}{Genetic structure of the human population}{section.3.2}% 41
+\BOOKMARK [0][-]{chapter.4}{IGV \(Integrative Genomics Viewer\)}{part.1}% 42
+\BOOKMARK [1][-]{section.4.1}{Main characteristics}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.1.1}{Igvtools}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.2}{Session Files}{section.4.1}% 45
+\BOOKMARK [1][-]{section.4.2}{Some of the main utilizations}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.2.1}{RNA-seq alignments}{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.2}{Study of variants}{section.4.2}% 48
+\BOOKMARK [1][-]{section.4.3}{Exercise}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.3.1}{Task B}{section.4.3}% 50
+\BOOKMARK [0][-]{chapter.5}{Tumor Evolution Studies via NGS data}{part.1}% 51
+\BOOKMARK [1][-]{section.5.1}{Tumor evolution}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.2}{From sketches to sequencing data evolution information}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.2.1}{Tumor evolution and heterogeneity}{section.5.2}% 54
+\BOOKMARK [2][-]{subsection.5.2.2}{Useful feature from NGS data}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.3}{Allelic Fraction \(AF\) properties}{section.5.2}% 56
+\BOOKMARK [1][-]{section.5.3}{Coverage and AF properties}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.4}{Computing Beta}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.5}{Global vs Local Estimates of admixture}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.6}{A challenging case \(PR-2741}{chapter.5}% 60
+\BOOKMARK [0][-]{chapter.6}{Tumor evolution studies \(continued\)}{part.1}% 61
+\BOOKMARK [1][-]{section.6.1}{Recalls from the previous lecture}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.2}{Ploidy and purity correction on 2\(TN\) data}{chapter.6}% 63
+\BOOKMARK [0][-]{chapter.7}{Tumor evolution studies via NGS data: SNVs-based methods}{part.1}% 64
+\BOOKMARK [1][-]{section.7.1}{Rationale of somatic point mutation based assays}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.2}{TPES \(Tumor Purity Estimation\)}{chapter.7}% 66
+\BOOKMARK [1][-]{section.7.3}{How many SNVs are needed to assess tumor purity?}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.4}{Comparison between purity callers}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.5}{Pros and Cons of SNVs-based tumor purity assessment}{chapter.7}% 69
+\BOOKMARK [0][-]{chapter.8}{Liquid biopsies in oncology}{part.1}% 70
+\BOOKMARK [1][-]{section.8.1}{Liquid vs Tissue biopsies}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.2}{Issues in the interpretation of cfDNA data}{chapter.8}% 72
+\BOOKMARK [2][-]{subsection.8.2.1}{Normalization on tumor content}{section.8.2}% 73
+\BOOKMARK [2][-]{subsection.8.2.2}{Quantity of input material}{section.8.2}% 74
+\BOOKMARK [1][-]{section.8.3}{SNV detection in liquid biopsies}{chapter.8}% 75
+\BOOKMARK [1][-]{section.8.4}{Requirements depend on the application}{chapter.8}% 76
+\BOOKMARK [1][-]{section.8.5}{Whole genome vs targeted sequencing}{chapter.8}% 77
+\BOOKMARK [1][-]{section.8.6}{Take-home message}{chapter.8}% 78
+\BOOKMARK [0][-]{chapter.9}{Epigenetic profiling of cell-free DNA}{part.1}% 79
+\BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}% 80
+\BOOKMARK [1][-]{section.9.2}{DNA methylation}{chapter.9}% 81
+\BOOKMARK [1][-]{section.9.3}{How is DNA methylation measured?}{chapter.9}% 82
+\BOOKMARK [1][-]{section.9.4}{Tissue-specific vs disease-specific DNA markers}{chapter.9}% 83
+\BOOKMARK [1][-]{section.9.5}{DNA methylation based liquid biopsy}{chapter.9}% 84
+\BOOKMARK [2][-]{subsection.9.5.1}{Workflow}{section.9.5}% 85
+\BOOKMARK [2][-]{subsection.9.5.2}{CCGA study}{section.9.5}% 86
+\BOOKMARK [2][-]{subsection.9.5.3}{Deconvolution approaches}{section.9.5}% 87
+\BOOKMARK [1][-]{section.9.6}{Targeted panel approaches for tumor content estimation}{chapter.9}% 88
+\BOOKMARK [-1][-]{part.2}{II Papers}{}% 89
+\BOOKMARK [0][-]{chapter.10}{Role of non-coding sequence variants in cancer}{part.2}% 90
+\BOOKMARK [1][-]{section.10.1}{Abstract}{chapter.10}% 91
+\BOOKMARK [2][-]{subsection.10.1.1}{Introduction}{section.10.1}% 92
+\BOOKMARK [1][-]{section.10.2}{Genomic sequence variants}{chapter.10}% 93
+\BOOKMARK [1][-]{section.10.3}{Non-coding element annotation}{chapter.10}% 94
+\BOOKMARK [2][-]{subsection.10.3.1}{Cis regulatory regions}{section.10.3}% 95
+\BOOKMARK [2][-]{subsection.10.3.2}{Distal regulatory elements}{section.10.3}% 96
+\BOOKMARK [2][-]{subsection.10.3.3}{RNA-seq}{section.10.3}% 97
+\BOOKMARK [2][-]{subsection.10.3.4}{Transcribed pseudogenes}{section.10.3}% 98
+\BOOKMARK [2][-]{subsection.10.3.5}{Evolutionary conservation}{section.10.3}% 99
+\BOOKMARK [1][-]{section.10.4}{Roles for somatic variants in cancer}{chapter.10}% 100
+\BOOKMARK [2][-]{subsection.10.4.1}{Gain of TF-binding sites}{section.10.4}% 101
+\BOOKMARK [2][-]{subsection.10.4.2}{Fusion events due to genomic rearrangements}{section.10.4}% 102
+\BOOKMARK [2][-]{subsection.10.4.3}{ncRNAs and their binding sites}{section.10.4}% 103
+\BOOKMARK [2][-]{subsection.10.4.4}{Role of pseudogenes in modulating the expression of a parental gene}{section.10.4}% 104
+\BOOKMARK [1][-]{section.10.5}{Roles for germline variants in cancer}{chapter.10}% 105
+\BOOKMARK [2][-]{subsection.10.5.1}{Promoter mutations}{section.10.5}% 106
+\BOOKMARK [2][-]{subsection.10.5.2}{SNPs in enhancers}{section.10.5}% 107
+\BOOKMARK [2][-]{subsection.10.5.3}{Variants in introns}{section.10.5}% 108
+\BOOKMARK [2][-]{subsection.10.5.4}{SNPs in ncRNA and their binding sites}{section.10.5}% 109
+\BOOKMARK [2][-]{subsection.10.5.5}{Others}{section.10.5}% 110
+\BOOKMARK [1][-]{section.10.6}{Interplay between germline and somatic variants}{chapter.10}% 111
+\BOOKMARK [1][-]{section.10.7}{Computational methods for identifying variants}{chapter.10}% 112
+\BOOKMARK [1][-]{section.10.8}{Experimental approaches for functional validation}{chapter.10}% 113
+\BOOKMARK [0][-]{chapter.11}{Advances in understanding cancer genomics through second-generation sequencing}{part.2}% 114
+\BOOKMARK [1][-]{section.11.1}{Abstract}{chapter.11}% 115
+\BOOKMARK [2][-]{subsection.11.1.1}{Introduction}{section.11.1}% 116
+\BOOKMARK [1][-]{section.11.2}{Cancer-specific consideration}{chapter.11}% 117
+\BOOKMARK [2][-]{subsection.11.2.1}{Characteristics of cancer samples for genomic analysis}{section.11.2}% 118
+\BOOKMARK [2][-]{subsection.11.2.2}{Structural variability of cancer genomes}{section.11.2}% 119
+\BOOKMARK [1][-]{section.11.3}{Experimental approaches}{chapter.11}% 120
+\BOOKMARK [2][-]{subsection.11.3.1}{Whole genome sequencing}{section.11.3}% 121
+\BOOKMARK [2][-]{subsection.11.3.2}{Exome sequencing}{section.11.3}% 122
+\BOOKMARK [2][-]{subsection.11.3.3}{Transcriptome sequencing}{section.11.3}% 123
+\BOOKMARK [1][-]{section.11.4}{Detecting classes of genome alterations}{chapter.11}% 124
+\BOOKMARK [2][-]{subsection.11.4.1}{Somatic nucleotide substitutions and small insertion and deletion mutations}{section.11.4}% 125
+\BOOKMARK [2][-]{subsection.11.4.2}{Copy number}{section.11.4}% 126
+\BOOKMARK [2][-]{subsection.11.4.3}{Chromosomal rearrangements}{section.11.4}% 127
+\BOOKMARK [2][-]{subsection.11.4.4}{Microbe-discovery methods}{section.11.4}% 128
+\BOOKMARK [1][-]{section.11.5}{Computational issues}{chapter.11}% 129
+\BOOKMARK [2][-]{subsection.11.5.1}{Alignment and assembly}{section.11.5}% 130
+\BOOKMARK [2][-]{subsection.11.5.2}{mutations detection}{section.11.5}% 131
+\BOOKMARK [2][-]{subsection.11.5.3}{Validation of mutation and rearrangement calls}{section.11.5}% 132
+\BOOKMARK [0][-]{chapter.12}{Integrative genomics viewer}{part.2}% 133
+\BOOKMARK [1][-]{section.12.1}{Introduction}{chapter.12}% 134
+\BOOKMARK [0][-]{chapter.13}{Tumour heterogeneity and resistance to cancer therapies}{part.2}% 135
+\BOOKMARK [1][-]{section.13.1}{Abstract}{chapter.13}% 136
+\BOOKMARK [2][-]{subsection.13.1.1}{Introduction}{section.13.1}% 137
+\BOOKMARK [1][-]{section.13.2}{Causes of intratumoral heterogeneity}{chapter.13}% 138
+\BOOKMARK [2][-]{subsection.13.2.1}{Genomic instability}{section.13.2}% 139
+\BOOKMARK [2][-]{subsection.13.2.2}{The clonal evolution and selection hypothesis}{section.13.2}% 140
+\BOOKMARK [1][-]{section.13.3}{The spectrum of tumour heterogeneity}{chapter.13}% 141
+\BOOKMARK [2][-]{subsection.13.3.1}{Spatial heterogeneity}{section.13.3}% 142
+\BOOKMARK [2][-]{subsection.13.3.2}{Temporal heterogeneity}{section.13.3}% 143
+\BOOKMARK [1][-]{section.13.4}{Noninvasive monitoring of heterogeneity}{chapter.13}% 144
+\BOOKMARK [2][-]{subsection.13.4.1}{Analysis of ctDNA}{section.13.4}% 145
+\BOOKMARK [1][-]{section.13.5}{Overcoming heterogeneity}{chapter.13}% 146
