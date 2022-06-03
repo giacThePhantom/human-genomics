@@ -202,7 +202,9 @@ Moreover, the closest the points are, the most probable it is that the lesions h
 
 \section{A challenging case (PR-2741}
 Data of a real case of prostate cancer in which we can see a clear drop in coverage in region 2 of the 5th chromosome. The DNA present in region 2 could come either from admixting cells or from cells that do not have the deletion. \\
-Looking at the AF of region 1, 2, 3 both from the tumor and the match normal normal sample 
+Looking at the AF of region 1, 2, 3 both from the tumor and the match normal normal sample we observe more or less the same two modes of distribution.\\
+In the tumor sample in fact we do not see two peaks in 0 and 1 as expected. It could be signal of intervening normal cells, that bring the modes to the center, or subclonality event. \\
+
 
 
 
