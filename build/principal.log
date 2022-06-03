@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  2 JUN 2022 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.4)  4 JUN 2022 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,7 +806,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen288
 \@vwid@roff=\dimen289
 )))
-No file principal.aux.
+(build/principal.aux)
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -825,6 +825,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -876,6 +877,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
+
+(build/principal.out) (build/principal.out)
 \@outlinefile=\write3
 \openout3 = `principal.out'.
 
@@ -939,7 +942,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (build/principal.toc)
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
@@ -957,570 +960,788 @@ Chapter 1.
 [3
 
 ]
-<chapters/01/relevance.png, id=38, 794.97pt x 738.76pt>
+<chapters/01/relevance.png, id=55, 794.97pt x 738.76pt>
 File: chapters/01/relevance.png Graphic file (type png)
 <use chapters/01/relevance.png>
-Package pdftex.def Info: chapters/01/relevance.png  used on input line 43.
+Package pdftex.def Info: chapters/01/relevance.png  used on input line 47.
 (pdftex.def)             Requested size: 216.81pt x 201.47437pt.
- [4 <./chapters/01/relevance.png>]
 
-LaTeX Warning: Reference `fig:relevance' on page 5 undefined on input line 56.
 
-[5]
+LaTeX Warning: Reference `fig:relevance' on page 4 undefined on input line 63.
 
-LaTeX Warning: Reference `subsec:aberrations' on page 6 undefined on input line
- 119.
+<chapters/01/ADME.png, id=57, 688.5725pt x 289.08pt>
+File: chapters/01/ADME.png Graphic file (type png)
+<use chapters/01/ADME.png>
+Package pdftex.def Info: chapters/01/ADME.png  used on input line 73.
+(pdftex.def)             Requested size: 216.81pt x 91.02098pt.
 
-[6]
-<chapters/01/igv.png, id=85, 1500.60625pt x 823.075pt>
+LaTeX Warning: Reference `subsec:aberrations' on page 4 undefined on input line
+ 127.
+
+
+LaTeX Warning: Reference `ch:meyerson' on page 4 undefined on input line 132.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/01/igv.png, id=59, 1500.60625pt x 823.075pt>
 File: chapters/01/igv.png Graphic file (type png)
 <use chapters/01/igv.png>
-Package pdftex.def Info: chapters/01/igv.png  used on input line 145.
+Package pdftex.def Info: chapters/01/igv.png  used on input line 150.
 (pdftex.def)             Requested size: 303.53267pt x 166.48338pt.
 
+LaTeX Warning: Reference `fig:igv' on page 4 undefined on input line 155.
 
-LaTeX Warning: Reference `fig:igv' on page 7 undefined on input line 150.
 
+LaTeX Warning: Reference `fig:igv' on page 4 undefined on input line 159.
 
-LaTeX Warning: Reference `fig:igv' on page 7 undefined on input line 154.
-
-) (./chapters/notes/02_boh.tex [7 <./chapters/01/igv.png>]
+) (./chapters/notes/02_boh.tex
 Chapter 2.
-<chapters/02/seq_phys.png, id=94, 861.2175pt x 409.53pt>
+
+LaTeX Warning: Reference `fig:seq_phys' on page 4 undefined on input line 20.
+
+<chapters/02/seq_phys.png, id=60, 861.2175pt x 409.53pt>
 File: chapters/02/seq_phys.png Graphic file (type png)
 <use chapters/02/seq_phys.png>
-Package pdftex.def Info: chapters/02/seq_phys.png  used on input line 17.
+Package pdftex.def Info: chapters/02/seq_phys.png  used on input line 23.
 (pdftex.def)             Requested size: 216.81pt x 103.09462pt.
-[8
-
- <./chapters/02/seq_phys.png>]
-Overfull \hbox (1.25436pt too wide) in paragraph at lines 25--26
- \T1/cmr/bx/n/10 2.1.1.0.2 Phys-i-cal cov-er-age:[] \T1/cmr/m/n/10 the ex-pecte
-d dis-tance be-tween the paired reads is used to uniquely
- []
-
-<chapters/02/local_coverage.png, id=108, 1309.89375pt x 355.3275pt>
+<chapters/02/local_coverage.png, id=61, 1309.89375pt x 355.3275pt>
 File: chapters/02/local_coverage.png Graphic file (type png)
 <use chapters/02/local_coverage.png>
-Package pdftex.def Info: chapters/02/local_coverage.png  used on input line 35.
+Package pdftex.def Info: chapters/02/local_coverage.png  used on input line 48.
 
 (pdftex.def)             Requested size: 216.81pt x 58.81084pt.
 
-LaTeX Warning: Reference `fig:local' on page 9 undefined on input line 40.
+LaTeX Warning: Reference `fig:local' on page 4 undefined on input line 53.
 
 
-LaTeX Warning: Reference `fig:local' on page 9 undefined on input line 41.
+LaTeX Warning: Reference `fig:local' on page 4 undefined on input line 54.
 
 
-LaTeX Warning: Reference `SE_PE' on page 9 undefined on input line 42.
+LaTeX Warning: Reference `fig:local2' on page 4 undefined on input line 55.
 
-<chapters/02/local_coverage1.png, id=109, 1307.88625pt x 252.945pt>
+
+LaTeX Warning: Reference `SE_PE' on page 4 undefined on input line 55.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/02/local_coverage1.png, id=62, 1307.88625pt x 252.945pt>
 File: chapters/02/local_coverage1.png Graphic file (type png)
 <use chapters/02/local_coverage1.png>
-Package pdftex.def Info: chapters/02/local_coverage1.png  used on input line 46
+Package pdftex.def Info: chapters/02/local_coverage1.png  used on input line 59
 .
 (pdftex.def)             Requested size: 216.81pt x 41.93095pt.
 
-LaTeX Warning: Reference `fig:local1' on page 9 undefined on input line 51.
+LaTeX Warning: Reference `fig:local1' on page 4 undefined on input line 64.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<chapters/02/local_coverage2.png, id=110, 1300.86pt x 321.2pt>
+<chapters/02/local_coverage2.png, id=63, 1300.86pt x 321.2pt>
 File: chapters/02/local_coverage2.png Graphic file (type png)
 <use chapters/02/local_coverage2.png>
-Package pdftex.def Info: chapters/02/local_coverage2.png  used on input line 55
+Package pdftex.def Info: chapters/02/local_coverage2.png  used on input line 68
 .
 (pdftex.def)             Requested size: 216.81pt x 53.52992pt.
 
-LaTeX Warning: Reference `fig:local2' on page 9 undefined on input line 60.
+LaTeX Warning: Reference `fig:local2' on page 4 undefined on input line 73.
 
-[9 <./chapters/02/local_coverage.png> <./chapters/02/local_coverage1.png>]
-<chapters/02/inversion.png, id=122, 934.49126pt x 417.56pt>
+
+LaTeX Warning: Reference `fig:inversion' on page 4 undefined on input line 104.
+
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/02/inversion.png, id=64, 934.49126pt x 417.56pt>
 File: chapters/02/inversion.png Graphic file (type png)
 <use chapters/02/inversion.png>
-Package pdftex.def Info: chapters/02/inversion.png  used on input line 79.
+Package pdftex.def Info: chapters/02/inversion.png  used on input line 113.
 (pdftex.def)             Requested size: 216.81pt x 96.87779pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+LaTeX Warning: Reference `fig:tandem' on page 4 undefined on input line 120.
 
- []
 
-[10 <./chapters/02/local_coverage2.png> <./chapters/02/inversion.png>]
-<chapters/02/tandem.png, id=133, 927.465pt x 416.55624pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/02/tandem.png, id=65, 927.465pt x 416.55624pt>
 File: chapters/02/tandem.png Graphic file (type png)
 <use chapters/02/tandem.png>
-Package pdftex.def Info: chapters/02/tandem.png  used on input line 91.
+Package pdftex.def Info: chapters/02/tandem.png  used on input line 126.
 (pdftex.def)             Requested size: 216.81pt x 97.37587pt.
-<chapters/02/inverted.png, id=134, 972.63374pt x 470.75874pt>
+Runaway argument?
+{fig:inverted, we expect double coverage in the duplicated site in th\ETC.
+! Paragraph ended before \T@ref was complete.
+<to be read again> 
+                   \par 
+l.135 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/02/inverted.png, id=66, 972.63374pt x 470.75874pt>
 File: chapters/02/inverted.png Graphic file (type png)
 <use chapters/02/inverted.png>
-Package pdftex.def Info: chapters/02/inverted.png  used on input line 100.
+Package pdftex.def Info: chapters/02/inverted.png  used on input line 138.
 (pdftex.def)             Requested size: 216.81pt x 104.93205pt.
-)
-(./chapters/notes/03_fingerprinting.tex [11 <./chapters/02/tandem.png> <./chapt
-ers/02/inverted.png>]
+) (./chapters/notes/03_fingerprinting.tex
 Chapter 3.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 16.
 
-[12
-
-]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
 7.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
-
- []
+LaTeX Warning: Reference `fig:linkage' on page 4 undefined on input line 61.
 
 
-LaTeX Warning: Reference `fig:linkage' on page 13 undefined on input line 61.
+! LaTeX Error: Not in outer par mode.
 
-[13]
-<chapters/03/linkage.png, id=167, 728.7225pt x 460.72125pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 	\centering
+                
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/linkage.png, id=69, 728.7225pt x 460.72125pt>
 File: chapters/03/linkage.png Graphic file (type png)
 <use chapters/03/linkage.png>
 Package pdftex.def Info: chapters/03/linkage.png  used on input line 66.
 (pdftex.def)             Requested size: 303.53267pt x 191.89876pt.
 
+LaTeX Warning: Reference `fig:linkage' on page 4 undefined on input line 72.
 
-LaTeX Warning: Reference `fig:linkage' on page 14 undefined on input line 72.
 
-[14 <./chapters/03/linkage.png>]
-<chapters/03/SNP.PNG, id=175, 890.32625pt x 610.28pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/SNP.PNG, id=70, 890.32625pt x 610.28pt>
 File: chapters/03/SNP.PNG Graphic file (type png)
 <use chapters/03/SNP.PNG>
 Package pdftex.def Info: chapters/03/SNP.PNG  used on input line 102.
 (pdftex.def)             Requested size: 303.53267pt x 208.06049pt.
 
-
-LaTeX Warning: Reference `fig:SNP' on page 15 undefined on input line 106.
-
-[15 <./chapters/03/SNP.png>]
-
-LaTeX Warning: Reference `fig:Distance' on page 16 undefined on input line 148.
+LaTeX Warning: Reference `fig:SNP' on page 4 undefined on input line 106.
 
 
-<chapters/03/loci.PNG, id=185, 939.51pt x 478.78876pt>
+LaTeX Warning: Reference `fig:Distance' on page 4 undefined on input line 148.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/loci.PNG, id=71, 939.51pt x 478.78876pt>
 File: chapters/03/loci.PNG Graphic file (type png)
 <use chapters/03/loci.PNG>
 Package pdftex.def Info: chapters/03/loci.PNG  used on input line 157.
 (pdftex.def)             Requested size: 303.53267pt x 154.68398pt.
-[16]
-<chapters/03/loci2.PNG, id=192, 954.56625pt x 604.2575pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/loci2.PNG, id=72, 954.56625pt x 604.2575pt>
 File: chapters/03/loci2.PNG Graphic file (type png)
 <use chapters/03/loci2.PNG>
 Package pdftex.def Info: chapters/03/loci2.PNG  used on input line 166.
 (pdftex.def)             Requested size: 303.53267pt x 192.14006pt.
 
+LaTeX Warning: Reference `fig:Distance2' on page 4 undefined on input line 171.
 
-LaTeX Warning: Reference `fig:Distance2' on page 17 undefined on input line 171
-.
 
-<chapters/03/loci3.PNG, id=193, 863.225pt x 541.02126pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/loci3.PNG, id=73, 863.225pt x 541.02126pt>
 File: chapters/03/loci3.PNG Graphic file (type png)
 <use chapters/03/loci3.PNG>
 Package pdftex.def Info: chapters/03/loci3.PNG  used on input line 183.
 (pdftex.def)             Requested size: 303.53267pt x 190.23534pt.
 
-LaTeX Warning: Reference `fig:Distance3' on page 17 undefined on input line 188
-.
+LaTeX Warning: Reference `fig:Distance3' on page 4 undefined on input line 188.
 
-[17 <./chapters/03/loci.png>] [18 <./chapters/03/loci2.png> <./chapters/03/loci
-3.png>]
-<chapters/03/selected.PNG, id=209, 1006.76125pt x 789.95125pt>
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/selected.PNG, id=74, 1006.76125pt x 789.95125pt>
 File: chapters/03/selected.PNG Graphic file (type png)
 <use chapters/03/selected.PNG>
 Package pdftex.def Info: chapters/03/selected.PNG  used on input line 214.
 (pdftex.def)             Requested size: 303.53267pt x 238.1564pt.
 
+LaTeX Warning: Reference `fig:sel_snp' on page 4 undefined on input line 218.
 
-LaTeX Warning: Reference `fig:sel_snp' on page 19 undefined on input line 218.
 
-[19 <./chapters/03/selected.png>]
-<chapters/03/double_test.PNG, id=218, 954.56625pt x 483.8075pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/double_test.PNG, id=75, 954.56625pt x 483.8075pt>
 File: chapters/03/double_test.PNG Graphic file (type png)
 <use chapters/03/double_test.PNG>
 Package pdftex.def Info: chapters/03/double_test.PNG  used on input line 265.
 (pdftex.def)             Requested size: 303.53267pt x 153.8397pt.
- [20]
 
-LaTeX Warning: Reference `fig:prob_test' on page 21 undefined on input line 272
-.
+LaTeX Warning: Reference `fig:prob_test' on page 4 undefined on input line 272.
 
-[21 <./chapters/03/double_test.png>]
-<chapters/03/50k.png, id=239, 1050.92625pt x 601.24625pt>
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/50k.png, id=76, 1050.92625pt x 601.24625pt>
 File: chapters/03/50k.png Graphic file (type png)
 <use chapters/03/50k.png>
 Package pdftex.def Info: chapters/03/50k.png  used on input line 315.
 (pdftex.def)             Requested size: 216.81pt x 124.03609pt.
-<chapters/03/54_snps.PNG, id=240, 1014.79124pt x 625.33624pt>
+<chapters/03/54_snps.PNG, id=77, 1014.79124pt x 625.33624pt>
 File: chapters/03/54_snps.PNG Graphic file (type png)
 <use chapters/03/54_snps.PNG>
 Package pdftex.def Info: chapters/03/54_snps.PNG  used on input line 315.
 (pdftex.def)             Requested size: 216.81pt x 133.59544pt.
- [22 <./chapters/03/50k.png> <./chapters/03/54_snps.png>]
-<chapters/03/relatedness.PNG, id=249, 701.62125pt x 583.17876pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/relatedness.PNG, id=78, 701.62125pt x 583.17876pt>
 File: chapters/03/relatedness.PNG Graphic file (type png)
 <use chapters/03/relatedness.PNG>
 Package pdftex.def Info: chapters/03/relatedness.PNG  used on input line 329.
 (pdftex.def)             Requested size: 303.53267pt x 252.30144pt.
 
+LaTeX Warning: Reference `fig: trios' on page 4 undefined on input line 333.
 
-LaTeX Warning: Reference `fig: trios' on page 23 undefined on input line 333.
 
-[23 <./chapters/03/relatedness.png>]
+LaTeX Warning: Reference `fig:PCA_countries' on page 4 undefined on input line 
+369.
 
-LaTeX Warning: Reference `fig:PCA_countries' on page 24 undefined on input line
- 369.
 
-<chapters/03/population.PNG, id=259, 1012.78375pt x 784.9325pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/population.PNG, id=80, 1012.78375pt x 784.9325pt>
 File: chapters/03/population.PNG Graphic file (type png)
 <use chapters/03/population.PNG>
 Package pdftex.def Info: chapters/03/population.PNG  used on input line 374.
 (pdftex.def)             Requested size: 303.53267pt x 235.24202pt.
-[24]
-<chapters/03/swiss.PNG, id=267, 754.82pt x 770.88pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 	\centering
+                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/03/swiss.PNG, id=81, 754.82pt x 770.88pt>
 File: chapters/03/swiss.PNG Graphic file (type png)
 <use chapters/03/swiss.PNG>
 Package pdftex.def Info: chapters/03/swiss.PNG  used on input line 385.
 (pdftex.def)             Requested size: 303.53267pt x 309.98155pt.
 
+LaTeX Warning: Reference `fig: PCA_swiss' on page 4 undefined on input line 389
+.
 
-LaTeX Warning: Reference `fig: PCA_swiss' on page 25 undefined on input line 38
-9.
-
-) (./chapters/notes/IGV.tex [25 <./chapters/03/population.png>] [26 <./chapters
-/03/swiss.png>]
+) (./chapters/notes/IGV.tex
 Chapter 4.
 
-LaTeX Warning: Reference `IGVusages' on page 27 undefined on input line 18.
+LaTeX Warning: Reference `IGVusages' on page 4 undefined on input line 18.
 
-<chapters/IGVImages/usagesIGV.PNG, id=281, 700.11563pt x 397.485pt>
+<chapters/IGVImages/usagesIGV.PNG, id=82, 700.11563pt x 397.485pt>
 File: chapters/IGVImages/usagesIGV.PNG Graphic file (type png)
 <use chapters/IGVImages/usagesIGV.PNG>
 Package pdftex.def Info: chapters/IGVImages/usagesIGV.PNG  used on input line 3
 0.
 (pdftex.def)             Requested size: 346.89731pt x 196.95279pt.
-[27
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
-
- []
+LaTeX Warning: Reference `subfig: IGVnavigation' on page 4 undefined on input l
+ine 41.
 
 
-LaTeX Warning: Reference `subfig: IGVnavigation' on page 28 undefined on input 
-line 41.
+LaTeX Warning: Reference `subfig: TileV' on page 4 undefined on input line 44.
 
 
-LaTeX Warning: Reference `subfig: TileV' on page 28 undefined on input line 44.
+! LaTeX Error: Not in outer par mode.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \begin{figure}[t]
+                      
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--52
-
- []
-
-<chapters/IGVImages/IGVview.PNG, id=289, 355.82938pt x 245.41687pt>
+<chapters/IGVImages/IGVview.PNG, id=83, 355.82938pt x 245.41687pt>
 File: chapters/IGVImages/IGVview.PNG Graphic file (type png)
 <use chapters/IGVImages/IGVview.PNG>
 Package pdftex.def Info: chapters/IGVImages/IGVview.PNG  used on input line 56.
 
 (pdftex.def)             Requested size: 433.62pt x 299.08234pt.
-<chapters/IGVImages/TileView.PNG, id=290, 412.03937pt x 340.27126pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \begin{figure}[t]
+                      
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/IGVImages/TileView.PNG, id=84, 412.03937pt x 340.27126pt>
 File: chapters/IGVImages/TileView.PNG Graphic file (type png)
 <use chapters/IGVImages/TileView.PNG>
 Package pdftex.def Info: chapters/IGVImages/TileView.PNG  used on input line 62
 .
 (pdftex.def)             Requested size: 433.62pt x 358.09494pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
-
- []
-
-[28 <./chapters/IGVImages/usagesIGV.PNG>]
-<chapters/IGVImages/IGVReadsView.PNG, id=300, 722.19812pt x 376.40625pt>
+<chapters/IGVImages/IGVReadsView.PNG, id=87, 722.19812pt x 376.40625pt>
 File: chapters/IGVImages/IGVReadsView.PNG Graphic file (type png)
 <use chapters/IGVImages/IGVReadsView.PNG>
 Package pdftex.def Info: chapters/IGVImages/IGVReadsView.PNG  used on input lin
 e 93.
 (pdftex.def)             Requested size: 433.62pt x 226.00055pt.
- [29 <./chapters/IGVImages/IGVview.PNG>]
-Overfull \vbox (75.9355pt too high) has occurred while \output is active []
-
-
-[30 <./chapters/IGVImages/TileView.PNG> <./chapters/IGVImages/IGVReadsView.PNG>
-]
-<chapters/IGVImages/igvtools.PNG, id=318, 446.16687pt x 188.705pt>
+<chapters/IGVImages/igvtools.PNG, id=88, 446.16687pt x 188.705pt>
 File: chapters/IGVImages/igvtools.PNG Graphic file (type png)
 <use chapters/IGVImages/igvtools.PNG>
 Package pdftex.def Info: chapters/IGVImages/igvtools.PNG  used on input line 10
 6.
 (pdftex.def)             Requested size: 303.53267pt x 128.37816pt.
-<chapters/IGVImages/structureXMLfile.PNG, id=319, 495.8525pt x 327.72438pt>
+<chapters/IGVImages/structureXMLfile.PNG, id=89, 495.8525pt x 327.72438pt>
 File: chapters/IGVImages/structureXMLfile.PNG Graphic file (type png)
 <use chapters/IGVImages/structureXMLfile.PNG>
 Package pdftex.def Info: chapters/IGVImages/structureXMLfile.PNG  used on input
  line 117.
 (pdftex.def)             Requested size: 346.89731pt x 229.27548pt.
- [31 <./chapters/IGVImages/igvtools.PNG> <./chapters/IGVImages/structureXMLfile
-.PNG>]
-<chapters/IGVImages/RNAseqAlign.PNG, id=330, 380.92313pt x 110.4125pt>
+<chapters/IGVImages/RNAseqAlign.PNG, id=90, 380.92313pt x 110.4125pt>
 File: chapters/IGVImages/RNAseqAlign.PNG Graphic file (type png)
 <use chapters/IGVImages/RNAseqAlign.PNG>
 Package pdftex.def Info: chapters/IGVImages/RNAseqAlign.PNG  used on input line
  132.
 (pdftex.def)             Requested size: 346.89731pt x 100.55301pt.
-<chapters/IGVImages/sashamiplot.PNG, id=331, 409.02812pt x 161.60374pt>
+<chapters/IGVImages/sashamiplot.PNG, id=91, 409.02812pt x 161.60374pt>
 File: chapters/IGVImages/sashamiplot.PNG Graphic file (type png)
 <use chapters/IGVImages/sashamiplot.PNG>
 Package pdftex.def Info: chapters/IGVImages/sashamiplot.PNG  used on input line
  140.
 (pdftex.def)             Requested size: 346.89731pt x 137.06299pt.
-<chapters/IGVImages/variantsView.PNG, id=332, 728.22063pt x 274.52562pt>
+<chapters/IGVImages/variantsView.PNG, id=92, 728.22063pt x 274.52562pt>
 File: chapters/IGVImages/variantsView.PNG Graphic file (type png)
 <use chapters/IGVImages/variantsView.PNG>
 Package pdftex.def Info: chapters/IGVImages/variantsView.PNG  used on input lin
 e 148.
 (pdftex.def)             Requested size: 390.25534pt x 147.11899pt.
- [32 <./chapters/IGVImages/RNAseqAlign.PNG> <./chapters/IGVImages/sashamiplot.P
-NG>]
-<chapters/IGVImages/TasksClass.PNG, id=344, 470.25688pt x 357.83687pt>
+<chapters/IGVImages/TasksClass.PNG, id=93, 470.25688pt x 357.83687pt>
 File: chapters/IGVImages/TasksClass.PNG Graphic file (type png)
 <use chapters/IGVImages/TasksClass.PNG>
 Package pdftex.def Info: chapters/IGVImages/TasksClass.PNG  used on input line 
 165.
 (pdftex.def)             Requested size: 346.89731pt x 263.97064pt.
-<chapters/IGVImages/pos1.PNG, id=345, 533.49312pt x 235.37938pt>
+<chapters/IGVImages/pos1.PNG, id=94, 533.49312pt x 235.37938pt>
 File: chapters/IGVImages/pos1.PNG Graphic file (type png)
 <use chapters/IGVImages/pos1.PNG>
 Package pdftex.def Info: chapters/IGVImages/pos1.PNG  used on input line 177.
 (pdftex.def)             Requested size: 346.89731pt x 153.05583pt.
- [33 <./chapters/IGVImages/variantsView.PNG> <./chapters/IGVImages/TasksClass.P
-NG>]
-<chapters/IGVImages/pos2.PNG, id=355, 269.50688pt x 280.54813pt>
+<chapters/IGVImages/pos2.PNG, id=95, 269.50688pt x 280.54813pt>
 File: chapters/IGVImages/pos2.PNG Graphic file (type png)
 <use chapters/IGVImages/pos2.PNG>
 Package pdftex.def Info: chapters/IGVImages/pos2.PNG  used on input line 185.
 (pdftex.def)             Requested size: 346.89731pt x 361.11662pt.
- [34 <./chapters/IGVImages/pos1.PNG>]
-<chapters/IGVImages/cov3.PNG, id=364, 404.51125pt x 40.15pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \begin{figure}[t]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/IGVImages/cov3.PNG, id=96, 404.51125pt x 40.15pt>
 File: chapters/IGVImages/cov3.PNG Graphic file (type png)
 <use chapters/IGVImages/cov3.PNG>
 Package pdftex.def Info: chapters/IGVImages/cov3.PNG  used on input line 191.
 (pdftex.def)             Requested size: 433.62pt x 43.0397pt.
-<chapters/IGVImages/pos3.PNG, id=365, 681.54625pt x 241.90375pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{figure}[t]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/IGVImages/pos3.PNG, id=97, 681.54625pt x 241.90375pt>
 File: chapters/IGVImages/pos3.PNG Graphic file (type png)
 <use chapters/IGVImages/pos3.PNG>
 Package pdftex.def Info: chapters/IGVImages/pos3.PNG  used on input line 196.
 (pdftex.def)             Requested size: 433.62pt x 153.90614pt.
-<chapters/IGVImages/pos3passages.jpg, id=366, 1473.505pt x 743.77875pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199  \begin{figure}[t]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/IGVImages/pos3passages.jpg, id=98, 1473.505pt x 743.77875pt>
 File: chapters/IGVImages/pos3passages.jpg Graphic file (type jpg)
 <use chapters/IGVImages/pos3passages.jpg>
 Package pdftex.def Info: chapters/IGVImages/pos3passages.jpg  used on input lin
 e 201.
 (pdftex.def)             Requested size: 433.62pt x 218.86807pt.
-)
-(./chapters/notes/04_tumor_evolution.tex [35 <./chapters/IGVImages/cov3.PNG> <.
-/chapters/IGVImages/pos2.PNG>] [36 <./chapters/IGVImages/pos3.PNG> <./chapters/
-IGVImages/pos3passages.jpg>]
+) (./chapters/notes/04_tumor_evolution.tex
 Chapter 5.
-<chapters/04/heterogeneity.png, id=383, 487.8225pt x 211.79124pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/heterogeneity.png, id=99, 487.8225pt x 211.79124pt>
 File: chapters/04/heterogeneity.png Graphic file (type png)
 <use chapters/04/heterogeneity.png>
 Package pdftex.def Info: chapters/04/heterogeneity.png  used on input line 32.
 (pdftex.def)             Requested size: 303.53267pt x 131.78104pt.
-[37
 
-]
-<chapters/04/treatment.png, id=390, 619.31375pt x 368.37625pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/treatment.png, id=100, 619.31375pt x 368.37625pt>
 File: chapters/04/treatment.png Graphic file (type png)
 <use chapters/04/treatment.png>
 Package pdftex.def Info: chapters/04/treatment.png  used on input line 41.
 (pdftex.def)             Requested size: 303.53267pt x 180.5509pt.
-<chapters/04/branching.png, id=391, 729.72626pt x 361.35pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/branching.png, id=101, 729.72626pt x 361.35pt>
 File: chapters/04/branching.png Graphic file (type png)
 <use chapters/04/branching.png>
 Package pdftex.def Info: chapters/04/branching.png  used on input line 49.
 (pdftex.def)             Requested size: 303.53267pt x 150.30482pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \begin{figure}[htbp!]
+                          
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[38 <./chapters/04/heterogeneity.png> <./chapters/04/treatment.png>]
-<chapters/04/response.png, id=400, 509.905pt x 417.56pt>
+<chapters/04/response.png, id=102, 509.905pt x 417.56pt>
 File: chapters/04/response.png Graphic file (type png)
 <use chapters/04/response.png>
 Package pdftex.def Info: chapters/04/response.png  used on input line 60.
 (pdftex.def)             Requested size: 303.53267pt x 248.57552pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[39 <./chapters/04/branching.png> <./chapters/04/response.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-[40]
-<chapters/04/af_properties.png, id=417, 460.72125pt x 302.12875pt>
+<chapters/04/af_properties.png, id=103, 460.72125pt x 302.12875pt>
 File: chapters/04/af_properties.png Graphic file (type png)
 <use chapters/04/af_properties.png>
 Package pdftex.def Info: chapters/04/af_properties.png  used on input line 111.
 
 (pdftex.def)             Requested size: 303.53267pt x 199.04599pt.
-<chapters/04/a.png, id=418, 1090.0725pt x 634.37pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/a.png, id=104, 1090.0725pt x 634.37pt>
 File: chapters/04/a.png Graphic file (type png)
 <use chapters/04/a.png>
 Package pdftex.def Info: chapters/04/a.png  used on input line 119.
 (pdftex.def)             Requested size: 346.89731pt x 201.87001pt.
-<chapters/04/b.png, id=419, 927.465pt x 439.6425pt>
+<chapters/04/b.png, id=105, 927.465pt x 439.6425pt>
 File: chapters/04/b.png Graphic file (type png)
 <use chapters/04/b.png>
 Package pdftex.def Info: chapters/04/b.png  used on input line 120.
 (pdftex.def)             Requested size: 346.89731pt x 164.43619pt.
 
+LaTeX Warning: Reference `fig:beta' on page 4 undefined on input line 132.
 
-LaTeX Warning: Reference `fig:beta' on page 41 undefined on input line 132.
 
-[41 <./chapters/04/af_properties.png>] [42 <./chapters/04/a.png> <./chapters/04
-/b.png>]
+LaTeX Warning: Reference `fig:sample1' on page 4 undefined on input line 153.
 
-LaTeX Warning: Reference `fig:sample1' on page 43 undefined on input line 153.
 
-<chapters/04/sample1.png, id=439, 661.47125pt x 204.765pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/sample1.png, id=106, 661.47125pt x 204.765pt>
 File: chapters/04/sample1.png Graphic file (type png)
 <use chapters/04/sample1.png>
 Package pdftex.def Info: chapters/04/sample1.png  used on input line 162.
 (pdftex.def)             Requested size: 303.53267pt x 93.9587pt.
 
-LaTeX Warning: Reference `fig:sample2' on page 43 undefined on input line 166.
+LaTeX Warning: Reference `fig:sample2' on page 4 undefined on input line 166.
 
-<chapters/04/sample2.png, id=440, 668.4975pt x 197.73875pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \begin{figure}[htbp!]
+                           
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/04/sample2.png, id=107, 668.4975pt x 197.73875pt>
 File: chapters/04/sample2.png Graphic file (type png)
 <use chapters/04/sample2.png>
 Package pdftex.def Info: chapters/04/sample2.png  used on input line 172.
 (pdftex.def)             Requested size: 303.53267pt x 89.78722pt.
 
-LaTeX Warning: Reference `eq:adm' on page 43 undefined on input line 177.
+LaTeX Warning: Reference `eq:adm' on page 4 undefined on input line 177.
 
-<chapters/04/adm.png, id=441, 331.2375pt x 421.575pt>
+<chapters/04/adm.png, id=108, 331.2375pt x 421.575pt>
 File: chapters/04/adm.png Graphic file (type png)
 <use chapters/04/adm.png>
 Package pdftex.def Info: chapters/04/adm.png  used on input line 181.
 (pdftex.def)             Requested size: 151.76633pt x 193.15492pt.
-[43 <./chapters/04/sample1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 204--207
-
- []
-
-) (./chapters/notes/05_tumor_evolution2.tex [44 <./chapters/04/sample2.png> <./
-chapters/04/adm.png>]
+) (./chapters/notes/05_tumor_evolution2.tex
 Chapter 6.
-<chapters/TumorEvStudiesIIImages/image1.png, id=462, 299.1175pt x 370.38374pt>
+<chapters/TumorEvStudiesIIImages/image1.png, id=109, 299.1175pt x 370.38374pt>
 File: chapters/TumorEvStudiesIIImages/image1.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image1.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image1.png  used on in
 put line 22.
 (pdftex.def)             Requested size: 171.79495pt x 212.74858pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
-
- []
-
-[45
-
- <./chapters/TumorEvStudiesIIImages/image1.png>]
-<chapters/TumorEvStudiesIIImages/image2.png, id=470, 523.9575pt x 400.49625pt>
+<chapters/TumorEvStudiesIIImages/image2.png, id=110, 523.9575pt x 400.49625pt>
 File: chapters/TumorEvStudiesIIImages/image2.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image2.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image2.png  used on in
 put line 49.
 (pdftex.def)             Requested size: 250.68126pt x 191.61879pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-<chapters/TumorEvStudiesIIImages/image3.png, id=471, 522.95375pt x 401.5pt>
+<chapters/TumorEvStudiesIIImages/image3.png, id=111, 522.95375pt x 401.5pt>
 File: chapters/TumorEvStudiesIIImages/image3.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image3.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image3.png  used on in
 put line 74.
 (pdftex.def)             Requested size: 196.68968pt x 151.01547pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-[46 <./chapters/TumorEvStudiesIIImages/image2.png>]
-<chapters/TumorEvStudiesIIImages/image4.png, id=477, 328.22626pt x 227.85126pt>
+<chapters/TumorEvStudiesIIImages/image4.png, id=112, 328.22626pt x 227.85126pt>
 
 File: chapters/TumorEvStudiesIIImages/image4.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image4.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image4.png  used on in
 put line 97.
 (pdftex.def)             Requested size: 230.44295pt x 159.9711pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-[47 <./chapters/TumorEvStudiesIIImages/image3.png> <./chapters/TumorEvStudiesII
-Images/image4.png>]
-<chapters/TumorEvStudiesIIImages/image5.png, id=484, 216.81pt x 218.8175pt>
+<chapters/TumorEvStudiesIIImages/image5.png, id=113, 216.81pt x 218.8175pt>
 File: chapters/TumorEvStudiesIIImages/image5.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image5.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image5.png  used on in
 put line 132.
 (pdftex.def)             Requested size: 172.1514pt x 173.75206pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-<chapters/TumorEvStudiesIIImages/image6.png, id=485, 364.36125pt x 240.9pt>
+<chapters/TumorEvStudiesIIImages/image6.png, id=114, 364.36125pt x 240.9pt>
 File: chapters/TumorEvStudiesIIImages/image6.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image6.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image6.png  used on in
 put line 146.
 (pdftex.def)             Requested size: 190.35849pt x 125.82008pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
-
- []
-
-[48 <./chapters/TumorEvStudiesIIImages/image5.png> <./chapters/TumorEvStudiesII
-Images/image6.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 226.
@@ -1549,72 +1770,40 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 226.
 
-[49]
-<chapters/TumorEvStudiesIIImages/image7.png, id=498, 286.06876pt x 408.52625pt>
+<chapters/TumorEvStudiesIIImages/image7.png, id=115, 286.06876pt x 408.52625pt>
 
 File: chapters/TumorEvStudiesIIImages/image7.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image7.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image7.png  used on in
 put line 253.
 (pdftex.def)             Requested size: 274.57922pt x 392.13712pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 12.3207pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[50] [51 <./chapters/TumorEvStudiesIIImages/image7.png>]
-<chapters/TumorEvStudiesIIImages/image8.png, id=510, 316.18124pt x 420.57124pt>
+<chapters/TumorEvStudiesIIImages/image8.png, id=116, 316.18124pt x 420.57124pt>
 
 File: chapters/TumorEvStudiesIIImages/image8.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image8.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image8.png  used on in
 put line 305.
 (pdftex.def)             Requested size: 247.83133pt x 329.63576pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-[52 <./chapters/TumorEvStudiesIIImages/image8.png>]
-<chapters/TumorEvStudiesIIImages/image9.png, id=516, 266.9975pt x 327.2225pt>
+<chapters/TumorEvStudiesIIImages/image9.png, id=117, 266.9975pt x 327.2225pt>
 File: chapters/TumorEvStudiesIIImages/image9.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image9.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image9.png  used on in
 put line 348.
 (pdftex.def)             Requested size: 234.43295pt x 287.32257pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-[53 <./chapters/TumorEvStudiesIIImages/image9.png>]
-<chapters/TumorEvStudiesIIImages/image10.png, id=522, 317.185pt x 326.21875pt>
+<chapters/TumorEvStudiesIIImages/image10.png, id=118, 317.185pt x 326.21875pt>
 File: chapters/TumorEvStudiesIIImages/image10.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image10.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image10.png  used on i
 nput line 389.
 (pdftex.def)             Requested size: 264.50731pt x 272.04074pt.
- [54 <./chapters/TumorEvStudiesIIImages/image10.png>]
-<chapters/TumorEvStudiesIIImages/image11.png, id=529, 402.50375pt x 561.09625pt
+<chapters/TumorEvStudiesIIImages/image11.png, id=119, 402.50375pt x 561.09625pt
 >
 File: chapters/TumorEvStudiesIIImages/image11.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image11.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image11.png  used on i
 nput line 417.
 (pdftex.def)             Requested size: 225.94102pt x 315.02512pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
-[55 <./chapters/TumorEvStudiesIIImages/image11.png>]
-<chapters/TumorEvStudiesIIImages/image12.png, id=538, 703.62875pt x 320.19624pt
+<chapters/TumorEvStudiesIIImages/image12.png, id=120, 703.62875pt x 320.19624pt
 >
 File: chapters/TumorEvStudiesIIImages/image12.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image12.png>
@@ -1622,31 +1811,24 @@ Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image12.png  used on i
 nput line 471.
 (pdftex.def)             Requested size: 483.40001pt x 215.10199pt.
 
-Overfull \hbox (49.78001pt too wide) in paragraph at lines 468--474
-[] 
+Overfull \hbox (49.78001pt too wide) in paragraph at lines 471--471
+ [][] 
  []
 
-[56 <./chapters/TumorEvStudiesIIImages/image12.png>]
-<chapters/TumorEvStudiesIIImages/image13.png, id=544, 356.33125pt x 343.2825pt>
+<chapters/TumorEvStudiesIIImages/image13.png, id=121, 356.33125pt x 343.2825pt>
 
 File: chapters/TumorEvStudiesIIImages/image13.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image13.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image13.png  used on i
 nput line 504.
 (pdftex.def)             Requested size: 217.45961pt x 209.48058pt.
-<chapters/TumorEvStudiesIIImages/image14.png, id=545, 165.2355pt x 144.54pt>
+<chapters/TumorEvStudiesIIImages/image14.png, id=122, 165.2355pt x 144.54pt>
 File: chapters/TumorEvStudiesIIImages/image14.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image14.png>
 Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image14.png  used on i
 nput line 533.
 (pdftex.def)             Requested size: 165.61832pt x 144.79767pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
-
- []
-
-[57 <./chapters/TumorEvStudiesIIImages/image13.png>]
-<chapters/TumorEvStudiesIIImages/image15.png, id=551, 475.7775pt x 372.39125pt>
+<chapters/TumorEvStudiesIIImages/image15.png, id=123, 475.7775pt x 372.39125pt>
 
 File: chapters/TumorEvStudiesIIImages/image15.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image15.png>
@@ -1654,18 +1836,11 @@ Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image15.png  used on i
 nput line 544.
 (pdftex.def)             Requested size: 475.7981pt x 365.8785pt.
 
-Overfull \hbox (80.87509pt too wide) in paragraph at lines 544--546
-[][]\T1/cmr/bx/n/10 Case
+Overfull \hbox (65.87509pt too wide) in paragraph at lines 544--545
+ [][]\T1/cmr/bx/n/10 Case 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 544--546
-
- []
-
-[58 <./chapters/TumorEvStudiesIIImages/image14.png>] [59 <./chapters/TumorEvStu
-diesIIImages/image15.png>]
-<chapters/TumorEvStudiesIIImages/image16.png, id=562, 571.13374pt x 431.6125pt>
+<chapters/TumorEvStudiesIIImages/image16.png, id=124, 571.13374pt x 431.6125pt>
 
 File: chapters/TumorEvStudiesIIImages/image16.png Graphic file (type png)
 <use chapters/TumorEvStudiesIIImages/image16.png>
@@ -1673,213 +1848,267 @@ Package pdftex.def Info: chapters/TumorEvStudiesIIImages/image16.png  used on i
 nput line 599.
 (pdftex.def)             Requested size: 483.40929pt x 365.32466pt.
 
-Overfull \hbox (64.78929pt too wide) in paragraph at lines 599--600
-[][] 
+Overfull \hbox (49.78929pt too wide) in paragraph at lines 599--599
+ [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
-
- []
-
-[60]) (./chapters/notes/06_tumor_evolution3.tex [61 <./chapters/TumorEvStudiesI
-IImages/image16.png>]
+) (./chapters/notes/06_tumor_evolution3.tex
 Chapter 7.
-<chapters/TumorEvolution3Images/peaks.png, id=573, 550.055pt x 366.36874pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/TumorEvolution3Images/peaks.png, id=125, 550.055pt x 366.36874pt>
 File: chapters/TumorEvolution3Images/peaks.png Graphic file (type png)
 <use chapters/TumorEvolution3Images/peaks.png>
 Package pdftex.def Info: chapters/TumorEvolution3Images/peaks.png  used on inpu
 t line 22.
 (pdftex.def)             Requested size: 216.81pt x 144.4094pt.
 
-LaTeX Warning: Reference `fig:peaks' on page 62 undefined on input line 35.
+LaTeX Warning: Reference `fig:peaks' on page 4 undefined on input line 35.
 
-[62
 
- <./chapters/TumorEvolution3Images/peaks.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<chapters/TumorEvolution3Images/tpes.png, id=581, 1077.02374pt x 363.3575pt>
+<chapters/TumorEvolution3Images/tpes.png, id=126, 1077.02374pt x 363.3575pt>
 File: chapters/TumorEvolution3Images/tpes.png Graphic file (type png)
 <use chapters/TumorEvolution3Images/tpes.png>
 Package pdftex.def Info: chapters/TumorEvolution3Images/tpes.png  used on input
  line 43.
 (pdftex.def)             Requested size: 303.53267pt x 102.40472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--53
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[63 <./chapters/TumorEvolution3Images/tpes.png>]
-<chapters/TumorEvolution3Images/comparative.png, id=589, 560.0925pt x 344.28625
+<chapters/TumorEvolution3Images/comparative.png, id=127, 560.0925pt x 344.28625
 pt>
 File: chapters/TumorEvolution3Images/comparative.png Graphic file (type png)
 <use chapters/TumorEvolution3Images/comparative.png>
 Package pdftex.def Info: chapters/TumorEvolution3Images/comparative.png  used o
 n input line 94.
 (pdftex.def)             Requested size: 303.53267pt x 186.58948pt.
- [64 <./chapters/TumorEvolution3Images/comparative.png>]) (./chapters/notes/07_
-liquid_biopsies.tex [65]
+) (./chapters/notes/07_liquid_biopsies.tex
 Chapter 8.
 
-Overfull \hbox (4.91855pt too wide) in paragraph at lines 29--36
-[][] 
- []
-
-[66
-
-]
 Underfull \hbox (badness 3849) in paragraph at lines 41--42
 []|\T1/cmr/m/n/10 The frac-tion of cir-cu-lat-ing tu-mor DNA
  []
 
 
-Overfull \hbox (4.91855pt too wide) in paragraph at lines 37--44
-[][] 
- []
+LaTeX Warning: Reference `fig:norm' on page 4 undefined on input line 57.
 
 
-Overfull \hbox (4.91855pt too wide) in paragraph at lines 45--53
-[][] 
- []
+! LaTeX Error: Not in outer par mode.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `fig:norm' on page 67 undefined on input line 57.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-<chapters/LiquidBiopsiesImages/norm.png, id=608, 459.7175pt x 351.3125pt>
+<chapters/LiquidBiopsiesImages/norm.png, id=128, 459.7175pt x 351.3125pt>
 File: chapters/LiquidBiopsiesImages/norm.png Graphic file (type png)
 <use chapters/LiquidBiopsiesImages/norm.png>
 Package pdftex.def Info: chapters/LiquidBiopsiesImages/norm.png  used on input 
 line 61.
 (pdftex.def)             Requested size: 173.44534pt x 132.54594pt.
 
-LaTeX Warning: Reference `fig:quan' on page 67 undefined on input line 66.
+LaTeX Warning: Reference `fig:quan' on page 4 undefined on input line 66.
 
-[67]
-<chapters/LiquidBiopsiesImages/quantity1.png, id=616, 648.4225pt x 473.77pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/LiquidBiopsiesImages/quantity1.png, id=129, 648.4225pt x 473.77pt>
 File: chapters/LiquidBiopsiesImages/quantity1.png Graphic file (type png)
 <use chapters/LiquidBiopsiesImages/quantity1.png>
 Package pdftex.def Info: chapters/LiquidBiopsiesImages/quantity1.png  used on i
 nput line 72.
 (pdftex.def)             Requested size: 433.62pt x 316.83147pt.
-<chapters/LiquidBiopsiesImages/quantity2.png, id=617, 593.21625pt x 487.8225pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/LiquidBiopsiesImages/quantity2.png, id=130, 593.21625pt x 487.8225pt>
 
 File: chapters/LiquidBiopsiesImages/quantity2.png Graphic file (type png)
 <use chapters/LiquidBiopsiesImages/quantity2.png>
 Package pdftex.def Info: chapters/LiquidBiopsiesImages/quantity2.png  used on i
 nput line 78.
 (pdftex.def)             Requested size: 433.62pt x 356.5913pt.
- [68 <./chapters/LiquidBiopsiesImages/norm.png>] [69 <./chapters/LiquidBiopsies
-Images/quantity1.png>] [70 <./chapters/LiquidBiopsiesImages/quantity2.png>]
 
-LaTeX Warning: Reference `fig:wg' on page 71 undefined on input line 125.
+LaTeX Warning: Reference `fig:wg' on page 4 undefined on input line 125.
 
-<chapters/LiquidBiopsiesImages/wg.png, id=638, 752.8125pt x 438.63875pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \begin{figure}[!ht]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/LiquidBiopsiesImages/wg.png, id=131, 752.8125pt x 438.63875pt>
 File: chapters/LiquidBiopsiesImages/wg.png Graphic file (type png)
 <use chapters/LiquidBiopsiesImages/wg.png>
 Package pdftex.def Info: chapters/LiquidBiopsiesImages/wg.png  used on input li
 ne 129.
 (pdftex.def)             Requested size: 303.53267pt x 176.86462pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-[71 <./chapters/LiquidBiopsiesImages/wg.png>])
-(./chapters/notes/08_methylation.tex [72]
+) (./chapters/notes/08_methylation.tex
 Chapter 9.
-[73
 
-]
+LaTeX Warning: Reference `fig:cancer' on page 4 undefined on input line 53.
 
-LaTeX Warning: Reference `fig:cancer' on page 74 undefined on input line 53.
 
-<chapters/MethylationImages/cancerMet.png, id=660, 500.87125pt x 538.01pt>
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/MethylationImages/cancerMet.png, id=132, 500.87125pt x 538.01pt>
 File: chapters/MethylationImages/cancerMet.png Graphic file (type png)
 <use chapters/MethylationImages/cancerMet.png>
 Package pdftex.def Info: chapters/MethylationImages/cancerMet.png  used on inpu
 t line 57.
 (pdftex.def)             Requested size: 216.81pt x 232.88315pt.
-<chapters/MethylationImages/methods.png, id=661, 734.745pt x 369.38pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \begin{figure}[!ht]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/MethylationImages/methods.png, id=133, 734.745pt x 369.38pt>
 File: chapters/MethylationImages/methods.png Graphic file (type png)
 <use chapters/MethylationImages/methods.png>
 Package pdftex.def Info: chapters/MethylationImages/methods.png  used on input 
 line 83.
 (pdftex.def)             Requested size: 346.89731pt x 174.39769pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+! LaTeX Error: Not in outer par mode.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \begin{figure}[!ht]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[74 <./chapters/MethylationImages/cancerMet.png>] [75 <./chapters/MethylationIm
-ages/methods.png>]
-<chapters/MethylationImages/comp.png, id=675, 804.00375pt x 428.60126pt>
+<chapters/MethylationImages/comp.png, id=134, 804.00375pt x 428.60126pt>
 File: chapters/MethylationImages/comp.png Graphic file (type png)
 <use chapters/MethylationImages/comp.png>
 Package pdftex.def Info: chapters/MethylationImages/comp.png  used on input lin
 e 130.
 (pdftex.def)             Requested size: 433.62pt x 231.15347pt.
-<chapters/MethylationImages/workflow.png, id=676, 756.8275pt x 291.0875pt>
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 \begin{figure}[!ht]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<chapters/MethylationImages/workflow.png, id=135, 756.8275pt x 291.0875pt>
 File: chapters/MethylationImages/workflow.png Graphic file (type png)
 <use chapters/MethylationImages/workflow.png>
 Package pdftex.def Info: chapters/MethylationImages/workflow.png  used on input
  line 151.
 (pdftex.def)             Requested size: 346.89731pt x 133.42216pt.
- [76 <./chapters/MethylationImages/comp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-) [77 <./chapters/MethylationImages/workflow.png>] [78] [79
-
-]
-(./chapters/papers/01_role_non_coding_cancer.tex
+) (./chapters/papers/01_role_non_coding_cancer.tex
 Chapter 10.
-[80
-
-] [81] [82] [83]) (./chapters/papers/02_cancer_genomics_2_gen_seq.tex
-[84] [85]
+) (./chapters/papers/02_cancer_genomics_2_gen_seq.tex
 Chapter 11.
-[86
-
-] [87] [88]) (./chapters/papers/03_IGV.tex [89] [90]
+) (./chapters/papers/03_IGV.tex
 Chapter 12.
-) (./chapters/papers/04_tumour_heterogeneity_resistance.tex [91
-
-]
+) (./chapters/papers/04_tumour_heterogeneity_resistance.tex
 Chapter 13.
-[92
-
-] [93] [94]) (./chapters/papers/05_clonal_hierarchy.tex [95] [96]
+) (./chapters/papers/05_clonal_hierarchy.tex
 Chapter 14.
-[97
-
-] [98]
-Overfull \hbox (7.99419pt too wide) in paragraph at lines 81--81
-[]\T1/cmr/bx/n/12 Comparative anal-y-sis re-veals dif-fer-ent mech-a-nisms of t
-u-mour dereg-
- []
-
-[99] [100] [101]) (./chapters/papers/06_TPES.tex [102]
+) (./chapters/papers/06_TPES.tex
 Chapter 15.
-) (./chapters/papers/07_SPIA.tex [103
-
-] [104]
+) (./chapters/papers/07_SPIA.tex
 Chapter 16.
-[105
+)
 
-]) [106]
+! LaTeX Error: \begin{figure} on input line 71 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
- [107]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
- (build/principal.aux)
+(build/principal.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `principal.out' has not changed.
@@ -1888,53 +2117,54 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
- ) 
+! You can't use `\end' in internal vertical mode.
+\enddocument ...es \z@ \Call@AtVeryVeryEnd \@@end 
+                                                  
+l.37 \end{document}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{figure} on input line 71 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.37 \end{document}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> principal.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 19153 strings out of 482820
- 336270 string characters out of 5957805
- 635079 words of memory out of 5000000
- 33567 multiletter control sequences out of 15000+600000
+ 18786 strings out of 482820
+ 331683 string characters out of 5957805
+ 1084252 words of memory out of 5000000
+ 33561 multiletter control sequences out of 15000+600000
  563429 words of font info for 103 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 44i,14n,79p,1194b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi0900.600
-pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1000.60
-0pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.6
-00pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.
-600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800
-.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm060
-0.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm07
-00.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
-000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti
-1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x0900.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-bx1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx1440.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx2074.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1000.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm0900.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm1200.600pk> </home/elisa/.texlive2019/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb>
-Output written on build/principal.pdf (108 pages, 8020887 bytes).
-PDF statistics:
- 1741 PDF objects out of 2073 (max. 8388607)
- 823 compressed objects within 9 object streams
- 382 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 44i,12n,79p,945b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
