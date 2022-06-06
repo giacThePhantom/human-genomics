@@ -18,7 +18,7 @@ Where G is the coverage, G is the haploid human genome length, L the read length
 The number of mapped reads is always lower than expected. Errors, or major translocation will impair a good mapping of the reads. \\
 There's a difference between physical and sequence coverage. Physical coverage is always higher, and it changes based on which protocol (PE or SE) is chosen for the assay.
 To put it simply, when calculating the sequence coverage we only take into account the actual ends, while when calculating the physical coverage we also account for the consequence part of the PE protocol. In figure \ref{fig:seq_phys} a  shcematic representation of this problem is displayed.
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{seq_phys.png}
     \caption{Schematic difference between sequence (on the left) and physical coverage (on the right). From Meyerson et al., Nature Reviews Genetics 2010}
@@ -43,7 +43,7 @@ The same reasoning goes for any monozygous mutation and any low abundant events,
 
 \subsection{Example on the importance of coverage}
 Here are represented 10 genes relevant for cancer. Each bar represents the average local coverage at 30 bp.
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{local_coverage.png}
     \caption{Example of local coverage. On the x axis genomic location (on top e ery gene) and the bars is the number of amplicons. }
@@ -54,7 +54,7 @@ In figure \ref{fig:local} a barplot can be observed, representing the local cove
 What's happening on PTEN base on plot \ref{fig:local}? Probably, the most accurate guess is a deletion. But of which kind? For sure not a homozygous deletion, since we would not be able to see any signal in the plot. From this data however we cannot say whether this is a monoallelic or biallelic deletion. \\
 Note that this (and the following \ref{fig:local2}) plot is the actual way sequencing data is shown, while the figure presented in \ref{SE_PE} was a schematic representation. 
 
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{local_coverage1.png}
     \caption{Example 2 of local coverage. The  cell line is different (PC3 instead of LNCaP). }
@@ -63,7 +63,7 @@ Note that this (and the following \ref{fig:local2}) plot is the actual way seque
 
 However, in the plot \ref{fig:local1}, from a different cell line, we can see a clear monoallelic deletion and a partial biallelic deletion of PTEN.\\
 
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{local_coverage2.png}
     \caption{Example 3 of local coverage. The  cell line is different (VCaP). The massive amplification of the AR region is typicall in advanced prostate cancer.}
@@ -108,12 +108,23 @@ In the target molecule, either it does not exist or exist only in one allele and
 When interpreting structural variance, we need not to care only about end-orientation, but also coverage at the exact break point, which is due to the fact that the inverted breakpoint sequence does not exist in the reference genome.
 
 
-\begin{figure}[htbp!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{inversion.png}
-    \caption{Inversion disocvering exploiting PE reads.}
-    \label{fig:inversion}
+%\begin{figure}[htbp!]
+    %\centering
+    %\includegraphics[width=0.5\textwidth]{inversion.png}
+   % \caption{Inversion discovering exploiting PE reads.}
+   % \label{fig:inversion}
+%\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{cc}
+  \includegraphics[width=0.5\textwidth]{inversion.png} &   \includegraphics[width=0.5\textwidth]{inversion_igv.png} \\
+(a) Schematic & (b) IGV view \\[6pt]
+
+\end{tabular}
+\caption{Inversion discovering exploiting PE reads.}
+\label{fig:inversion}
 \end{figure}
+
 
 
 \subsection{Tandem duplication}
@@ -121,23 +132,28 @@ Notice how in the tandem duplication (figure \ref{fig:tandem}) all the reads tha
 The coverage will be 3/2 of the expected value, proportional to the extra copy. B junction and A junction will not have modifications. If we had a read mapping BA, we would observe a partial alignment at B on the reference.
 We observe no drop of coverage because the sequences also exist in the reference. \\
 
-\begin{figure}[htbp!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{tandem.png}
-    \caption{Tandem duplication discovering exploiting PE reads.}
-    \label{fig:tandem}
+
+\begin{figure}[H]
+\begin{tabular}{cc}
+  \includegraphics[width=0.5\textwidth]{tandem.png} &   \includegraphics[width=0.5\textwidth]{tandem_igv.png} \\
+(a) Schematic & (b) IGV view \\[6pt]
+\end{tabular}
+\caption{Tandem duplication discovering exploiting PE reads.}
+\label{fig:tandem}
 \end{figure}
 
 \subsection{Inverted duplication}
-For the inverted duplication, in figure \ref{fig:inverted, we expect double coverage in the duplicated site in the reference genome. \\
+For the inverted duplication, in figure \ref{fig:inverted}, we expect double coverage in the duplicated site in the reference genome. \\
 Both A and B on the first segment on the subject are LR oriented, and the same occurs in the reference genome. 
 When we add the second fragment the same holds, but direction will be LL and RR and the insert size will be significantly longer. In particular, we can notice that we have an overlapping of left and right reads on the reference. Furthermore, the coverage depth will highly increase due to the presence of multiple reads on the reference genome.
 
-\begin{figure}[htbp!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{inverted.png}
-    \caption{Inverted duplication discovering exploiting PE reads.}
-    \label{fig:inverted}
+\begin{figure}[H]
+\begin{tabular}{cc}
+  \includegraphics[width=0.5\textwidth]{inverted.png} &   \includegraphics[width=0.5\textwidth]{inverted_igv.png} \\
+(a) Schematic & (b) IGV view \\[6pt]
+\end{tabular}
+\caption{Inverted duplication discovering exploiting PE reads.}
+\label{fig:inverted}
 \end{figure}
 
 What if we have a deletion? How can you guess the size of it? We can look at the coverage or observed distance between the reads, which gives clean indication of the size of the deletion. For tiny deletions, smaller than the length of the read, we use the sequence within the reads and in this way discovering indels.  

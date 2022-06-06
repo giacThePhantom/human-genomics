@@ -1,57 +1,55 @@
 \graphicspath{{chapters/TumorEvolution3Images/}}
 
 \chapter{Tumor evolution studies via NGS data: SNVs-based methods}
+There is a large number of tumors where copy-number aberrations are minimal. 
+Consequently, it is difficult to use copy number based approaches for these kind of tumors. 
+It is estimated that about 3\% of primary tumors present flat genomes, meaning that they display very few copy number changes. 
+These types of tumors are correlated to a better prognosis both in overall survival and progression-free interval, but relapses are still present so the assessment of these tumors is important.
 
-\textbf{\textit{Written by Linda Cova}}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.5\linewidth]{quiet_genome.png}
+    \caption{\label{fig:quiet} Data on 'quiet genomes', that make about 1-3\% of all primary tumors.}
+\end{figure}
 
-There is a large number of tumors where copy-number aberrations are minimal.
-Consequently, it is difficult to use copy number based approaches for these
-kinds of tumors. It is estimated that about 3\% of primary tumors present flat
-genomes, meaning that they display very few copy number changes. These types of
-tumors are correlated to a better prognosis both in overall survival and
-progression-free interval, but relapses are still present so the assessment of
-these tumors is important.
-
-In order to address this issue, some tools were developed to detect tumor purity
-via SNVs.
+Multiple Tumor Purity Assessment assays have been proposed, based on: RNA, DNA methylation and SNVs.
+In this chapter we will be focusing on the methods exploiting SNVs.
 
 \section{Rationale of somatic point mutation based assays}
+Conisder figure \ref{fig:cluster}. Peaks shift for a clonal tumor cell population and some mixed populations. Considering two genomic locations, healthy cells have genotype AA-AA, clonal tumor cells AB-AA and subclonal tumor cells AB-AB, where B is the alternative allele associated with a somatic point mutation
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
-    \includegraphics[width=0.5\linewidth]{peaks.png}
-    \caption{\label{fig:peaks}Peaks shift for a clonal tumor cell population and
-    some mixed populations. Considering two genomic locations, healthy cells
-    have genotype AA-AA, clonal tumor cells AB-AA and subclonal tumor cells
-    AB-AB, where B is the alternative allele associated with a somatic point
-    mutation}
+\begin{tabular}{cc}
+  \includegraphics[width=0.2\textwidth]{SNVs.png} &   \includegraphics[width=0.5\textwidth]{peaks.png} \\
+(a)  & (b)  \\[6pt]
+\end{tabular}
+\caption{\textbf{a)} genotype of normal and tumor cells, P1 and P2 are single nucleotide positions. \\
+\textbf{b)} B,C,D) Three possible tumor tissue compositions: B)
+100\% pure clonal tumor population, C) clonal tumor population (60\%) admixed with normal cells (40\%), D) two subclonal tumor
+populations (50\% + 20\%) admixed with normal cells (30\%). E,F,G) Histograms of the VAF values of SNVs in tumor cell populations
+B), C) and D), respectively.}
+\label{fig:cluster}
 \end{figure}
 
-The distribution of allelic fractions of the clonal population only is
-symmetric, with the main peak around 0.5. A mixed population of clonal tumor and
-normal healthy cells shows a shifted peak. The distance from 0.5 to the peak is
-proportional to the fraction of normal cells, because normal cells contribution
-moves the peak towards the side from the center (purity shift displayed in
-\ref{fig:peaks}. A subclonal point mutation is identified with a second peak
-towards 0, because its allelic fraction is probably far distant from 0.5.
+The distribution of allelic fractions of the clonal population only is symmetric, with the main peak around 0.5. A mixed population of clonal tumor and normal healthy cells shows a shifted peak. 
+The distance from 0.5 to the peak is proportional to the fraction of normal cells, because normal cells contribution moves the peak towards the side from the center (purity shift displayed in \ref{fig:peaks}. 
+A subclonal point mutation is identified with a second peak towards 0, because its allelic fraction is probably far distant from 0.5.
 
 \section{TPES (Tumor Purity Estimation)}
-\textit{Alessio Locallo (Demichelis' student, 2019)}\\
-
-\begin{figure}[!ht]
-\centering
-    \includegraphics[width=0.7\linewidth]{tpes.png}
-    \caption{\label{fig:tpes}Workflow of the TPES algorithm}
-\end{figure}
-
 It is important to consider the \textbf{Reference Mapping Bias}: a polymorphic
 locus carrying a non-reference base is less likely to be mapped during the
 alignment process. With a perfect SNV (clonal, monoallelic, in highly pure
 tumor), allelic fraction will not be 0.5 because the aligner considers the
 variation as an error and sometimes discards the read containing it: some signal
-is lost.\\
-
-TPES steps:
+is lost.
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.7\linewidth]{tpes.png}
+    \caption{\label{fig:tpes}Workflow of the TPES algorithm}
+\end{figure}
+            
+The tool TPES is extensively described in chapter \ref{ch:tpes}. However, the main steps are:
 \begin{itemize}
     \item \textbf{Selection of CN-neutral segments}: point mutations that are
     flat in terms of copy-number are perfect for flat genomes and easier to deal
@@ -74,22 +72,16 @@ with the following equation:
 
 \section{How many SNVs are needed to assess tumor purity?}
 
-The number of SNVs changes for each tumor type, so not all tumor types guarantee
-enough SNVs. The minimum number of SNVs needed to obtain reliable results can be
-assessed with a \textbf{comparative analysis}. The Spearman's correlations
-between the results of two different purity calling algorithms uding decreasing
-number of SNVs are computed. The subsampling approach (which SNVs to consider?)
-is to subsample the SNVs as many time as possible to have higher confidence on
-the results. At each iteration, as many samples as possible are used, but the
-number decreases when the number of SNVs increases.
+The number of SNVs changes for each tumor type, so not all tumor types guarantee enough SNVs. The minimum number of SNVs needed to obtain reliable results can be assessed with a \textbf{comparative analysis}. The Spearman's correlations between the results of two different purity calling algorithms uding decreasing number of SNVs are computed. The subsampling approach (which SNVs to consider) is to subsample the SNVs as many time as possible to have higher confidence on the results. 
+At each iteration, as many samples as possible are used, but the number decreases when the number of SNVs increases.
 
 The computations determined 10 as the minimum number of SNVs needed to infer
-tumor purity. With this number, tumor was detected in 80\% of samples by
+tumor purity, as reported in figure \ref{fig:comp}. With this number, tumor was detected in 80\% of samples by
 combining TPES and CLONET (CN-based). The 20\% could be tumor-free or not
 detected samples. Since both SNVs and CN based methods failed, this 20\% could
 be possibly detected with methylation.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
     \includegraphics[width=0.7\linewidth]{comparative.png}
     \caption{\label{fig:comp}\textbf{A}) Correlation between two purity

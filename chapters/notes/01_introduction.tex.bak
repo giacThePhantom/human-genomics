@@ -68,11 +68,13 @@ In the middle on the diagram we find very well-known variants correlated to canc
 One example of how the genetic make-up plays a role in deases is the ADME genes. 
 ADME stands for \textit{Absorption, distribution, metabolism and elimination}. 
 It is a set of genetic variants that is able to change ability of the organism to react to certain compounds (pharmacokinetic variability),influencing the patient's treatment response. Both common and rare variants are involved.
-\begin{figure}[htbp!]
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{ADME.png}
     \caption{From review: \textit{Pharmacogenomic Profiling of ADME Gene Variants:
 Current Challenges and Validation Perspectives}}
+\end{figure}
 
 A therapeutic approach that considers these variations could be very useful in precision medicine.
 
@@ -145,7 +147,7 @@ Paired end is useful especially for detecting structural variance. PE gives impo
 Interestingly, PE reads can be considered as two single reads from one molecule (PE protocol); but there's a loss of structural information.
 PE protocol is, however, twice as expensive!
 
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{igv.png}
     \caption{\textit{Advances in understanding cancer genomes through second-generation sequencing}, Meyerson et al., Nature Reviews Genetics 2010}
