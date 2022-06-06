@@ -33,6 +33,7 @@
 \rfoot{\thepage}
 \usepackage[export]{adjustbox}
 \usepackage{wrapfig}
+\usepackage{float}
 
 \setcounter{secnumdepth}{5}
 
