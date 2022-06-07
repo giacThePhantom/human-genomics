@@ -13,7 +13,7 @@ On the membrane there are proteins that are able to to interact with he immune s
 Figure \ref{fig:ev1} represents all the main components of a vesicle.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{ev1.png}
+    \includegraphics[width=0.7\textwidth]{ev1.png}
     \caption{Sketch representing the main components of an EV.}
     \label{fig:ev1}
 \end{figure}
@@ -40,7 +40,7 @@ Apoptotic bodies instead are the result of cell death. In the experiment perform
 (a) Origin of exosomes and microvesicles & (b) Origin of apoptotic body \\[6pt]
 
 \end{tabular}
-\caption{caption}
+\caption{Origin of different categories of EVs.}
 \label{fig:origin}
 \end{figure}
 
@@ -74,7 +74,7 @@ In cancer, EVs have important functions. In prostate cancer it has been shown th
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{evs_bone.png}
+    \includegraphics[width=0.7\textwidth]{evs_bone.png}
     \caption{Prostate cancer extracellular vesicles mediate intercellular communication with bone marrow cells and promote metastasis in a cholesterol-dependent manner.\textit{ Stephen E. Henrich, JExtracell Vesicles. 2020}.
     \\
     Exosomes from prostate cancer travel in the body, arrive to the bone and boost metastasis. }
@@ -92,7 +92,7 @@ In the bloodstream we have cells coming from the tumor, free cDNA, EVs and ribol
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{cancer2.png}
+    \includegraphics[width=0.7\textwidth]{cancer2.png}
     \caption{4 Breast cancer patients. On the left:  Whole Exome Sequencing of cfDNA from plasma. }
     \label{fig:cancer2}
 \end{figure}
@@ -110,3 +110,61 @@ Serial approach: tracking the signal of different biomarkers in time. Es: tracki
 Sequence/perfomr digital PCR on the saples from the blood and follow the biomarkers in time, to discover how well the patient is responding to the treatment. 
 
 \subsection{Different EVs isolation methods}
+In literature different ways to isolate EVs are reported. Three methods are:
+\begin{itemize}
+\item Nickel-base isolation (NBI): exploits the charge of the EVs (negative) using beads;
+\item Size exclusion chromatography (SEC): filter based on the size of the molecule;
+\item Ultracentrifugation (UCFG): heaviest molecules (pallet) is discarded and only the surnatant (EV) is retained.
+\end{itemize}
+
+Usually all three methods are used. This because no method is perfect, as the EVs in our blood are heterogeneous and each method isolates different subpopulations. This is particular important in liquid biopsies: if the EVs only came from of type of cells, the choice of the method does not change the result that much. Hence multiple analysis methods are required to avoid batch effects.
+
+\subsection{Challenges}
+\begin{itemize}
+\item Evidence of high variability of EVs populations in terms of EVs isolation method
+\item No standard de facto for the analysis of the EVs transcriptome;
+\item Dealing with plasma samples, multiple populations of EVs are present, some of which are relevant to cancer, while other are not;
+\item The RNA signal deriving from multiple populations is difficult to interpret
+\end{itemize}
+
+\subsection{Approaching deconvolution}
+Deconvolution is the process through which, from mixed signal after EVs isolation and RNA sequencing, we can differentiate and characterize the different population of vesicles and molecules.\\
+Right now the main method is the supervised deconvolution, as shown in figure \ref{fig:sup}. However it has several limitations, mainly due to the fact that it exploits known signature matrices, making it impossible to detect new EVs species.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{supervised_devo.png}
+    \caption{Chen B, Khodadoust MS, Liu CL, Newman AM, Alizadeh AA. Profiling Tumor Infiltrating Immune Cells with CIBERSORT. Methods Mol Biol. 2018 }
+    \label{fig:sup}
+\end{figure}
+
+The second possible approach, which is however at the very beginning, is to implement an unsupervised approach.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{unsupervised_deco.png}
+    \caption{Original approach from Konstantin Zaitsev et al, Nat Comm,2019 }
+    \label{fig:unsup}
+\end{figure}
+
+\section{Conclusions}
+\begin{itemize}
+\item EVs can be isolated and analyzed from biofluids (liquid biospy)
+\item EVs are involved in tumor related processes
+\item EVs carry information about their cell of origin and function
+\item EVs populations in blood are heterogeneous. This is the major issue with their analysis
+\item Deconvolution approaches are possible but not yet well established
+\item The analysis of EVs together with other molecules in liquid biopsies (cfDNA) can be more informative in respect to the analysis of a single analyte alone. Multi-analyte approach 
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
