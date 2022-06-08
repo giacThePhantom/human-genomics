@@ -35,13 +35,15 @@ However, techniques to study tumor heterogeneity are hindered by intra-patient h
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{heterogeneity.png}
-	\caption{\label{fig:hetero} a) Spatial heterogeneity denotes an uneven distribution of cancer subclones across different regions of the primary tumor and/or metastatic sites. b) Temporal heterogeneity refers to variations in the molecular makeup of a single lesion over time, either as a result of natural progression of the tumor or as a result of exposure to selective pressures created by clinical interventions. Colors denote the presence of subclones with different genetic features.}
+	\caption{a) Spatial heterogeneity denotes an uneven distribution of cancer subclones across different regions of the primary tumor and/or metastatic sites. b) Temporal heterogeneity refers to variations in the molecular makeup of a single lesion over time, either as a result of natural progression of the tumor or as a result of exposure to selective pressures created by clinical interventions. Colors denote the presence of subclones with different genetic features.}
+	\label{fig:hetero}
 \end{figure}
 
-\begin{figure}[htbp!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{treatment.png}
-	\caption{\label{fig:treatment} Certain cells of the tumor mass respond to treatment and some don't. Red = cell resistant to drug, blue = cell sensitive to drug. }
+	\caption{x Certain cells of the tumor mass respond to treatment and some don't. Red = cell resistant to drug, blue = cell sensitive to drug. }
+	\label{fig:hetero}
 \end{figure}
 
 \subsubsection{Linear an branching evolution}
@@ -58,7 +60,8 @@ Multiple genetically distinct populations can emerge from a common ancestral clo
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{branching.png}
-	\caption{\label{fig:branching} a) everything branches out from the monoclonal origin, but b) polyclonal origin, independent metastatic processes. Cells from independent lesions meet and form a highly diverse metastatic tumor.}
+	\caption{ a) everything branches out from the monoclonal origin, but b) polyclonal origin, independent metastatic processes. Cells from independent lesions meet and form a highly diverse metastatic tumor.}
+	\label{fig:branching}
 \end{figure}
 
 How can we study tumor evolution? Example seen in class: prostate sample, multiple independent lesions. By browsing through the morphologies, we can find similarities for the expression of the same gene. Sanger sequencing can be used for very specific mutations. Through bulk DNA sequencing from each position, a representation of the tumor burden and features of all the different areas can be obtained.
@@ -78,7 +81,8 @@ Drug-tolerant, “persister” cells generate resistant clones. At the time of d
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{response.png}
-	\caption{\label{fig:response} Tumor cells evolution driven by treatment.}
+	\caption{ Tumor cells evolution driven by treatment.}
+	\label{fig:response}
 \end{figure}
 
 \section{From sketches to sequencing data evolution information}
@@ -132,7 +136,8 @@ How do we select informative SNPs? Use dbSNP database and select all heterozygou
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{af_properties.png}
-	\caption{\label{fig:af_properties} Thanks to the presence of informative SNPs is very easy to detected the loss of an allele in the tumor cell.}
+	\caption{ Thanks to the presence of informative SNPs is very easy to detected the loss of an allele in the tumor cell.}
+	\label{fig:af_properties}
 \end{figure}
 
 An example of the use of AF and beta measures for tumor data analysis in depicted in figure \ref{fig:a_b}.
@@ -141,11 +146,12 @@ An example of the use of AF and beta measures for tumor data analysis in depicte
 	\centering
 	\includegraphics[width=0.8\textwidth]{a.png}
 	\includegraphics[width=0.8\textwidth]{b.png}
-	\caption{\label{fig:a_b} 
+	\caption{ 
 	\textbf{A)}Example of the allelic fraction (AF) and beta ($\beta$) in computed in five genomic positions ($p_1$ to $p_m$). Positions $p_1$ to $p_n$ are within a hemizygous deleted genomic segment A, while genomic positions $p_{n+1}$ to pm lie within a wild type genomic segment B.\\
 \textbf{(B-D)} Examples of a normal cell and two different tumor cells. Tumor cells 1 and 2 differ for the status of genomic segment B. Histograms below cell cartoons report the expected distribution of the allelic fraction of SNPs in genomic segments A and B together with the associated beta values.\\
 \textbf{(E-F)} Examples of two different tumor samples. Tumor sample 1 includes one normal cell and nine tumor cells with deleted genomic segment A and wild type genomic segment B. Tumor sample 2 differs from tumor sample 1 in the presence of six tumor cells with a hemizygous deletion of genomic segment B.
 Expected distribution of the AF of informative SNPs together with estimated beta are depicted below each tumor sample cartoon.}
+\label{fig:a_b}
 \end{figure}
 
 \subsection{Coverage and AF properties}
@@ -156,9 +162,10 @@ Intuitively, the deeper the sequencing the more likely it is to distinguish dist
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{beta.png}
-	\caption{\label{fig:beta}2X experiment: on average we have 2 reads per gene, very easy to miscall.\\
+	\caption{2X experiment: on average we have 2 reads per gene, very easy to miscall.\\
 10X experiment: easy to do call, but in the case of tumor cells it becomes difficult. The higher the sequencing depth, the more accurate the calls will be (as it becomes easier to tell when a distribution has two peaks).
 }
+\label{fig:beta}
 \end{figure}
 
 \subsection{Computing Beta}
@@ -174,7 +181,7 @@ We can compute beta for each genomic segment S:
 \end{enumerate}
 
 
-\section{Global vs Local Estimates of admixture}\label{sub:admixture}
+\section{Global vs Local Estimates of admixture}\label{sec:admixture}
 We'll discuss two types of sample and how to determine the differences in cell population (admixture).
 \\
 In sample one depicted in figure \ref{fig:sample1} there's a clonal cell population, meaning no heterogeneity. On the X axis we have genomic coordinates indexed by informative SNPs for that individual, on the Y axis the half AF.
@@ -191,7 +198,7 @@ Or, again, the amount of cells that have the first, second, third lesion etc. is
 	\label{fig:sample1}
 \end{figure}
 
-In the picture \ref{fig:sample2} below we can see another sample.
+In picture \ref{fig:sample2} below we can see another sample.
 We can clearly discover multiclonal cell population. The depth of the lesion is proportional to the number of cells that carry the lesion.
 In this case the definitions of local and global admixture change: a \textbf{global} value is a global value of tumor purity, a local value is a value of the clonality of the lesion in the diseased cell population.
 
@@ -203,13 +210,13 @@ In this case the definitions of local and global admixture change: a \textbf{glo
 \end{figure}
 
 \subsubsection{Estimate of DNA admixture (1-Purity)}
-We will now translate the concepts expressed in the previous sub-sections \ref{sub:admixture} in a 2-dimensional space, as shown in figure \ref{eq:adm}.
+We will now translate the concepts expressed in the previous sub-sections \ref{sec:admixture} in a 2-dimensional space, as shown in figure \ref{fig:2d}.
 
 \begin{wrapfigure}{l}{0.5\textwidth}
 	%\centering
 	\includegraphics[width=0.7\linewidth]{adm.png}
-	\caption{\label{fig:adm} Multiple clusters, where each dot is a genomic segment. Lower clusters are used for the admixture, the others are subclonal.
- }
+	\caption{Multiple clusters, where each dot is a genomic segment. Lower clusters are used for the admixture, the others are subclonal.}
+ \label{fig:2d}
 \end{wrapfigure}
 
 On the X axis we have the Log2 ratio measure and on the Y axis the admixture apparent, which is proportional to the beta  value.\\
@@ -239,7 +246,8 @@ In the tumor sample in fact we do not see two peaks in 0 and 1 as expected. It c
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{PR_2741.png}
-	\caption{\label{fig:adm} The distribution of heterozygous SNPs in benign cells is peaked in 0.5, while we observe two modes in tumor cells. The distance between the two modes is equal in 1 and 3, it’s proportional. In the middle we see that the two modes are moving towards the center, suggesting that the deletion is not likely 100\% clonal or it is clonal and shift is due to lack of deletion in 1 and 3. Subclonality: lesion with admixture}
+	\caption{ The distribution of heterozygous SNPs in benign cells is peaked in 0.5, while we observe two modes in tumor cells. The distance between the two modes is equal in 1 and 3, it’s proportional. In the middle we see that the two modes are moving towards the center, suggesting that the deletion is not likely 100\% clonal or it is clonal and shift is due to lack of deletion in 1 and 3. Subclonality: lesion with admixture}
+	\label{fig:adm}
 	\end{figure}
 
 

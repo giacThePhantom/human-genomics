@@ -102,8 +102,9 @@ Experimental mismatches are related to the error rate of the technology used, th
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{SNP.PNG}
-	\caption{\label{fig:SNP}}
+	\includegraphics[width=0.6\textwidth]{SNP.PNG}
+	\caption{}
+	\label{fig:SNP}
 \end{figure}
 
 In each example in figure \ref{fig:SNP} there are two samples with the same number of potential SNPs: 24. To determine the difference/similarity of the two samples we can look at the genotype for each position and count mismatches.
@@ -149,7 +150,7 @@ In the context of disease samples and tumors, many somatic events can happen, li
 	\end{equation}	
 \end{itemize}
 
-\bigskip
+
 Biological mismatches can be properly modeled in our assay. We can, in a data driven way, assess the error rate for the genotyping for some specific SNPs or run tests. We can also think in terms of SNP-specific or tissue-specific probabilities.
 \\
 The joint probability of two events $E1$ and $E2$, $P(E1,E2)$ or $P(E1 AND E2)$ is $P(E1,E2) = P(E1) * P(E2|E1)$ and $P(E2|E1)$ is called the conditional probability of $E2$ given $E1$. 
@@ -168,7 +169,8 @@ In figure \ref{fig:Distance} we can see an example of a typical graph used to me
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{loci.PNG}
-	\caption{\label{fig:Distance}Genetic Distance graph with 4 samples. On the y axis we have the genotype distance, allegedly from 0 to 1. On the x-axis we have the index of all possible pairs in the dataset.}
+	\caption{Genetic Distance graph with 4 samples. On the y axis we have the genotype distance, allegedly from 0 to 1. On the x-axis we have the index of all possible pairs in the dataset.}
+	\label{fig:Distance}
 \end{figure}
 
 
@@ -183,7 +185,8 @@ If we put that into an equation will have that: for each position i (SNP) betwee
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{loci2.PNG}
-	\caption{\label{fig:Distance2}Genetic Distance graph with 160 samples}
+	\caption{Genetic Distance graph with 160 samples}
+	\label{fig:Distance2}
 \end{figure}
 
 This other example at figure \ref{fig:Distance2} shows the distance, measured by genetic fingerprinting, of a collection of 160 samples of cell lines. 
@@ -199,7 +202,8 @@ Here we find certain pairs with a very low distance, sometimes almost equal to z
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{loci3.PNG}
-	\caption{\label{fig:Distance3}Genetic Distance graph with tumor samples}
+	\caption{Genetic Distance graph with tumor samples}
+	\label{fig:Distance3}
 \end{figure}
 
 
@@ -229,7 +233,8 @@ How does the genetic distance among different samples change when varying the nu
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{selected.PNG}
-	\caption{\label{fig:sel_snp}Genetic Distance graph at decreasing number of selected SNPs}
+	\caption{Genetic Distance graph at decreasing number of selected SNPs}
+	\label{fig:sel_snp}
 \end{figure}
 
 The genetic distance among many samples, with an array of 5.3K SNPs, was measured, using a decreasing number of SNPs (from the initial total number of SNPs to decreasing numbers of highly selected SNPs) \ref{fig:sel_snp}. 
@@ -279,7 +284,8 @@ Using something that simple we can add a probabilistic test in our assay, defini
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{double_test.PNG}
-	\caption{\label{fig:prob_test}}
+	\caption{}
+	\label{fig:prob_test}
 \end{figure}
 
 For example: given two unrelated samples, we reason in terms of 'what is the probability of having a certain number k of matches over a total number of n SNPs, therefore a certain value of D?'. 
@@ -319,7 +325,8 @@ Cell lines go through multiple passages in which they are used and stored. Genet
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{50k.png}\quad\includegraphics[width=0.6\textwidth]{54_snps.PNG}
-	\caption{\label{fig: cell_lines}}
+	\caption{}
+	\label{fig: cell_lines}
 \end{figure}
 
 

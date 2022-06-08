@@ -7,7 +7,7 @@ Those findings are essential to pave the way for the future \textbf{precision me
 
 \section{Main characteristics of IGV}
 Some utilization of IGV are: NGS alignment, epigenomics studies, copy number evaluations, RNA-sequencing and Identification of variants and genotypes.
-Below, some of the main utilization of IGV, also represented in figur \ref{fig:IGVusages}.
+Below, some of the main utilization of IGV, also represented in figure \ref{fig:IGVusages}.
 
 \begin{figure}[H]
     \centering
@@ -86,15 +86,7 @@ display. Some commands are reported in figure \ref{fig:commands}
 \end{figure}
 
 \subsection{Session Files}
-Sessions allow users to share their data and views with other users simply and accurately. Session files describe the session in XML, like in figure \ref{fig:XMLfile}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{structureXMLfile.PNG}
-    \label{fig:XMLfile}
-    \caption{Structure of the XML file}
-\end{figure} 
-
+Sessions allow users to share their data and views with other users simply and accurately. Session files describe the session in XML.
 
 \section{Some of the main utilizations}
 \textit{(Not all the passages needed to obtain the figures are described below, as they are included in the exercise file delivered by the professor)}
@@ -102,7 +94,7 @@ Sessions allow users to share their data and views with other users simply and a
 \subsection{RNA-seq alignments}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{RNAseqAlign.PNG}
+    \includegraphics[width=0.7\textwidth]{RNAseqAlign.PNG}
     \caption{the height depends on the quantity of reads connecting the different exons.}
     \label{fig:RNAseq}
 \end{figure}
@@ -110,9 +102,7 @@ Sessions allow users to share their data and views with other users simply and a
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{sashamiplot.PNG}
-    \caption{\textbf{Sashami plots}: The number of reads connecting exosomes are
-    represented here on the curved lines. The peaks represent coverage within
-    exons.}
+    \caption{\textbf{Sashami plots}: The number of reads connecting exosomes are represented here on the curved lines. The peaks represent coverage within exons.}
     \label{fig:sashami}
 \end{figure}
 
@@ -130,17 +120,9 @@ considering different characteristics.
 
 \section{Exercise}
 The goal was to read pairs/end order/coverage/insert sizes at following
-coordinates (reference: hg19). Then to interpret, if possible, as inversion, inverted duplication, tandem duplication, or deletion.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.6\textwidth]{TasksClass.PNG}
-  \label{fig: Tasks performed IGV}
-  \caption{Tasks performed}
-\end{figure}
+coordinates (reference: hg19). Then to interpret, if possible, as inversion, inverted duplication, tandem duplication, or deletion. The description of the tasks can be found in the slides.
 
 \subsection{Task B}
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{pos1.PNG}
@@ -153,14 +135,12 @@ coordinates (reference: hg19). Then to interpret, if possible, as inversion, inv
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{pos2.PNG}
-     \caption{\textbf{\textit{chr5:9,410,315-9,413,699}}: it is quite clear that
-    both the alleles were deleted in that region, because of the decrease in
-    coverage}
+    \includegraphics[width=0.6\textwidth]{pos2.PNG}
+     \caption{\textbf{\textit{chr5:9,410,315-9,413,699}}: it is quite clear that both the alleles were deleted in that region, because of the decrease in coverage}
 \end{figure}
 
 
-\begin{figure}[t]
+\begin{figure}[H]
    \centering
    \includegraphics[width=1\textwidth]{cov3.PNG}
    \label{fig:cov3}
