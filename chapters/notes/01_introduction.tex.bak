@@ -25,7 +25,7 @@ We will focus on human genomics, on how to mine raw (mainly sequencing) data, ho
 
 \section{Human Genomics - the Basis}
 \subsection{Genetic Make-Up}
-The individual's genetic make-up is different in all of us and it is responsible for human diversity.
+The genetic make-up is different in all of us and it is responsible for human diversity.
 SNPs (single nucleotide polymorphisms) and CNVs (copy number variants) contribute to make us all different. 
 The majority of external phenotypes are from genetic variance that we inherit (but they can also be aquired). 
 
@@ -42,14 +42,13 @@ The majority of external phenotypes are from genetic variance that we inherit (b
 \section{Inherited variants' relevance}
 Inherited variants can be characterized by penetrance and allele frequency.
 
-\begin{figure}[htbp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{relevance.png}
-    \caption{R. Eeles, Future Sci. OA (2016) 2(1), FSO87. Review on prostate cancer.\\
-   \textbf{ Common SNPs}: $\frac{1}{4}$ has a homozygous for A1, $\frac{1}{4}$ has a homozygous for A2, $\frac{1}{2}$ heterozygous $\rightarrow$ minor allele frequency around 30-50\%, low penetrance.\\
-\textbf{Rare SNPs}: very large size effect i.e. if they are related to very specific traits they will have high penetrance e.g. deleterious variant.
-}
-    \label{fig:relevance}
+    \caption{R. Eeles, Future Sci. OA (2016) 2(1), FSO87. Review on prostate 					cancer.\\
+   			\textbf{ Common SNPs}: $\frac{1}{4}$ has a homozygous for A1, $						\frac{1}{4}$ has a homozygous for A2, $\frac{1}{2}$ heterozygous $					\rightarrow$ minor allele frequency around 30-50\%, low penetrance.\\
+			\textbf{Rare SNPs}: very large size effect i.e. if they are related 				to very specific traits they will have high penetrance e.g. 						deleterious variant.
+}\label{fig:relevance}
 \end{figure}
 
 \paragraph*{Penetrance}
@@ -67,13 +66,13 @@ In the middle on the diagram we find very well-known variants correlated to canc
 \subsection{Differences in Genetic Make-Up, an example}
 One example of how the genetic make-up plays a role in deases is the ADME genes. 
 ADME stands for \textit{Absorption, distribution, metabolism and elimination}. 
-It is a set of genetic variants that is able to change ability of the organism to react to certain compounds (pharmacokinetic variability),influencing the patient's treatment response. Both common and rare variants are involved.
-
+It is a set of genetic variants that is able to change ability of the organism to react to certain compounds (pharmacokinetic variability),influencing the patient's treatment response. Both common and rare variants are involved. Figure \ref{fig:adme} represent a subset of them.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{ADME.png}
+    \includegraphics[width=0.7\textwidth]{ADME.png}
     \caption{From review: \textit{Pharmacogenomic Profiling of ADME Gene Variants:
 Current Challenges and Validation Perspectives}}
+\label{fig:adme}
 \end{figure}
 
 A therapeutic approach that considers these variations could be very useful in precision medicine.
@@ -131,7 +130,7 @@ Karyotyping indeed is not enough!
 Sequence specific variants, breakpoints, etc. could not be detected until NGS. 
 
 \section{Sequence capture for cancer genomics}
-In the paper summarized in \ref{ch:meyerson} it is described a typical sequence capture for cancer genomics. \\
+In the paper summarized in \ref{ch:Meyerson} it is described a typical sequence capture for cancer genomics. \\
 One of the main realizations in DNA sequencing is that the test reference genome is the normal (non-cancer) DNA.
 Most of the times when studying somatic changes a reference is needed, and the best reference is the individual's own genome, usually retrieved from white blood samples. 
 Intuitively, we can align both cancer and normal DNA so that we can detect if an aberration is cancer specific or it is present also in the normal DNA and discover somatic aberration.
@@ -159,7 +158,7 @@ Figure \ref{fig:igv} gives a nice graphical overview of genomic aberrations dete
 Important to notice is that when performing PE sequencing is like having double the coverage. 
 Both for homozygous and hemizygous deletions and insertions the single most important thing we need to care about is to have enough coverage on the whole experiment to perform significant downstream analysis. 
 Notice in \ref{fig:igv} the translocation breakpoint: without PE we would not be able to detect the translocation event. 
-
+\newpage
  
 
 

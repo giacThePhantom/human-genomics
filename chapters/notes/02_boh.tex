@@ -1,12 +1,12 @@
 \graphicspath{{chapters/02/}}
 \chapter{Coverage}
 \section{Local Coverage and Allelic Fraction}
-Two key concepts needed when perfoming genomics analysis are the \textbf{local coverage} and \textbf{allelic fraction}.
+Two key concepts needed when performing genomics analysis are the \textbf{local coverage} and \textbf{allelic fraction}.
 
 	\paragraph*{Local coverage (cov)}
 		The local coverage (cov) at position (base) $i$ is the number of reads that span $p_i$.
 	\paragraph*{Allelic fraction (AF)}
-		The allelic fraction (AF) at position $i$ is the proportion of reads that supports 			the reference base in $p_i$, and viceversa. 
+		The allelic fraction (AF) at position $i$ is the proportion of reads that supports 			the reference base in $p_i$, and vice versa. 
 
 The Lander-Waterman equation to compute NGS coverage is:
 \begin{equation}
@@ -17,7 +17,7 @@ Where G is the coverage, G is the haploid human genome length, L the read length
 \subsection{Mapping in NGS}
 The number of mapped reads is always lower than expected. Errors, or major translocation will impair a good mapping of the reads. \\
 There's a difference between physical and sequence coverage. Physical coverage is always higher, and it changes based on which protocol (PE or SE) is chosen for the assay.
-To put it simply, when calculating the sequence coverage we only take into account the actual ends, while when calculating the physical coverage we also account for the consequence part of the PE protocol. In figure \ref{fig:seq_phys} a  shcematic representation of this problem is displayed.
+To put it simply, when calculating the sequence coverage we only take into account the actual ends, while when calculating the physical coverage we also account for the consequence part of the PE protocol. In figure \ref{fig:seq_phys} a  schematic representation of this problem is displayed.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{seq_phys.png}
@@ -36,7 +36,7 @@ Formal definitions of sequence and physical coverage are:
 
 \section{Tuning the intended coverage of a NGS assay}
 In some experiments setups there's the need to carefully control the amount of intended coverage. \\
-If we are looking for SNPs only, which by definition are present in all of the cells, we only need enough redundancy (local coverage) to detect them and distinguish the reference base and the alternative base (in case of an heterozygous SNP we will ideally find half of the reads supporting the reference and half supporting the alternatice). Indeed for SNPs we do not need more than 10-15 X coverage. 
+If we are looking for SNPs only, which by definition are present in all of the cells, we only need enough redundancy (local coverage) to detect them and distinguish the reference base and the alternative base (in case of an heterozygous SNP we will ideally find half of the reads supporting the reference and half supporting the alternative). Indeed for SNPs we do not need more than 10-15 X coverage. 
 \\
 However, if the sample comes from a tumor or hematopoietic events, we need to look for subclonal events. Subclonal events are not harbored by all of the cells but only by a fraction of them. If we expect 1/4 of the cells harboring the mutation, we need to increase the coverage. \\
 The same reasoning goes for any monozygous mutation and any low abundant events, and for  transcripts expressed at very low level (RNA-seq) and weak binding in ChIP-Seq. 

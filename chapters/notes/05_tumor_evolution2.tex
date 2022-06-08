@@ -1,7 +1,7 @@
 \graphicspath{{chapters/TumorEvStudiesIIImages/}}
 \chapter{Tumor evolution studies (continued)}
 
-\section{ANalysis of clonality}
+\section{Analysis of clonality}
 \subsection{Recalls from previous chapter}
 At the basis of tumor evolution is the concept of how to use informative SNPs:SNPs for which a specific individual has heterozygous calls so that set of SNPs is unique for every individual.
 This property is connected to the fact that when we have the loss of an allele, the allelic fraction of the informative SNPs within that lesion will be informative of the lesion and its depth (clonality = what's the fraction of tumor cells that very likely harbor that lesion).
@@ -49,7 +49,6 @@ In panel B of figure \ref{fig:cluster} the number of copies that correspond to a
 \end{itemize}
 
 This is how we can map in the space the status of clonality and the number of copies for a specific segment in the genome.
-
 
 
 \section{Evolution maps}
@@ -112,12 +111,13 @@ Meaning that we need to have co-occurrence of the two lesions and subclonality o
 So if co-occurrence occurs in N individuals and subclonality of the second lesion to the first one occurs in a fraction of those, only if this fraction is significant with a proportion test out of the total number, then we can build the path. We are tremendously limited by co-occurrence of lesions.
 \\
 \subsection{Pathway based evolution analysis}
-To boost the reconstruction of these paths gene families or \textbf{pathways} have been exploited.
+To boost the reconstruction of these paths gene families or \textbf{pathways} have been exploited, like for prostate cancer in figure \ref{fig:prostate_path}
 
-\begin{figure}][H]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.4\linewidth]{pathways.png}
 \caption{Pathway evolution study example for prostate cancer}
+\label{fig:prostate_path}
 \end{figure}
 
 E.g. if we are dealing with PTEN, which is a tumor-suppressive gene relevant in a specific pathway (PF3K), then it doesn't matter if we have deletion or inactivation of the same genes in the same pathway, what matters for the tumor evolution is that that specific pathway is altered and so what we can do is start aggregating signals from genes that belong to the same pathway.

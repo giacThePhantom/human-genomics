@@ -4,7 +4,6 @@
 \chapter{Epigenetic profiling of cell-free DNA}
 Gian Marco Franceschini -  \textit{gian.franceschini@unitn.it}
 
-\textbf{\textit{Written by Linda Cova}}
 
 \section{Introduction}
 
@@ -52,10 +51,11 @@ leading to an abnormal regulation of gene expression. In addition to that,
 hypermethylation of pericentrometric heterochromatin in cancer can lead to
 mitotic recombination and thus genomic instability \ref{fig:cancer}.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
     \includegraphics[width=0.5\linewidth]{cancerMet.png}
-    \caption{\label{fig:cancer}Methylation patterns altered in cancer}
+    \caption{Methylation patterns altered in cancer}
+    \label{fig:cancer}
 \end{figure}
 
 This landscape of regulation is very complex: DNA methylation can regulate gene
@@ -78,10 +78,11 @@ methylations. Both array-based and shotgun-sequencing-based assays are used to
 this aim. The result of such an assay is a series of \textbf{beta values}: the
 fraction of reads corresponding to one genome site that is methylated.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
     \includegraphics[width=0.8\linewidth]{methods.png}
-    \caption{\label{fig:met}Main methods for DNA methylation measurement}
+    \caption{Main methods for DNA methylation measurement}
+    \label{fig:met}
 \end{figure}
 
 Immunoprecipitation-based methods are also available, but the most frequently
@@ -125,7 +126,7 @@ methylations it is difficult to discriminate between what is aberrant and what
 is not because the modifications are tissue-specific and it is difficult to
 obtain clear background references to make a comparison.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
     \includegraphics[width=\linewidth]{comp.png}
     \caption{\label{fig:comp}Comparison of genomics vs methylation for cancer
@@ -146,7 +147,7 @@ pattern as reference, the goal is to discover biomarkers and perform feature
 selection. Subsequently, a model is fitted and optimized to perform predictions
 on new data. The last step is performance evaluation.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
     \includegraphics[width=0.8\linewidth]{workflow.png}
     \caption{\label{fig:wo}Common analysis workflow}
