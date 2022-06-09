@@ -22,7 +22,7 @@ higher the tumor content and the level of clonality is.
 
 \subsection{Cluster analysis, an example}
 
-Referring to the image \ref{fig:cluster}, we can derive some conclusions.
+Referring to the image \ref{fig:cluster0}, we can derive some conclusions.
 
 \begin{figure}[H]
 \begin{tabular}{cc}
@@ -30,10 +30,10 @@ Referring to the image \ref{fig:cluster}, we can derive some conclusions.
 (a) Clonality & (b) CNV \\[6pt]
 \end{tabular}
 \caption{Lower clusters are more clonal, the more left the deeper they are in terms of loss of DNA.}
-\label{fig:cluster}
+\label{fig:cluster0}
 \end{figure}
 
-Looking at panel A of figure \ref{fig:cluster}
+Looking at panel A of figure \ref{fig:cluster0}
 \begin{itemize}
 \item The blue cluster with deletions is the most clonal one.
 \item Both blue and green clusters have deletions, since they have a negative log2 ratio, but the green one is less clonal than the blue one.
@@ -41,7 +41,7 @@ Looking at panel A of figure \ref{fig:cluster}
 \item All the other clusters with a positive log2 ratio had a gain of DNA.
 \end{itemize}
 
-In panel B of figure \ref{fig:cluster} the number of copies that correspond to all the clusters in the space is also reported.
+In panel B of figure \ref{fig:cluster0} the number of copies that correspond to all the clusters in the space is also reported.
 
 \begin{itemize}
 \item Blue: one copy of DNA, so there's a deletion
@@ -107,7 +107,7 @@ than one individual (e.g. in prostate cancer we can say that a loss in NKX3-1 pr
 Even if we have hundreds of BAM files on whole exon sequencing data from large collections all that we can build are evolution maps with at most three layers (pretty disappointing).
 \\
 One reason for this is that to build a relationship which is statistically significant between two genes we need to have multiple instances of that relationship (in many samples).
-Meaning that we need to have co-occurrence of the two lesions and subclonality of the second lesion with respect to the first in a significant number of individuals compared to the total number of individuals that have co-occurrence. 
+Meaning that we need to have co-occurrence of the two lesions and subclonality of the second lesion with respect to the first in a significant number of individuals compared to the total number of individuals that have co-occurrence.
 So if co-occurrence occurs in N individuals and subclonality of the second lesion to the first one occurs in a fraction of those, only if this fraction is significant with a proportion test out of the total number, then we can build the path. We are tremendously limited by co-occurrence of lesions.
 \\
 \subsection{Pathway based evolution analysis}
@@ -130,7 +130,7 @@ With this method we start having some more data to look for major changes during
 
 E.g. in prostate cancer we'd identify a set of pathways that are more or less at some level altered in earlier staged disease and that then trigger or are precedent to our pathways. Doing so we can learn more in terms of the biology of the disease evolution.
 \\
-There are also more complicated ways to make inference of tumor evolution. Some try to avoid the hypothesis that the more clonal a lesion is the more likely it is to happen early, because we know it's not always the case; it might be in untreated samples but not in treated samples. 
+There are also more complicated ways to make inference of tumor evolution. Some try to avoid the hypothesis that the more clonal a lesion is the more likely it is to happen early, because we know it's not always the case; it might be in untreated samples but not in treated samples.
 In a treatment regiment, because of drug pressure selection, specific resistant clones harboring a specific lesion can take over due to their higher rate of proliferation.
 In this case, if we see a lesion that appears to be more clonal, it doesn't really mean that it happened earlier, it may be that it had a higher proliferation and so it's taking over (and we see it as apparently clonal but it's in fact a late event).
 
@@ -138,9 +138,9 @@ In this case, if we see a lesion that appears to be more clonal, it doesn't real
 \section{Ploidy and purity correction on $\log_2(\frac{T}{N})$ data}
 How can we use measure of the tumor purity and the effect of the tumor ploidy? How can we compare two different samples for which we quantify completely different levels of tumor content?
 \\
-For example, suppose we have a sample a 100\% pure and with 50\% of clonality (a lesion present in 50\% of the cells) and a second sample with a tumor purity of 10\% and a clonality of 100\% (a lesion present in 100\% of the cells). We need to compare numbers without having to convert every time, for every lesion, the depth of the lesion based on the tumor content. 
+For example, suppose we have a sample a 100\% pure and with 50\% of clonality (a lesion present in 50\% of the cells) and a second sample with a tumor purity of 10\% and a clonality of 100\% (a lesion present in 100\% of the cells). We need to compare numbers without having to convert every time, for every lesion, the depth of the lesion based on the tumor content.
 \\
-The accuracy in calls for pure or admixture tissues (with same coverage) is different, we are likely to witness many more FP calls in admixture case. In order to compare, we need to \textbf{adjust the signal} for tumor \textbf{purity} and \textbf{ploidy}. 
+The accuracy in calls for pure or admixture tissues (with same coverage) is different, we are likely to witness many more FP calls in admixture case. In order to compare, we need to \textbf{adjust the signal} for tumor \textbf{purity} and \textbf{ploidy}.
 \\
 The coverage makes data coming from different samples comparable because we normalize everything to the total coverage, but when we deal with diseased cells we can have contamination from the admixture, so we need an extra step. The step, once we know how to assess the tumor purity and ploidy, is quite simple: we need to adjust the data for tumor purity and ploidy. An example is reported in figure \ref{fig:ploidy1}. These corrections are part of standard preprocessing.
 
@@ -154,7 +154,7 @@ Raw data from Berger et al. Nature. 2012 May 9;485(7399)}
 \label{fig:ploidy1}
 \end{figure}
 
-In the figure we are looking at one tumor sample: a whole genome sequencing ofone melanoma sample.We see multiple peaks which correspond to different copy number states.
+In the figure we are looking at one tumor sample: a whole genome sequencing of one melanoma sample.We see multiple peaks which correspond to different copy number states.
 \\
 Most of the time, no matter NGS or array data, the best way to detect CNV is to compare tumor signals with normal signals. Image having tumor data with no somatic changes; if we match it to a normal genome, the two samples will be really similar (just some noise). The histogram of the log2ratio will look like a Normal distribution centered around zero.
 \\
@@ -379,7 +379,7 @@ Another way to track evolution is to have \textbf{time points.}
 \includegraphics[width=0.8\linewidth]{image16.png}
 \caption{\textbf{Application of longitudinal plasma profiling.}Longitudinal monitoring of alterations in circulating tumour DNA has the potential to enable molecular relapses to be detected before the emergence of disease relapse on imaging. In a hypothetical example: \textbf{a)} A biopsy sample from lesion one (green) leads to the use of a targeted agent directed at the alterations in lesion one. \textbf{b)} A failure to also sample lesion two (red) might then lead to outgrowth of clones harbouring alternative molecular alterations, prompting the use of a combination of targeted agents or use of a single targeted therapy capable Of overcoming both molecular alterations. \textbf{c)} The emergence Of lesion three (yellow) might then be
 missed by biopsy sampling until this lesion becomes detectable on imaging. \textbf{d)} Longitudinal analysis of liquid biopsy
-mples would enable the detection and determination of the allelic fractions of the variants at all three lesions before their detection on imaging. This figure illustrates the ability ofthe molecular analysis of plasma to convey the full spectrum of resistance alterations and shows the dynamic nature of resistance.}
+Samples would enable the detection and determination of the allelic fractions of the variants at all three lesions before their detection on imaging. This figure illustrates the ability of the molecular analysis of plasma to convey the full spectrum of resistance alterations and shows the dynamic nature of resistance.}
 \label{fig:img16}
 \end{figure}
 

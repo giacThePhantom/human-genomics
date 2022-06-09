@@ -1,9 +1,9 @@
 \graphicspath{{chapters/TumorEvolution3Images/}}
 
 \chapter{Tumor evolution studies via NGS data: SNVs-based methods}
-There is a large number of tumors where copy-number aberrations are minimal. 
-Consequently, it is difficult to use copy number based approaches for these kind of tumors. 
-It is estimated that about 3\% of primary tumors present flat genomes, like the one in figure \ref{fig:quiet}, meaning that they display very few copy number changes. 
+There is a large number of tumors where copy-number aberrations are minimal.
+Consequently, it is difficult to use copy number based approaches for these kind of tumors.
+It is estimated that about 3\% of primary tumors present flat genomes, like the one in figure \ref{fig:quiet}, meaning that they display very few copy number changes.
 These types of tumors are correlated to a better prognosis both in overall survival and progression-free interval, but relapses are still present so the assessment of these tumors is important.
 
 \begin{figure}[H]
@@ -33,8 +33,8 @@ B), C) and D), respectively.}
 \label{fig:cluster}
 \end{figure}
 
-The distribution of allelic fractions of the clonal population only is symmetric, with the main peak around 0.5. A mixed population of clonal tumor and normal healthy cells shows a shifted peak. 
-The distance from 0.5 to the peak is proportional to the fraction of normal cells, because normal cells contribution moves the peak towards the side from the center (purity shift displayed in \ref{fig:cluster}. 
+The distribution of allelic fractions of the clonal population only is symmetric, with the main peak around 0.5. A mixed population of clonal tumor and normal healthy cells shows a shifted peak.
+The distance from 0.5 to the peak is proportional to the fraction of normal cells, because normal cells contribution moves the peak towards the side from the center (purity shift displayed in \ref{fig:cluster}.
 A subclonal point mutation is identified with a second peak towards 0, because its allelic fraction is probably far distant from 0.5.
 
 \section{TPES (Tumor Purity Estimation)}
@@ -45,21 +45,21 @@ It is important to consider the \textbf{Reference Mapping Bias}: a polymorphic l
     \caption{Workflow of the TPES algorithm}
     \label{fig:tpes}
 \end{figure}
-            
+
 The tool TPES is extensively described in chapter \ref{ch:tpes}. However, the main steps are:
 \begin{itemize}
     \item \textbf{Selection of CN-neutral segments}: point mutations that are
     flat in terms of copy-number are perfect for flat genomes and easier to deal
     with. This is the first filter implemented by this tool: a threshold is set
     on the log2 of the tumor over the normal.
-    
+
     \item When considering the \textbf{allelic fractions} of all the somatic
     mutations of whole genome, a major peak is expected around 0.5 (expected
     VAF). Other peaks can be originated from things that escaped the previous
     filter or from monoallelic mutations with copy-neutral LOH (loss of
     heterozygosity): in this case the allelic fraction results doubled. So
     another threshold on allelic fraction is needed (maxAF=0.55).
-    
+
     \item Identification of \textbf{putative clonal SNVs}: the peak closer to
     0.5 is the most useful to determine tumor purity. The others are related to
     subclonal events.
@@ -71,7 +71,7 @@ with the following equation:
 
 \section{How many SNVs are needed to assess tumor purity?}
 
-The number of SNVs changes for each tumor type, so not all tumor types guarantee enough SNVs. The minimum number of SNVs needed to obtain reliable results can be assessed with a \textbf{comparative analysis}. The Spearman's correlations between the results of two different purity calling algorithms uding decreasing number of SNVs are computed. The subsampling approach (which SNVs to consider) is to subsample the SNVs as many time as possible to have higher confidence on the results. 
+The number of SNVs changes for each tumor type, so not all tumor types guarantee enough SNVs. The minimum number of SNVs needed to obtain reliable results can be assessed with a \textbf{comparative analysis}. The Spearman's correlations between the results of two different purity calling algorithms uding decreasing number of SNVs are computed. The subsampling approach (which SNVs to consider) is to subsample the SNVs as many time as possible to have higher confidence on the results.
 At each iteration, as many samples as possible are used, but the number decreases when the number of SNVs increases.
 
 The computations determined 10 as the minimum number of SNVs needed to infer
@@ -99,7 +99,7 @@ particular with the CN-based algorithms. This shows that genomics is more
 reproducible in general to assess purity, while methods relying for example on
 image analysis give different results.
 
-The best solution to assess tumor purity is to couple and CN-based and a
+The best solution to assess tumor purity is to couple a CN-based and a
 SNV-based approach: some samples are only detected by one of the two so a
 combination gives the best results globally.
 
