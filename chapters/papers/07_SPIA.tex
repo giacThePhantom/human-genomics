@@ -55,8 +55,8 @@ To address this a simple approach to enable accurate determination of cell line 
 	\end{multicols}
 
 	On the training set the minor allele frequency, the heterozygosity rate and the call rate for each SNP across all sample have been computed.
-	Then SNP satisfying the Hardy-Weinberd equilibrium applying elastic boundaries and having SNP call rates than $80\%$ have been filtered.
-	Then on the test set, the heterzygosity rate of the identified SNAP has been computed.
+	Then SNP satisfying the Hardy-Weinberd equilibrium applying elastic boundaries and having SNP call rates more than $80\%$ have been filtered.
+	Then on the test set, the heterozygosity rate of the identified SNAP has been computed.
 	At each iteration a variable number of SNPs has been computed.
 	SNPs have been ranked according to the selection rate.
 
@@ -65,7 +65,7 @@ To address this a simple approach to enable accurate determination of cell line 
 	The test score depends on the number of matches and on the total number of SNPs evaluated.
 	The test relies on the probability of the evaluated distance belonging to the population of real matched pairs or to the population of real non-pairs.
 	If the output is not clear a second panel of SNPs would need to be investigated.
-	If the SNPs are independent and the genotype call probability being the same at each SNP, the probability of habing $k$ matches out of $N$ SNPs follows the binomial distribution:
+	If the SNPs are independent and the genotype call probability being the same at each SNP, the probability of having $k$ matches out of $N$ SNPs follows the binomial distribution:
 
 	$$P_k = \binom{N}{k} P^kQ^{N-k} = \frac{N!}{k!(N-k)!}P^kQ^{N=k}$$
 

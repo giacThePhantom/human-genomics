@@ -21,7 +21,7 @@ Cancer samples and genomes have general distinct characteristics from other tiss
 	\subsection{Characteristics of cancer samples for genomic analysis}
 	Cancer samples differ in their quantity, quality and purity from the peripheral blood samples.
 	Diagnostic biopsies from patients with disseminated disease tend to contain few cells, therefore the quantity of nucleic acid available may be limiting.
-	An alternative approach to deal with small sample is whole-genome amplification, but it does not preserve genome structure and can crate artefactual alteration.
+	An alternative approach to deal with small sample is whole-genome amplification, but it does not preserve genome structure and can create artefactual alteration.
 	Nucleic acids from cancer are of lower quality due to formalin fixation and paraffin embedding necessary for microscopi histology.
 	They will have undergone cross-linking and be degraded.
 	Special experimental and computational methods are required.
@@ -55,8 +55,8 @@ The application of second-generation sequencing has allowed cancer genomics to m
 	\subsection{Exome sequencing}
 	Target sequencing approaches have an increased sequence coverage of regions of interests at lower costs and higher throughput.
 	Any subset of the genome can be targeted.
-	Capillary-based sequencing has been proben powerful to focus sequencing efforts on the coding genes of interest.
-	Uneven capture efficiency across exons can mean that not all exons are sequenced and some off-targed hybridization can occur.
+	Capillary-based sequencing has been proven powerful to focus sequencing efforts on the coding genes of interest.
+	Uneven capture efficiency across exons can mean that not all exons are sequenced and some off-tagged hybridization can occur.
 	The higher coverage make WES suitable for mutation discovery in cancer samples of mixed purity.
 
 	\subsection{Transcriptome sequencing}
@@ -71,7 +71,7 @@ The application of second-generation sequencing has allowed cancer genomics to m
 Second-generation sequencing can provide a comprehensive picture of the cancer genome detecting each of the major alterations in the cancer genome.
 
 	\subsection{Somatic nucleotide substitutions and small insertion and deletion mutations}
-	Nucleotide substitutions are the most comommon somatic genomic alteration occurring at a frequency of one in a million.
+	Nucleotide substitutions are the most common somatic genomic alteration occurring at a frequency of one in a million.
 	Insertion and deletions are tenfold less common.
 	The rate of mutations varies greatly between cancer specimens.
 	Detection of somatic mutations in cancer requires mutation calling on the tumour DNA and the matched normal DNA, coupled with comparison to a reference genome.
@@ -84,18 +84,18 @@ Second-generation sequencing can provide a comprehensive picture of the cancer g
 	Experimental validation is the most powerful method.
 
 	\subsection{Copy number}
-	Second generation sequencing methods offer substantial benefits for copy number analysis, including higher resolution and precise delineation of the breakpoints of copy number changes/
+	Second generation sequencing methods offer substantial benefits for copy number analysis, including higher resolution and precise delineation of the breakpoints of copy number changes.
 	The digital nature allow to estimate the tumour to normal copy number ration at a genomic locus counting the number of reads in both tumour and normal samples in the locus.
 
 	\subsection{Chromosomal rearrangements}
-	Second-generation sequencing has been shown to allow systematic description of the rearrangements in a givencancer sample.
-	Extension of these approaches to large numbers of samples should lead to the discovery of the makor recurrent translocations in cancer.
-	Intrachromosomal rearrangements, inversions, tandem duplications and deletions, insertions of non-endogenous sequences like viral ones, reciprocal and non-reciprocal interchromosomal rearrangemnts and complex rearrangements like combinations of these various events can be detected through second-generation sequencing.
+	Second-generation sequencing has been shown to allow systematic description of the rearrangements in a given cancer sample.
+	Extension of these approaches to large numbers of samples should lead to the discovery of the major recurrent translocations in cancer.
+	Intrachromosomal rearrangements, inversions, tandem duplications and deletions, insertions of non-endogenous sequences like viral ones, reciprocal and non-reciprocal interchromosomal rearrangements and complex rearrangements like combinations of these various events can be detected through second-generation sequencing.
 
 	\subsection{Microbe-discovery methods}
 	In addition to somatic alterations many cancers are caused by microbial infections.
 	Neither array methods nor directed sequencing approaches can identify new examples of microbial genomes that have inserted themselves into the human genome.
-	COmputational subtraction of the sequence from a sample from the human reference genome can detect non-human sequences and identify novel microbial infections associated with human disease.
+	Computational subtraction of the sequence from a sample from the human reference genome can detect non-human sequences and identify novel microbial infections associated with human disease.
 	Challenges include low concentration of the microbial agent ,hit and run mechanisms, quality issue that cause artefacts and incompleteness of human genome reference samples.
 
 \section{Computational issues}
@@ -103,14 +103,14 @@ The three main challenges in developing computational solutions are the need to 
 
 	\subsection{Alignment and assembly}
 	Reads must be aligned to the specific chromosome, position and DNA strand from which they are most likely to have originated.
-	Thiese are perfomed against reference human genomes using methods developed for normal samples.
+	These are performed against reference human genomes using methods developed for normal samples.
 	The uniqueness of every cancer genome and the difficulty of correctly assigning rearranged sequences from homologous regions mean that de novo assembly of cancer genomes is likely to become the most powerful approach.
 
 	\subsection{mutations detection}
 	As somatic genome alteration are rare, any method that detects mutations in cancer must do so with low false positive rates.
 	The first report of a method specific for somatic mutation calling or SNVMix.
-	Systematic analysis of false-positive and false-negative rates of the methods based on real cacner data is yet to be performed.
-	A naive somatic mutation caller can be built by applying a germline single-sample mutation caller to thetumour and normal data sets: somatic events are those detected only in the tumour.
+	Systematic analysis of false-positive and false-negative rates of the methods based on real cancer data is yet to be performed.
+	A naive somatic mutation caller can be built by applying a germline single-sample mutation caller to the tumour and normal data sets: somatic events are those detected only in the tumour.
 	Somatic mutation calling is more complex because cancer samples vary in purity and ploidy.
 	A key parameter for each mutation is its allelic fraction: the expected fraction of reads in the tumour that harbour the mutation among all reads that map to the same genomic location.
 	The allelic fraction captures the local complexity of the tumour genome, the non-tumour contamination levels and any mutation-dependent experimental or alignment bias.
@@ -118,8 +118,8 @@ The three main challenges in developing computational solutions are the need to 
 	\subsection{Validation of mutation and rearrangement calls}
 	Accurate estimation of false positive and false-negative rates is a challenge.
 	The second can be estimated by validation of the event using an orthogonal technology: a genotyping assay such as mass spectrometric analysis.
-	This is not sufficiently sensitive to validate mutations with low allelic fracitons.
+	This is not sufficiently sensitive to validate mutations with low allelic fractions.
 	Current efforts are focused on applying deep targeted second generation sequencing to validate the events.
-	For validating rearrangments the current methods require PCR amplification of the region surrounding the event follwed by sequencing of this region.
+	For validating rearrangements the current methods require PCR amplification of the region surrounding the event followed by sequencing of this region.
 	They are not high-throughput.
-	A deveolping concept is to capture the rearranged sites using a similar protocol to the exon capture approach and apply deep sequencing.
+	A developing concept is to capture the rearranged sites using a similar protocol to the exon capture approach and apply deep sequencing.
