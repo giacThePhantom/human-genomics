@@ -1,169 +1,140 @@
 \graphicspath{{chapters/notes/02/images}}
 \chapter{Coverage}
-\section{Local Coverage and Allelic Fraction}
-Two key concepts needed when performing genomics analysis are the \textbf{local coverage} and \textbf{allelic fraction}.
 
-	\paragraph*{Local coverage (cov)}
-		The local coverage (cov) at position (base) $i$ is the number of reads that span $p_i$.
-	\paragraph*{Allelic fraction (AF)}
-		The allelic fraction (AF) at position $i$ is the proportion of reads that supports 			the reference base in $p_i$, and vice versa.
+\section{Computing coverage}
+The three key concepts needed when performing genomics analysis are the local and global coverage and allelic fraction.
 
-The Lander-Waterman equation to compute NGS coverage is:
-\begin{equation}
-C = \frac{L * N}{G}
-\end{equation}
-Where C is the coverage, G is the haploid human genome length, L the read length and N the number of mapped reads.
+    \subsection{Local coverage}
+		The local coverage $cov$ at position (base) $i$ is the number of reads that span $p_i$.
 
-\subsection{Mapping in NGS}
-The number of mapped reads is always lower than expected. Errors, or major translocation will impair a good mapping of the reads. \\
-There's a difference between physical and sequence coverage. Physical coverage is always higher, and it changes based on which protocol (PE or SE) is chosen for the assay.
-To put it simply, when calculating the sequence coverage we only take into account the actual ends, while when calculating the physical coverage we also account for the consequence part of the PE protocol. In figure \ref{fig:seq_phys} a  schematic representation of this problem is displayed.
+    $$cov = \# r_i : r_i \in p_i$$
+
+    \subsection{Allelic fraction}
+		The allelic fraction $AF$ at position $i$ is the proportion of reads that supports the reference (or alternative) base in $p_i$ over the total number of reads that span $p_i$.
+
+    $$AF = \frac{\# r_{alternative_i\ (reference_i)}}{\# r_i} : r_i\in p_i$$
+
+    \subsection{NGS global coverage}
+    The Lander-Waterman equation is used to compute NGS global coverage.
+    The equation is:
+
+    $$C = \frac{L * N}{G}$$
+
+    Where $C$ is the global coverage, $G$ is the haploid human genome length, $L$ the read length and $N$ the number of mapped reads.
+
+\section{Mapping in NGS}
+When mapping NGS reads to a reference genome the number of correctly mapped reads is always lower than expected.
+This is due to sequencing or aligning errors or due to major translocations that will impair a good mapping of the reads.
+When considering which part of the reference genome is covered by the mapped reads, a distinction between physical and sequence coverage has to be made.
+A schematic representation of the problem is displayed in figure \ref{fig:seq_phys}.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{seq_phys.png}
-    \caption{Schematic difference between sequence (on the left) and physical coverage (on the right). From Meyerson et al., Nature Reviews Genetics 2010}
+    \caption{Schematic difference between sequence (on the left) and physical coverage (on the right).}
     \label{fig:seq_phys}
 \end{figure}
 
-Formal definitions of sequence and physical coverage are:
+    \subsection{Sequence coverage}
+    Sequence coverage is the amount of oversampling (how many times a base is sequenced).
+    It is needed to detect nucleotide alterations with high sensitivity.
+    To do so for the 3 billion bases of the human genome a $30$-fold coverage on average ($30X$) is usually required.
+    This means that $90$ million of bases need to be mapped for each sample.
 
-\paragraph*{Sequence coverage:}
-	Sequence coverage is the amount of oversampling (how many times a base is sequenced); to detect nucleotide alterations with high sensitivity, the 3 billion bases of the human genome have typically been ‘covered’ with at least 30-fold (30X) on average, meaning 90 billion bases of sequence data per sample.
-	\paragraph*{Physical coverage:}
-		the expected distance between the paired reads is used to uniquely place the reads on the genome; unexpected read pairs are used to detect structural anomalies.
+    \subsection{Physical coverage}
+		The expected distance between the paired reads is used to uniquely place the reads on the genome.
+    Physical coverage refers to the average number of times a base is read or spanned by paired end reads.
+    Unexpected read pairs are used to detect structural anomalies.
+    So, while sequence coverage refers to a single base resolution, physical coverage refers to structural coverage of the genome.
 
+\section{Tuning coverage}
+In some experiments setups there's the need to carefully control the amount of intended coverage.
 
+    \subsection{SNP detection}
+    SNPs are by definition present in all of the cells of an individual, so only enough redundancy or local coverage to distinguish the reference from the alternative base is needed.
+    Ideally for heterozygous SNPs half of the reads will support the reference base while the other half the alternative one.
+    Typically to perform this kind of detections only $10$ to $15X$ coverage is needed.
 
-\section{Tuning the intended coverage of a NGS assay}
-In some experiments setups there's the need to carefully control the amount of intended coverage. \\
-If we are looking for SNPs only, which by definition are present in all of the cells, we only need enough redundancy (local coverage) to detect them and distinguish the reference base and the alternative base (in case of an heterozygous SNP we will ideally find half of the reads supporting the reference and half supporting the alternative). Indeed for SNPs we do not need more than 10-15 X coverage.
-\\
-However, if the sample comes from a tumor or hematopoietic events, we need to look for subclonal events. Subclonal events are not harbored by all of the cells but only by a fraction of them. If we expect 1/4 of the cells harboring the mutation, we need to increase the coverage. \\
-The same reasoning goes for any monozygous mutation and any low abundant events, and for  transcripts expressed at very low level (RNA-seq) and weak binding in ChIP-Seq.
+    \subsection{Subclonal events}
+    Subclonal events from a tumour or hematopoietic sample are not harboured by all the cells in an individual, so the coverage must be increased with respect to the one needed for SNPs detection.
+    The same approach must be taken to detect momozygous mutations and low abundant events, like low-expression transcripts and to reduce the effect of weak binding in chIP-seq.
 
-\subsection{Example on the importance of coverage}
-Here are represented 10 genes relevant for cancer. Each bar represents the average local coverage at 30 bp.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{local_coverage.png}
-    \caption{Example of local coverage. On the x axis genomic location (on top e ery gene) and the bars is the number of amplicons. }
-    \label{fig:local}
-\end{figure}
+    \subsection{Amplicon-based approaches}
+    Amplicon sequencing is a highly targeted approach that enables researchers to analyse genetic variation in specific genomic regions.
+    The ultra-deep sequencing of PCR products or amplicons allows for efficient variant identification and characterization.
+    This methods uses oligonucleotide probes designed to target and capture regions of interest, which are amplified by PCR and sequenced by NGS.
 
-In figure \ref{fig:local} a barplot can be observed, representing the local coverage (y axis) in the gene locations (x axis). The \textit{cov} is on average about 600x and it's "wavy", not evenly distributed (very typical). However, if one would do an average of the coverage for each gene, they would discover that one gene is abundantly underrepresented: PTEN.\\
-What's happening on PTEN base on plot \ref{fig:local}? Probably, the most accurate guess is a deletion. But of which kind? For sure not a homozygous deletion, since we would not be able to see any signal in the plot. From this data however we cannot say whether this is a monoallelic or biallelic deletion. \\
-Note that this (and the following \ref{fig:local2}) plot is the actual way sequencing data is shown, while the figure presented in \ref{SE_PE} was a schematic representation.
+        \subsubsection{Heterozygous deletion of PTEN}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{local_coverage1.png}
-    \caption{Example 2 of local coverage. The  cell line is different (PC3 instead of LNCaP). }
-    \label{fig:local1}
-\end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{local_coverage.png}
+            \caption{Example of local coverage of $10$ genes for cell line LNCaP. On the x axis genomic location, while on the $y$ axis the amount of amplicons sequenced.}
+            \label{fig:local}
+        \end{figure}
 
-However, in the plot \ref{fig:local1}, from a different cell line, we can see a clear monoallelic deletion and a partial biallelic deletion of PTEN.\\
+        In figure \ref{fig:local} a barplot representing the local coverage (y axis) in the gene locations (x axis) can be observed.
+        The coverage is on average about $600x$ and it's not evenly distributed, as it typically is for this kind of experiment.
+        Averaging the coverage for each gene it is clear how for PTEN it is significantly less.
+        Since some coverage is still present for that gene the most probable event to have caused this type of event is an heterozygous deletion.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{local_coverage2.png}
-    \caption{Example 3 of local coverage. The  cell line is different (VCaP). The massive amplification of the AR region is typicall in advanced prostate cancer.}
-    \label{fig:local2}
-\end{figure}
+        \subsubsection{Homozygous deletion of PTEN}
 
-In figure \ref{fig:local2} we can see a massive amplification of the antigen receptor. Probably it was a mistake in the assay: amplification on the AR does not allow the analysis/discovery of other copy number variations because all of the reads will go to the AR site. \\
-These were amplicon-based approaches.
-With NGS instead, It is easy to increase the experimental coverage (i.e. the sequence depth) at later point in time.
-Provided our original sample/library is still available, we can perform another run of sequencing and then combine the output from different runs.
-Note that this isn’t possible with array-based technologies.\\
-However, there are some limiting factors of NGS DNA-seq experiments.
-Problems with repeated regions, but also not knowing the linearity of the genome.
-If the sequencing is done with longer reads we could tackle the problem by having longer molecules to work with, but there are more errors in the reads.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{local_coverage1.png}
+            \caption{Example of local coverage of $10$ genes for cell line PC3. On the x axis genomic location, while on the $y$ axis the amount of amplicons sequenced.}
+            \label{fig:local1}
+        \end{figure}
 
-\subsection{Databases}
+        In the plot \ref{fig:local1} from a different cell line a clear monoallelic deletion and a partial biallelic deletion of PTEN can be observed.
+
+        \subsubsection{Amplification of AR}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{local_coverage2.png}
+            \caption{Example of local coverage of $10$ genes for cell line VCaP. On the x axis genomic location, while on the $y$ axis the amount of amplicons sequenced.}
+            \label{fig:local2}
+        \end{figure}
+
+        In figure \ref{fig:local2} a massive amplification of the antigen receptor typical of prostate cancer can be seen.
+        This massive amplification is probably due to a mistake of the assay.
+        Amplification on the AR does not allow for the analysis and discovery of other copy number variations because all of the reads will be mapped to the AR site.
+
+    \subsection{NGS-based approaches}
+    NGS-based approach are based on the sequencing of all of the sample genome, skipping the probing and amplification passages.
+
+        \subsubsection{Advantages over amplicon-based approaches}
+        With this type of approaches it is easy to increase the experimental coverage at later point in time.
+        It is enough to perform another run of sequencing on the same sample or library and then combine the output from different runs to increase coverage.
+        This isn't possible with array-based technologies.
+
+        \subsubsection{Problems of NGS-based approaches}
+        There are limiting factors to be considered when performing NGS DNA sequencing experiments.
+        In particular:
+
+        \begin{multicols}{2}
+            \begin{itemize}
+                \item Repeated regions are difficult to sequence and map correctly.
+                \item Structural information are difficult to obtain.
+            \end{itemize}
+        \end{multicols}
+
+        This problems could be mitigated by increasing the read length, but this would make the sequencing process more error prone.
+        There is a need to make a trade-off between read length and single-base accuracy.
+
+\section{Databases for NGS analysis}
 Two very known databases for NGS analysis are:
-\begin{itemize}
-\item \textbf{Genome Reference Consortium}: assemble a reference genome reflecting the most common sequences in population at each position while tracking information on polymorphisms.
-\item \textbf{USCS Genome Browser}: select a reference genome and query all known features.
-\end{itemize}
 
-\section{Interpreting Pair Orientations}
-We will now look at some aberrations' discoveries performed using IGV.\\
-In IGV, each vertical bar corresponds to a read.
-If there is a colored sign, there is a polymorphism or difference with respect to a reference.
-The browser also gives info about the quality of the read and bases (and others from the BAM file).\\
-While using a paired-end protocol, we can study inversions, duplications and translocations. A useful legend to navigate the subsequent example is reported in the list below.
-\begin{itemize}
-\item \textbf{LR} ($\rightarrow \, \, \, \leftarrow$): Illumina (convention), the reads are left and right of the unsequenced part of the sequenced DNA fragment when aligned back to the reference genome.
-\item \textbf{LL}, \textbf{RR}: implies inversion in sequenced DNA with respect to reference.
-\item \textbf{RL}: implies duplication or translocation with respect to reference.
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Genome Reference Consortium.
+        \item USCS Genome Browser.
+    \end{itemize}
+\end{multicols}
 
-\end{itemize}
+    \subsection{Genome reference consortium}
+    The genome reference Consortium assembles a reference genome reflecting the most common sequences in population at each position while tracking information on polymorphisms.
 
-\subsection{Inversion}
-To detect major aberration, like inversions, we need reads that span the breakpoint (either long reads, or, better, PE reads). \\
-What's happening exactly at the breakpoint in figure \ref{fig:inversion}? What's the coverage when looking at the data?  When we map them on the reference, we see that the direction is LL and RR, meaning that there is an inversion.
-%The sequence that we have in the molecule does not exist there and therefore that sequence doe not exist in two copies in the molecule.
-We can also spot a drop in the local coverage.
-In the target molecule, either it does not exist or exist only in one allele and not the other one. \\
-When interpreting structural variance, we need not to care only about end-orientation, but also coverage at the exact break point, which is due to the fact that the inverted breakpoint sequence does not exist in the reference genome.
-
-
-%\begin{figure}[htbp!]
-    %\centering
-    %\includegraphics[width=0.5\textwidth]{inversion.png}
-   % \caption{Inversion discovering exploiting PE reads.}
-   % \label{fig:inversion}
-%\end{figure}
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-  \includegraphics[width=0.5\textwidth]{inversion.png} &   \includegraphics[width=0.5\textwidth]{inversion_igv.png} \\
-(a) Schematic & (b) IGV view \\[6pt]
-
-\end{tabular}
-\caption{Inversion discovering exploiting PE reads.}
-\label{fig:inversion}
-\end{figure}
-
-
-
-\subsection{Tandem duplication}
-Notice how in the tandem duplication (figure \ref{fig:tandem}) all the reads that do not cover the junction point align perfectly to the reference.
-The coverage will be 3/2 of the expected value, proportional to the extra copy. B junction and A junction will not have modifications. If we had a read mapping BA, we would observe a partial alignment at B on the reference.
-We observe no drop of coverage because the sequences also exist in the reference. \\
-
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-  \includegraphics[width=0.5\textwidth]{tandem.png} &   \includegraphics[width=0.5\textwidth]{tandem_igv.png} \\
-(a) Schematic & (b) IGV view \\[6pt]
-\end{tabular}
-\caption{Tandem duplication discovering exploiting PE reads.}
-\label{fig:tandem}
-\end{figure}
-
-\subsection{Inverted duplication}
-For the inverted duplication, in figure \ref{fig:inverted}, we expect double coverage in the duplicated site in the reference genome. \\
-Both A and B on the first segment on the subject are LR oriented, and the same occurs in the reference genome.
-When we add the second fragment the same holds, but direction will be LL and RR and the insert size will be significantly longer. In particular, we can notice that we have an overlapping of left and right reads on the reference. Furthermore, the coverage depth will highly increase due to the presence of multiple reads on the reference genome.
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-  \includegraphics[width=0.5\textwidth]{inverted.png} &   \includegraphics[width=0.5\textwidth]{inverted_igv.png} \\
-(a) Schematic & (b) IGV view \\[6pt]
-\end{tabular}
-\caption{Inverted duplication discovering exploiting PE reads.}
-\label{fig:inverted}
-\end{figure}
-
-What if we have a deletion? How can you guess the size of it? We can look at the coverage or observed distance between the reads, which gives clean indication of the size of the deletion. For tiny deletions, smaller than the length of the read, we use the sequence within the reads and in this way discovering indels.
-
-\section{Summary}
-Summarizing, the elements to consider are:
- \begin{itemize}
- \item Pair ends relative orientation;
- \item Insert size length;
-\item Coverage within the aberrant region;
-\item Coverage outside of the aberrant region (flanking genomic segments);
-\item Coverage at the breakpoints.
- \end{itemize}
+    \subsection{USCS genome browser}
+    The USCS Genome Browser allows to  select a reference genome and query all of its known features.
