@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  29 JUN 2022 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  30 JUN 2022 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,9 +748,6 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 (./build/principal.aux
 
 LaTeX Warning: Label `fig:adm' multiply defined.
-
-
-LaTeX Warning: Label `fig:norm' multiply defined.
 
 
 LaTeX Warning: Label `fig:comp' multiply defined.
@@ -1509,100 +1506,82 @@ ut line 147.
 //comparative.png>]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\T1/cmr/m/n/10 Accurate and de-tailed
  []
 
 
-Underfull \hbox (badness 4543) in paragraph at lines 21--21
+Underfull \hbox (badness 4543) in paragraph at lines 29--29
 \T1/cmr/m/n/10 the pa-tient, not fea-si-
  []
 
 [75
 
-]
-Overfull \hbox (46.82407pt too wide) in paragraph at lines 40--57
- [][] 
- []
-
-[76]
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
-
- []
-
-<chapters/notes/08/images//norm.png, id=1928, 459.7175pt x 351.3125pt>
-File: chapters/notes/08/images//norm.png Graphic file (type png)
-<use chapters/notes/08/images//norm.png>
-Package pdftex.def Info: chapters/notes/08/images//norm.png  used on input line
- 74.
-(pdftex.def)             Requested size: 173.44534pt x 132.54594pt.
-[77]
-<chapters/notes/08/images//quantity1.png, id=1936, 648.4225pt x 473.77pt>
-File: chapters/notes/08/images//quantity1.png Graphic file (type png)
-<use chapters/notes/08/images//quantity1.png>
-Package pdftex.def Info: chapters/notes/08/images//quantity1.png  used on input
- line 90.
-(pdftex.def)             Requested size: 216.81pt x 158.41211pt.
-<chapters/notes/08/images//quantity2.png, id=1937, 593.21625pt x 487.8225pt>
-File: chapters/notes/08/images//quantity2.png Graphic file (type png)
-<use chapters/notes/08/images//quantity2.png>
-Package pdftex.def Info: chapters/notes/08/images//quantity2.png  used on input
- line 97.
-(pdftex.def)             Requested size: 303.53267pt x 249.61241pt.
- [78 <./chapters/notes/08/images//norm.png> <./chapters/notes/08/images//quanti
-ty1.png>] [79 <./chapters/notes/08/images//quantity2.png>]
-Overfull \hbox (46.82407pt too wide) in paragraph at lines 125--136
-[] 
- []
-
-<chapters/notes/08/images//wg.png, id=1954, 752.8125pt x 438.63875pt>
+] [76]
+<chapters/notes/08/images//wg.png, id=1931, 752.8125pt x 438.63875pt>
 File: chapters/notes/08/images//wg.png Graphic file (type png)
 <use chapters/notes/08/images//wg.png>
 Package pdftex.def Info: chapters/notes/08/images//wg.png  used on input line 1
-42.
+26.
 (pdftex.def)             Requested size: 260.17464pt x 151.59825pt.
-<chapters/notes/08/images//case1a.png, id=1956, 548.0475pt x 392.46625pt>
-File: chapters/notes/08/images//case1a.png Graphic file (type png)
-<use chapters/notes/08/images//case1a.png>
-Package pdftex.def Info: chapters/notes/08/images//case1a.png  used on input li
-ne 153.
-(pdftex.def)             Requested size: 173.44534pt x 124.2084pt.
-<chapters/notes/08/images//case1b.png, id=1957, 681.54625pt x 388.45125pt>
-File: chapters/notes/08/images//case1b.png Graphic file (type png)
-<use chapters/notes/08/images//case1b.png>
-Package pdftex.def Info: chapters/notes/08/images//case1b.png  used on input li
-ne 153.
-(pdftex.def)             Requested size: 260.17464pt x 148.28871pt.
-
-Overfull \hbox (24.00002pt too wide) in paragraph at lines 152--156
-[][] 
- []
-
-[80 <./chapters/notes/08/images//wg.png>]
-<chapters/notes/08/images//case2.png, id=1964, 816.04875pt x 369.38pt>
-File: chapters/notes/08/images//case2.png Graphic file (type png)
-<use chapters/notes/08/images//case2.png>
-Package pdftex.def Info: chapters/notes/08/images//case2.png  used on input lin
-e 172.
-(pdftex.def)             Requested size: 303.53267pt x 137.3899pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[81 <./chapters/notes/08/images//case1a.png> <./chapters/notes/08/images//case1
-b.png> <./chapters/notes/08/images//case2.png>]
-<chapters/notes/08/images//time.png, id=1974, 568.1225pt x 337.26pt>
+ [77 <./chapters/notes/08/images//wg.png>]
+<chapters/notes/08/images//time.png, id=1942, 568.1225pt x 337.26pt>
 File: chapters/notes/08/images//time.png Graphic file (type png)
 <use chapters/notes/08/images//time.png>
 Package pdftex.def Info: chapters/notes/08/images//time.png  used on input line
- 193.
+ 149.
 (pdftex.def)             Requested size: 303.53267pt x 180.19301pt.
-)
-(./chapters/notes/09/extra-vescicles.tex [82 <./chapters/notes/08/images//time.
-png>]
+ [78 <./chapters/notes/08/images//time.png>]
+<chapters/notes/08/images//norm.png, id=1952, 459.7175pt x 351.3125pt>
+File: chapters/notes/08/images//norm.png Graphic file (type png)
+<use chapters/notes/08/images//norm.png>
+Package pdftex.def Info: chapters/notes/08/images//norm.png  used on input line
+ 170.
+(pdftex.def)             Requested size: 173.44534pt x 132.54594pt.
+<chapters/notes/08/images//quantity1.png, id=1954, 648.4225pt x 473.77pt>
+File: chapters/notes/08/images//quantity1.png Graphic file (type png)
+<use chapters/notes/08/images//quantity1.png>
+Package pdftex.def Info: chapters/notes/08/images//quantity1.png  used on input
+ line 182.
+(pdftex.def)             Requested size: 216.81pt x 158.41211pt.
+ [79 <./chapters/notes/08/images//norm.png> <./chapters/notes/08/images//quanti
+ty1.png>]
+<chapters/notes/08/images//quantity2.png, id=1964, 593.21625pt x 487.8225pt>
+File: chapters/notes/08/images//quantity2.png Graphic file (type png)
+<use chapters/notes/08/images//quantity2.png>
+Package pdftex.def Info: chapters/notes/08/images//quantity2.png  used on input
+ line 197.
+(pdftex.def)             Requested size: 303.53267pt x 249.61241pt.
+ [80 <./chapters/notes/08/images//quantity2.png>]
+<chapters/notes/08/images//case1a.png, id=1973, 548.0475pt x 392.46625pt>
+File: chapters/notes/08/images//case1a.png Graphic file (type png)
+<use chapters/notes/08/images//case1a.png>
+Package pdftex.def Info: chapters/notes/08/images//case1a.png  used on input li
+ne 244.
+(pdftex.def)             Requested size: 173.44534pt x 124.2084pt.
+<chapters/notes/08/images//case1b.png, id=1974, 681.54625pt x 388.45125pt>
+File: chapters/notes/08/images//case1b.png Graphic file (type png)
+<use chapters/notes/08/images//case1b.png>
+Package pdftex.def Info: chapters/notes/08/images//case1b.png  used on input li
+ne 244.
+(pdftex.def)             Requested size: 260.17464pt x 148.28871pt.
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 243--247
+[][] 
+ []
+
+[81 <./chapters/notes/08/images//case1a.png> <./chapters/notes/08/images//case1
+b.png>]
+<chapters/notes/08/images//case2.png, id=1985, 816.04875pt x 369.38pt>
+File: chapters/notes/08/images//case2.png Graphic file (type png)
+<use chapters/notes/08/images//case2.png>
+Package pdftex.def Info: chapters/notes/08/images//case2.png  used on input lin
+e 272.
+(pdftex.def)             Requested size: 303.53267pt x 137.3899pt.
+) (./chapters/notes/09/extra-vescicles.tex [82 <./chapters/notes/08/images//cas
+e2.png>]
 Chapter 9.
-<chapters/notes/09/images//ev1.png, id=1981, 997.7275pt x 478.78876pt>
+<chapters/notes/09/images//ev1.png, id=1994, 997.7275pt x 478.78876pt>
 File: chapters/notes/09/images//ev1.png Graphic file (type png)
 <use chapters/notes/09/images//ev1.png>
 Package pdftex.def Info: chapters/notes/09/images//ev1.png  used on input line 
@@ -1617,13 +1596,13 @@ i-cles re-leased from es-sen-tially all prokary-
 [83
 
  <./chapters/notes/09/images//ev1.png>]
-<chapters/notes/09/images//origin1.png, id=1990, 452.69125pt x 400.49625pt>
+<chapters/notes/09/images//origin1.png, id=2003, 452.69125pt x 400.49625pt>
 File: chapters/notes/09/images//origin1.png Graphic file (type png)
 <use chapters/notes/09/images//origin1.png>
 Package pdftex.def Info: chapters/notes/09/images//origin1.png  used on input l
 ine 39.
 (pdftex.def)             Requested size: 184.9429pt x 163.61786pt.
-<chapters/notes/09/images//origin2.png, id=1991, 430.60875pt x 439.6425pt>
+<chapters/notes/09/images//origin2.png, id=2004, 430.60875pt x 439.6425pt>
 File: chapters/notes/09/images//origin2.png Graphic file (type png)
 <use chapters/notes/09/images//origin2.png>
 Package pdftex.def Info: chapters/notes/09/images//origin2.png  used on input l
@@ -1631,7 +1610,7 @@ ine 39.
 (pdftex.def)             Requested size: 184.9429pt x 188.82791pt.
  [84 <./chapters/notes/09/images//origin1.png> <./chapters/notes/09/images//ori
 gin2.png>]
-<chapters/notes/09/images//cancer1.png, id=2001, 734.745pt x 374.90062pt>
+<chapters/notes/09/images//cancer1.png, id=2014, 734.745pt x 374.90062pt>
 File: chapters/notes/09/images//cancer1.png Graphic file (type png)
 <use chapters/notes/09/images//cancer1.png>
 Package pdftex.def Info: chapters/notes/09/images//cancer1.png  used on input l
@@ -1642,7 +1621,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--92
 
  []
 
-<chapters/notes/09/images//cancer2.png, id=2007, 762.85pt x 520.94624pt>
+<chapters/notes/09/images//cancer2.png, id=2020, 762.85pt x 520.94624pt>
 File: chapters/notes/09/images//cancer2.png Graphic file (type png)
 <use chapters/notes/09/images//cancer2.png>
 Package pdftex.def Info: chapters/notes/09/images//cancer2.png  used on input l
@@ -1654,13 +1633,13 @@ Chapter 10.
 [88
 
 ]
-<chapters/notes/10/images//cancerMet.png, id=2023, 500.87125pt x 538.01pt>
+<chapters/notes/10/images//cancerMet.png, id=2036, 500.87125pt x 538.01pt>
 File: chapters/notes/10/images//cancerMet.png Graphic file (type png)
 <use chapters/notes/10/images//cancerMet.png>
 Package pdftex.def Info: chapters/notes/10/images//cancerMet.png  used on input
  line 54.
 (pdftex.def)             Requested size: 216.81pt x 232.88315pt.
-<chapters/notes/10/images//methods.png, id=2024, 734.745pt x 369.38pt>
+<chapters/notes/10/images//methods.png, id=2037, 734.745pt x 369.38pt>
 File: chapters/notes/10/images//methods.png Graphic file (type png)
 <use chapters/notes/10/images//methods.png>
 Package pdftex.def Info: chapters/notes/10/images//methods.png  used on input l
@@ -1672,13 +1651,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
  []
 
 [90 <./chapters/notes/10/images//methods.png>]
-<chapters/notes/10/images//comp.png, id=2036, 804.00375pt x 428.60126pt>
+<chapters/notes/10/images//comp.png, id=2050, 804.00375pt x 428.60126pt>
 File: chapters/notes/10/images//comp.png Graphic file (type png)
 <use chapters/notes/10/images//comp.png>
 Package pdftex.def Info: chapters/notes/10/images//comp.png  used on input line
  129.
 (pdftex.def)             Requested size: 433.62pt x 231.15347pt.
-<chapters/notes/10/images//workflow.png, id=2037, 756.8275pt x 291.0875pt>
+<chapters/notes/10/images//workflow.png, id=2051, 756.8275pt x 291.0875pt>
 File: chapters/notes/10/images//workflow.png Graphic file (type png)
 <use chapters/notes/10/images//workflow.png>
 Package pdftex.def Info: chapters/notes/10/images//workflow.png  used on input 
@@ -1735,13 +1714,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: F139B1CEA5898D9C8B03D00E6997970B;47346.
+(rerunfilecheck)             Checksum: 3B2D521683FDE029F1EC1BCCB0B45D03;47463.
  ) 
 Here is how much of TeX's memory you used:
- 25183 strings out of 478238
- 471582 string characters out of 5850456
- 771952 words of memory out of 5000000
- 42391 multiletter control sequences out of 15000+600000
+ 25190 strings out of 478238
+ 471827 string characters out of 5850456
+ 771729 words of memory out of 5000000
+ 42387 multiletter control sequences out of 15000+600000
  489195 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,17n,82p,1158b,968s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1767,10 +1746,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share
 ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public
 /cm-super/sfti0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1
 000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on ./build/principal.pdf (123 pages, 9477105 bytes).
+Output written on ./build/principal.pdf (123 pages, 9478064 bytes).
 PDF statistics:
- 2407 PDF objects out of 2487 (max. 8388607)
- 2043 compressed objects within 21 object streams
- 529 named destinations out of 1000 (max. 500000)
+ 2421 PDF objects out of 2487 (max. 8388607)
+ 2057 compressed objects within 21 object streams
+ 540 named destinations out of 1000 (max. 500000)
  2361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

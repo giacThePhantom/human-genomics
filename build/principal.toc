@@ -186,18 +186,30 @@
 \contentsline {subsection}{\numberline {7.2.4}Minimal number of SNV for tumour identification}{73}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5}Comparison with other tumour callers}{74}{subsection.7.2.5}%
 \contentsline {chapter}{\numberline {8}Liquid biopsies in oncology}{75}{chapter.8}%
-\contentsline {section}{\numberline {8.1}General considerations}{75}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Issues in the interpretation of cfDNA data}{77}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Normalization on tumor content}{77}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Quantity of input material}{78}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}SNV detection in liquid biopsies}{79}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Requirements depend on the application}{80}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Whole genome vs targeted sequencing}{80}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Case studies}{80}{section.8.6}%
-\contentsline {subsection}{\numberline {8.6.1}Case I}{80}{subsection.8.6.1}%
-\contentsline {subsection}{\numberline {8.6.2}Case II}{81}{subsection.8.6.2}%
-\contentsline {section}{\numberline {8.7}Take-home message}{82}{section.8.7}%
-\contentsline {subsection}{\numberline {8.7.1}Challenges in the tracking of tumor evolution}{82}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.1}Introduction}{75}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Tracking tumour progression}{75}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Differences between tissue and liquid biopsies}{75}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}Liquid biopsies allow to perform a number of analysis}{76}{subsubsection.8.1.2.1}%
+\contentsline {subsubsection}{\numberline {8.1.2.2}Material availability}{76}{subsubsection.8.1.2.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.3}Tumour content}{76}{subsubsection.8.1.2.3}%
+\contentsline {subsubsection}{\numberline {8.1.2.4}Assessment of tumour ploidy}{76}{subsubsection.8.1.2.4}%
+\contentsline {subsection}{\numberline {8.1.3}Application-dependent requirements}{77}{subsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.3.1}Early tumour, MRD and recurrence detection}{77}{subsubsection.8.1.3.1}%
+\contentsline {subsubsection}{\numberline {8.1.3.2}Analysis of tumour dynamics, treatment response and analysis of the mechanisms of resistance}{77}{subsubsection.8.1.3.2}%
+\contentsline {subsubsection}{\numberline {8.1.3.3}Single biomarker assessment}{77}{subsubsection.8.1.3.3}%
+\contentsline {subsection}{\numberline {8.1.4}Whole-genome and targeted sequencing}{77}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Challenges in tracking tumour evolution with liquid biopsies}{78}{subsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.5.1}An example of similarity between two plasma samples between two different tumours}{78}{subsubsection.8.1.5.1}%
+\contentsline {section}{\numberline {8.2}Interpretation of cell free DNA data}{78}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Introduction}{78}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Normalization}{78}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Quantity of input material}{79}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}SNVs detection}{80}{subsection.8.2.4}%
+\contentsline {subsubsection}{\numberline {8.2.4.1}Technical problems}{80}{subsubsection.8.2.4.1}%
+\contentsline {subsubsection}{\numberline {8.2.4.2}Biological problems}{81}{subsubsection.8.2.4.2}%
+\contentsline {subsection}{\numberline {8.2.5}Two case studies}{81}{subsection.8.2.5}%
+\contentsline {subsubsection}{\numberline {8.2.5.1}Signal distribution in prostate cancer}{81}{subsubsection.8.2.5.1}%
+\contentsline {subsubsection}{\numberline {8.2.5.2}Non-AR driven castration resistance prostate cancer}{81}{subsubsection.8.2.5.2}%
 \contentsline {chapter}{\numberline {9}Extracellular vesicles}{83}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Definition}{83}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Characterization}{83}{section.9.2}%
