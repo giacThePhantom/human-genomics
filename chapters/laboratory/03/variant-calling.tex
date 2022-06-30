@@ -1,1 +1,93 @@
+\graphicspath{{chapters/laboratory/03/images/}}
 \chapter{Variant calling}
+
+\section{Introduction}
+
+	\subsection{Objective of variant calling}
+	The objective of variant calling is to compute allelic fractions across all positions.
+	Thresholds or basic statistics can be used to distinguish between genotypes.
+	The goal is to identify germline variants.
+	Quality thresholds can be added.
+
+	\subsection{Bayes' rule for variant calling}
+	Refined methods can find the genotype of each sample by calculating via Bayes' rule the probability of each possible genotype/
+	Let $P(G)$ be the prior of the genotype, $P(D|G)$ the likelihood of the genotype and $P(D|H)$ the haploid likelihood function.
+	Then, given $G = H_1H_2$ the diploid assumption, the Bayesian model is computed as:
+
+	$$\begin{cases}P(G|D) = \frac{P(G)P(D|G)}{\sum\limits_iP(G_i)P(D|G_i)}\\P(D|G) = \prod\limits_j\big(\frac{P(D_j|H_1)}{2} + \frac{P(D_j|H_2)}{2}\big)\end{cases}$$
+
+	Where:
+
+	$$P(D_j|H) = P(D_j|b)$$
+
+	Is a single base pileup and:
+
+	$$P(D_j|b) = \begin{cases}1-\epsilon_j & D_j = b\\\epsilon_j & D_j\neq b\end{cases}$$
+
+
+\section{Likelihood estimation for variant calling}
+The inference used as a gold standard relies on a likelihood function to estimate the probability of sample data given the proposed haplotype.
+The probability is computed by calculating the support of the alternative base based on quality.
+All diploid genotypes are considered at each base.
+The likelihood of genotype is computed using only pileup of bases and associated quality scores at a given locus.
+Only bases satisfying minimum base quality, mapping read quality, pair mapping quality or other quality parameter are considered.
+This approach can be implemented as a multi-sample calling, where it is possible to obtain joint estimates across samples.
+
+	\subsection{Available tools}
+	Available tools to perform this task are:
+
+	\begin{itemize}
+		\item Bcftools: bcftools mpileup -Ou -a DP -f human\_g1k\_v37.fasta Sample.sorted.bam | bcftools call -Ov -c -v $>$ Sample.BCF.vcf
+		\item GATK: java -jar GATK/GenomeAnalysisTK.jar -T UnifiedGenotyper -R human\_g1k\_v37.fasta -I Sample.sorted.bam -o Sample.GATK.vcf -L chr20.bed
+	\end{itemize}
+
+\section{VCF files}
+VCF is a text file format, most likely stored in a compressed matter, that contains meta-information lines, a header line and data lines, each containing information about a position in the genome.
+
+	\subsection{Composition}
+	The fileformat field is required and it should detail the VCF format version number.
+	Descriptions of field INFO, FILTER and FORMAT are optional but strongly encouraged.
+	The header line names $8$ fixed, mandatory columns:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item CHROM: chromosome.
+			\item POS: position.
+			\item ID: semi-colon separated list of unique identifiers.
+			\item REF: reference bases.
+			\item ALT: comma separated list of alternative non-reference alleles called on at least one of the samples.
+			\item QUAL: prhed-scaled quality score for the assertion made in ALT.
+			\item FILTER: pASS if the position has passed all filters.
+				"." when filters are not applied.
+			\item INFO: additional information.
+		\end{itemize}
+	\end{multicols}
+
+	Genotype data are followed by a FORMAT column header and an arbitrary number of sample IDs.
+	The header line is tab-delimited.
+
+	\subsection{Vcftools}
+	The package vcftools can be used to perform a number of operations on VCF files:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Filter out specific variants for quality, mean depth or allelic fraction.
+			\item Compare files.
+			\item Summarize variants.
+			\item Convert to different file types.
+			\item Validate and merge files.
+			\item Create intersections and subsets of variants.
+		\end{itemize}
+	\end{multicols}
+
+\section{A variant calling protocol}
+A variant calling protocol consists of two steps.
+In the first bcftools pileup provides the supported bases and their quality.
+The highest support is checked through a Bayesian model.
+A position with an alternative allele is reported in the sample VCF file.
+Then in the second step vcftools or GATK are used to produce a new VCF with the corresponding informations.
+GATK keeps more variants with respect to vcftools, but there is no method clearly better than the other.
+Usually the consensus is used to compare the output of the two tools and an intersection is built.
+Moreover the two tools show a lot of similarities in their output.
+Vcftools are more confident in making calls while GATK can introduce a portion of false positives.
+This can be reduced by increasing the filter on minimal coverage and reaching a set of more trustable parameters.
