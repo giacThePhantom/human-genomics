@@ -1,0 +1,141 @@
+\chapter{Data pre-processing}
+
+\section{Realignment}
+
+	\subsection{Introduction}
+	The identification of indels is not easy to be done by mappers.
+	In particular indels across the ends or in complex regions of reads are of difficult detection.
+	This generates some artefact mismatches, which if not corrected can introduce biases that propagates across the downstream analysis.
+	Realignment is an operation performed on BAM file in order to improve accuracy of other pre-processing steps.
+
+	\subsection{An example}
+	A typical situation in which realignment helps is one in which a small homopolymeric region is in the middle of two regions with consecutive SNPS.
+	Given the complexity the aligner is not able to identify an indel in that particolar region.
+	Because of this some artefacts will be found at the end of the reads.
+	The scoring function allow to accept an alignment even in the presence of gaps and mismatches.
+	In this case a misalignment could introduce mismatches, reducing the score of the alignment.
+
+	\subsection{Objective of realignment}
+	The objective of realignment is to identify regions hiding indels.
+	This process can be done in two steps:
+
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item Known sites collected in databases like $1000$ genomes and dbSNP are checked.
+			\item The CIGAR line gives information about the goodness of an alignment.
+				All reads are explored and regions where indels are present should be identified.
+				If this is not feasible the density of variation of quality at difference reads should be explored.
+				For example an high density of mismatches with respect to expectancy suggests the presence of an indel.
+		\end{enumerate}
+	\end{multicols}
+
+	\subsection{GATK}
+	GATK implements realignment considering the default CIGAR line and the density of variation to provide known indes.
+	To do so GATK considers each alignment and:
+
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item Inserts an indel and finds a better alignment with an alternative consensus sequence.
+			\item The score for that alternative consensus is computed as the total sum of the quality scores of mismatching bases.
+			\item If the score of the best alternative consensus is deemed significantly better by a LOD score the proposed alignment of the reads is accepted.
+		\end{enumerate}
+	\end{multicols}
+
+	\subsection{Protocol}
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Apply RealignedTargetCreator to the BAM file to identify which regions need to be realigned.
+				By default the tool uses the density criteria and the CIGAR one, but it is also possible to provide a file with a list of known sites.
+			\item IndelRealigner performs the actual realignment at the RTC target intervals using the same input files.
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{Realignment results}
+	When the new BAM file is created realigned reads change their CIGAR but maintain the original one with an OC tag.
+	Because of this it is easy to check how the realignment was performed.
+	Realignment is a useful step as position artefacts might lead to an incorrect correlation between a patient and pathogenic SNPs.
+
+\section{Recalibration}
+
+	\subsection{Introduction}
+	Base quality score recalibration involves assigning accurate confidence scores to each sequence.
+	Quality scores are critical for all the downstream analysis and systematic biases are a major contributor to bad calls.
+
+	\subsubsection{Dealing with systematic errors}
+	Systematic errors correlate with base call feature like:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Reported quality score.
+			\item Position within the read due to the machine cycle.
+			\item Sequence context due to the chemistry of sequencing.
+		\end{itemize}
+	\end{multicols}
+
+	The error distribution and how error varies with base call features can be computed empirically.
+	This process is made possible by looking at works per read groups, or entire lane of data.
+
+	\subsection{Computing empirical qualities}
+	Except for known variants any sequence mismatch represents an error.
+	The number of observation and the number of errors are taken into account as a function of the various covariates that give rise to systematic errors.
+
+		\subsubsection{Base quality score recalibration}
+		A PHRED scaled quality score is computed as:
+
+		$$\frac{\# of\ reference\ mismatches+1}{\# of\ observed\ bases +2}$$
+
+		Base quality score recalibration or BQRS is a method that adjust the PHRED quality scores to be more accurate by looking at every base in a BAM file.
+		To run BQSR an additional file is necessary to make the process aware of all known single nucleic polimoprhisms SNPs.
+		Each read base is grouped into separate group bins, as different sequencing machines may be calibrated differently.
+		Then the data is split in a read group by the quality scores.
+		Then BQSR compare the scores reported by the sequencing machines with the empirical scores derived from the empirical error counts.
+		An empirical PHRED score is computed as:
+
+		$$Q_{actual} = Q_{global} + \Delta all + \Delta readgroup + \Delta quality + \sum\limits_i^n \Delta covariate_i$$
+
+		Post-recalibration quality scores should fit the empirically-driven quality scores well, without obvious systematic biases.
+
+	\subsection{Protocol}
+	A typical process for base quality score recalibration is composed of $4$ steps:
+
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item BaseRecalibrator: model the error modes and recalibrate qualities.
+				Its inputs are a BAM file and the known sites.
+			\item PrintReads: write recalibrated data to a BAM file thanks to the recalibration table produced in the previous step.
+				Original qualities are retained with the OC flag.
+			\item The process is repeated to build the after model to evaluate remaining error.
+			\item AnalyzeCovariates: before and after plots are made based on recalibration tables.
+		\end{enumerate}
+	\end{multicols}
+
+\section{Marking duplicates}
+
+	\subsection{Introduction}
+	Duplicates are non-independent measurements of a sequence, as they are sampled from the exact same template of DNA, violating the assumptions of variant calling.
+	Errors in sample or library preparation will be propagated to all the duplicates.
+	Therefore, the best copy among all the duplicates should be taken to mitigate the effects of errors.
+
+	\subsection{Identification of duplicates}
+	Duplicates come from the same input DNA template, so they should have the same start position on reference.
+	This is even more true for paired end, in which both the reverse and the forward read should have the same starting position.
+	Duplicate sets are first identified, then the representative read based on base quality scores an other criteria is chosen for each set.
+
+		\subsubsection{Consideration on Borrow-Wheeler aligner}
+		Borrow-Wheeler aligner sometimes clip bases from the ends of the alignment, so fragments mapped to the reverse strand are specified by their $3'$ position instead of the $5'$.
+		SAM flags and CIGAR strings are needed to determine the unclipped $5'$ ends.
+
+	\subsection{Protocol}
+	Marking the duplicates can be done in two different ways:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item MarkDUplicates from Picard, the golden standard.
+			\item markdup from samtool.
+				It requires the addition of mate tags to the BAM file through the fixmate command.
+		\end{itemize}
+	\end{multicols}
+
+	The samtools command is faster than the Picard one as it exploits the Cigar of the mate read to correct with a simple iteration.
+	However the Picard command retains more reads because samtools' command removes all the reads that have a mae mapped to a different chromosome, removing in this way structural variants.

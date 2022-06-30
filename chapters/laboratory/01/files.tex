@@ -1,0 +1,142 @@
+\graphicspath{{chapters/laboratory/01/images/}}
+\chapter{Relevant file's formats}
+
+\section{FASTA format}
+FASTA files contain information about a sequence and its quality score.
+
+	\subsection{Components}
+	FASTA files are composed of:
+
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item A line beginning with $>$ followed by a sequence ID and a sequence description.
+			\item The sequence.
+			\item Quality scores for each base.
+		\end{enumerate}
+	\end{multicols}
+
+	A multi-fasta file is obtained as a simple concatenation of individual FASTA, with $>$ as the separator.
+
+	\subsection{Alphabet}
+	The alphabet of FASTA is built such that for DNA and RNA:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item $ATCG$ for the normal bases.
+			\item $N$ for an unknown base.
+			\item $R$ for either $A$ or $G$.
+			\item $Y$ for either $C$ or $T$.
+			\item For RNA $T$ is replaced by the $U$.
+		\end{itemize}
+	\end{multicols}
+
+	For Proteins:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Standard letter for standard amino acids.
+			\item $X$ for unknown amino acids.
+			\item $OBZJ$ for protein amino acid modifications.
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{DNA sequence quality}
+	DNA sequences have a quality value associated with each nucleotide.
+	This score is a measure of the reliability for each base, as it is derived from the physical process of sequencing.
+	The quality score is formalized by the Phred software for the human genome project: let $P$ be the probability of a base call being incorrect, then the quality score $Q$ is computed as:
+
+	$$Q = -10\log P \Leftrightarrow P = 10^{-\frac{Q}{10}}$$
+
+\section{FASTQ format}
+FASTQ files are similar as FASTA files, their differences being that the start symbol is an $@$ instead of an $>$, and the quality score is separated from the sequence with a $+$ followed by a blank line.
+Moreover the quality encoding uses letters or symbols to represent numbers.
+
+	\subsection{Data compression}
+	FASTQ files are very big, as they are typically more than $10GB$.
+	Therefore they will often be compressed with \emph{gzip}, in order to get to $\le 20\%$ of their original size.
+
+\section{SAM and BAM formats}
+
+	\subsection{SAM files}
+	SAM files contain information about on the alignment of each read, optimized for readability and sequential access.
+
+		\subsubsection{COmposition}
+		They are composed by an header containing information about:
+
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Version.
+				\item Reference sequences.
+				\item Read groups with platform information.
+				\item Processing history.
+			\end{itemize}
+		\end{multicols}
+
+		Following the header alignment records are found, containing:
+
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Query name.
+				\item Flag.
+				\item Mapping quality.
+				\item CIGAR.
+				\item Sequence.
+				\item Quality.
+			\end{itemize}
+		\end{multicols}
+
+	\subsection{BAM files}
+	BAM files are binary SAM files, compressed and optimized for size.
+	They may be sorted and indexed at the location query.
+	A sorted and indexed BAM is the default for an analysis pipeline and it is converted into a SAM file only to allow visualization.
+
+	\subsection{Operation with SAM and BAM files}
+	Samtools by default expects a BAM file as input and will produce a SAM file as output.
+	Alignment results are typically stored as a sorted and indexed BAM file.
+	Aligners produce SAM files.
+
+		\subsubsection{Converting from SAM to BAM}
+
+		\begin{enumerate}
+			\item samtools view -Sbh Normal.sam > Normal.bam
+			\item samtools sort Normal.bam > Normal.sorted.bam
+			\item samtools index Normal.sorted.bam
+		\end{enumerate}
+
+		The file is sorted so that read pairs are next to one another, typically with the same order as the FASTQ file.
+		Sorting will depend on the next analysis method to be used.
+
+		\subsubsection{Filtering}
+		Before performing downstream analysis, the BAM file must be cleaned and processed to eliminate biases:
+
+		\begin{enumerate}
+			\item Count reads: samtools view -c Normal.sorted.bam
+			\item Reads mapping to reverse strand $f$: samtools view -c -f 16 Normal.sorted.bam
+			\item Reads mapping to forward strand $F$: samtools view -c -F 16 Normal.sorted.bam
+			\item Mapping quality $>30$: samtools view -c -q $30$ Normal.sorted.bam
+		\end{enumerate}
+
+		\subsubsection{Explore statistics}
+		Different operations are allowed to explore statistics of a bam file:
+
+		\begin{enumerate}
+			\item General statistics: samtools stats Normal.sorted.bam > Stats.txt
+			\item Single base sum coverage per region: samtools bedcov CG100.bed Normal.sorted.bam > BEDCov.txt
+			\item Single base depth: samtools depth -b CG100.bed Normal.sorted.bam > BEDDepth.txt
+		\end{enumerate}
+
+		\subsubsection{Mpileup}
+		Mpileup allow to compute the pileup, the number of reads aligned to a reference sequence in a region:
+
+		\begin{enumerate}
+			\item samtools mpileup -r 1:3410684-3410690 Normal.sorted.bam
+			\item samtools mpileup -r 1:3410684-3410690 -q 60 -Q 60 Normal.sorted.bam
+		\end{enumerate}
+
+		The different read support for a specific gene could be checked through:
+
+		\begin{center}
+			samtools bedcov CG100.bed Normal.sorted.bam | grep "TP53"
+		\end{center}
+
+		The numbers obtained from this commands should always be normalized with the total number of reads.
