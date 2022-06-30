@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  30 JUN 2022 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  30 JUN 2022 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,14 +908,14 @@ Chapter 1.
 [8
 
 ]
-<chapters/notes/01/images//relevance.png, id=1265, 794.97pt x 738.76pt>
+<chapters/notes/01/images//relevance.png, id=1290, 794.97pt x 738.76pt>
 File: chapters/notes/01/images//relevance.png Graphic file (type png)
 <use chapters/notes/01/images//relevance.png>
 Package pdftex.def Info: chapters/notes/01/images//relevance.png  used on input
  line 80.
 (pdftex.def)             Requested size: 216.81pt x 201.47437pt.
  [9] [10 <./chapters/notes/01/images//relevance.png>]
-<chapters/notes/01/images//ADME.png, id=1287, 688.5725pt x 289.08pt>
+<chapters/notes/01/images//ADME.png, id=1312, 688.5725pt x 289.08pt>
 File: chapters/notes/01/images//ADME.png Graphic file (type png)
 <use chapters/notes/01/images//ADME.png>
 Package pdftex.def Info: chapters/notes/01/images//ADME.png  used on input line
@@ -927,7 +927,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
  []
 
 [11 <./chapters/notes/01/images//ADME.png>] [12]
-<chapters/notes/01/images//igv.png, id=1312, 1500.60625pt x 823.075pt>
+<chapters/notes/01/images//igv.png, id=1338, 1500.60625pt x 823.075pt>
 File: chapters/notes/01/images//igv.png Graphic file (type png)
 <use chapters/notes/01/images//igv.png>
 Package pdftex.def Info: chapters/notes/01/images//igv.png  used on input line 
@@ -936,7 +936,7 @@ Package pdftex.def Info: chapters/notes/01/images//igv.png  used on input line
 )
 (./chapters/notes/02/coverage.tex [13 <./chapters/notes/01/images//igv.png>]
 Chapter 2.
-<chapters/notes/02/images/seq_phys.png, id=1326, 861.2175pt x 409.53pt>
+<chapters/notes/02/images/seq_phys.png, id=1351, 861.2175pt x 409.53pt>
 File: chapters/notes/02/images/seq_phys.png Graphic file (type png)
 <use chapters/notes/02/images/seq_phys.png>
 Package pdftex.def Info: chapters/notes/02/images/seq_phys.png  used on input l
@@ -945,21 +945,21 @@ ine 33.
 [14
 
 ] [15 <./chapters/notes/02/images/seq_phys.png>]
-<chapters/notes/02/images/local_coverage.png, id=1340, 1309.89375pt x 355.3275p
+<chapters/notes/02/images/local_coverage.png, id=1365, 1309.89375pt x 355.3275p
 t>
 File: chapters/notes/02/images/local_coverage.png Graphic file (type png)
 <use chapters/notes/02/images/local_coverage.png>
 Package pdftex.def Info: chapters/notes/02/images/local_coverage.png  used on i
 nput line 71.
 (pdftex.def)             Requested size: 216.81pt x 58.81084pt.
-<chapters/notes/02/images/local_coverage1.png, id=1342, 1307.88625pt x 252.945p
+<chapters/notes/02/images/local_coverage1.png, id=1367, 1307.88625pt x 252.945p
 t>
 File: chapters/notes/02/images/local_coverage1.png Graphic file (type png)
 <use chapters/notes/02/images/local_coverage1.png>
 Package pdftex.def Info: chapters/notes/02/images/local_coverage1.png  used on 
 input line 85.
 (pdftex.def)             Requested size: 216.81pt x 41.93095pt.
-<chapters/notes/02/images/local_coverage2.png, id=1344, 1300.86pt x 321.2pt>
+<chapters/notes/02/images/local_coverage2.png, id=1369, 1300.86pt x 321.2pt>
 File: chapters/notes/02/images/local_coverage2.png Graphic file (type png)
 <use chapters/notes/02/images/local_coverage2.png>
 Package pdftex.def Info: chapters/notes/02/images/local_coverage2.png  used on 
@@ -972,14 +972,14 @@ Chapter 3.
 [18
 
 ] [19]
-<chapters/notes/03/images/linkage.png, id=1380, 728.7225pt x 460.72125pt>
+<chapters/notes/03/images/linkage.png, id=1405, 728.7225pt x 460.72125pt>
 File: chapters/notes/03/images/linkage.png Graphic file (type png)
 <use chapters/notes/03/images/linkage.png>
 Package pdftex.def Info: chapters/notes/03/images/linkage.png  used on input li
 ne 107.
 (pdftex.def)             Requested size: 303.53267pt x 191.89876pt.
  [20 <./chapters/notes/03/images/linkage.png>]
-<chapters/notes/03/images/SNP.PNG, id=1390, 890.32625pt x 610.28pt>
+<chapters/notes/03/images/SNP.PNG, id=1415, 890.32625pt x 610.28pt>
 File: chapters/notes/03/images/SNP.PNG Graphic file (type png)
 <use chapters/notes/03/images/SNP.PNG>
 Package pdftex.def Info: chapters/notes/03/images/SNP.PNG  used on input line 1
@@ -991,7 +991,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<chapters/notes/03/images/loci.PNG, id=1412, 939.51pt x 478.78876pt>
+<chapters/notes/03/images/loci.PNG, id=1438, 939.51pt x 478.78876pt>
 File: chapters/notes/03/images/loci.PNG Graphic file (type png)
 <use chapters/notes/03/images/loci.PNG>
 Package pdftex.def Info: chapters/notes/03/images/loci.PNG  used on input line 
@@ -999,21 +999,21 @@ Package pdftex.def Info: chapters/notes/03/images/loci.PNG  used on input line
 (pdftex.def)             Requested size: 303.53267pt x 154.68398pt.
 
 [23]
-<chapters/notes/03/images/loci2.PNG, id=1425, 954.56625pt x 604.2575pt>
+<chapters/notes/03/images/loci2.PNG, id=1450, 954.56625pt x 604.2575pt>
 File: chapters/notes/03/images/loci2.PNG Graphic file (type png)
 <use chapters/notes/03/images/loci2.PNG>
 Package pdftex.def Info: chapters/notes/03/images/loci2.PNG  used on input line
  267.
 (pdftex.def)             Requested size: 303.53267pt x 192.14006pt.
  [24 <./chapters/notes/03/images/loci.png>]
-<chapters/notes/03/images/loci3.PNG, id=1433, 863.225pt x 541.02126pt>
+<chapters/notes/03/images/loci3.PNG, id=1458, 863.225pt x 541.02126pt>
 File: chapters/notes/03/images/loci3.PNG Graphic file (type png)
 <use chapters/notes/03/images/loci3.PNG>
 Package pdftex.def Info: chapters/notes/03/images/loci3.PNG  used on input line
  283.
 (pdftex.def)             Requested size: 303.53267pt x 190.23534pt.
  [25 <./chapters/notes/03/images/loci2.png>]
-<chapters/notes/03/images/selected.PNG, id=1443, 1006.76125pt x 789.95125pt>
+<chapters/notes/03/images/selected.PNG, id=1468, 1006.76125pt x 789.95125pt>
 File: chapters/notes/03/images/selected.PNG Graphic file (type png)
 <use chapters/notes/03/images/selected.PNG>
 Package pdftex.def Info: chapters/notes/03/images/selected.PNG  used on input l
@@ -1025,26 +1025,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
 []\T1/cmr/m/n/10 In sil-ico val-i-da-tion on in-de-pen-dent
  []
 
-<chapters/notes/03/images/double_test.PNG, id=1461, 954.56625pt x 483.8075pt>
+<chapters/notes/03/images/double_test.PNG, id=1486, 954.56625pt x 483.8075pt>
 File: chapters/notes/03/images/double_test.PNG Graphic file (type png)
 <use chapters/notes/03/images/double_test.PNG>
 Package pdftex.def Info: chapters/notes/03/images/double_test.PNG  used on inpu
 t line 348.
 (pdftex.def)             Requested size: 303.53267pt x 153.8397pt.
 [28 <./chapters/notes/03/images/double_test.png>]
-<chapters/notes/03/images/50k.png, id=1474, 1050.92625pt x 601.24625pt>
+<chapters/notes/03/images/50k.png, id=1499, 1050.92625pt x 601.24625pt>
 File: chapters/notes/03/images/50k.png Graphic file (type png)
 <use chapters/notes/03/images/50k.png>
 Package pdftex.def Info: chapters/notes/03/images/50k.png  used on input line 3
 77.
 (pdftex.def)             Requested size: 173.44534pt x 99.22887pt.
-<chapters/notes/03/images/54_snps.PNG, id=1475, 1014.79124pt x 625.33624pt>
+<chapters/notes/03/images/54_snps.PNG, id=1500, 1014.79124pt x 625.33624pt>
 File: chapters/notes/03/images/54_snps.PNG Graphic file (type png)
 <use chapters/notes/03/images/54_snps.PNG>
 Package pdftex.def Info: chapters/notes/03/images/54_snps.PNG  used on input li
 ne 377.
 (pdftex.def)             Requested size: 173.44534pt x 106.87827pt.
-<chapters/notes/03/images/relatedness.PNG, id=1478, 701.62125pt x 583.17876pt>
+<chapters/notes/03/images/relatedness.PNG, id=1503, 701.62125pt x 583.17876pt>
 File: chapters/notes/03/images/relatedness.PNG Graphic file (type png)
 <use chapters/notes/03/images/relatedness.PNG>
 Package pdftex.def Info: chapters/notes/03/images/relatedness.PNG  used on inpu
@@ -1052,14 +1052,14 @@ t line 407.
 (pdftex.def)             Requested size: 303.53267pt x 252.30144pt.
  [29 <./chapters/notes/03/images/50k.png> <./chapters/notes/03/images/54_snps.p
 ng>] [30 <./chapters/notes/03/images/relatedness.png>]
-<chapters/notes/03/images/population.PNG, id=1497, 1012.78375pt x 784.9325pt>
+<chapters/notes/03/images/population.PNG, id=1522, 1012.78375pt x 784.9325pt>
 File: chapters/notes/03/images/population.PNG Graphic file (type png)
 <use chapters/notes/03/images/population.PNG>
 Package pdftex.def Info: chapters/notes/03/images/population.PNG  used on input
  line 451.
 (pdftex.def)             Requested size: 303.53267pt x 235.24202pt.
  [31 <./chapters/notes/03/images/population.png>]
-<chapters/notes/03/images/swiss.PNG, id=1505, 754.82pt x 770.88pt>
+<chapters/notes/03/images/swiss.PNG, id=1530, 754.82pt x 770.88pt>
 File: chapters/notes/03/images/swiss.PNG Graphic file (type png)
 <use chapters/notes/03/images/swiss.PNG>
 Package pdftex.def Info: chapters/notes/03/images/swiss.PNG  used on input line
@@ -1071,19 +1071,19 @@ Chapter 4.
 [33
 
 ]
-<chapters/notes/04/images/usagesIGV.PNG, id=1520, 700.11563pt x 397.485pt>
+<chapters/notes/04/images/usagesIGV.PNG, id=1545, 700.11563pt x 397.485pt>
 File: chapters/notes/04/images/usagesIGV.PNG Graphic file (type png)
 <use chapters/notes/04/images/usagesIGV.PNG>
 Package pdftex.def Info: chapters/notes/04/images/usagesIGV.PNG  used on input 
 line 55.
 (pdftex.def)             Requested size: 346.89731pt x 196.95279pt.
-<chapters/notes/04/images/RNAseqAlign.PNG, id=1522, 380.92313pt x 110.4125pt>
+<chapters/notes/04/images/RNAseqAlign.PNG, id=1547, 380.92313pt x 110.4125pt>
 File: chapters/notes/04/images/RNAseqAlign.PNG Graphic file (type png)
 <use chapters/notes/04/images/RNAseqAlign.PNG>
 Package pdftex.def Info: chapters/notes/04/images/RNAseqAlign.PNG  used on inpu
 t line 66.
 (pdftex.def)             Requested size: 303.53267pt x 87.98305pt.
-<chapters/notes/04/images/sashamiplot.PNG, id=1524, 409.02812pt x 161.60374pt>
+<chapters/notes/04/images/sashamiplot.PNG, id=1549, 409.02812pt x 161.60374pt>
 File: chapters/notes/04/images/sashamiplot.PNG Graphic file (type png)
 <use chapters/notes/04/images/sashamiplot.PNG>
 Package pdftex.def Info: chapters/notes/04/images/sashamiplot.PNG  used on inpu
@@ -1098,20 +1098,20 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:variants' on page 35 undefined on input line 84.
 
-<chapters/notes/04/images/variantsView.PNG, id=1536, 728.22063pt x 274.52562pt>
+<chapters/notes/04/images/variantsView.PNG, id=1562, 728.22063pt x 274.52562pt>
 
 File: chapters/notes/04/images/variantsView.PNG Graphic file (type png)
 <use chapters/notes/04/images/variantsView.PNG>
 Package pdftex.def Info: chapters/notes/04/images/variantsView.PNG  used on inp
 ut line 88.
 (pdftex.def)             Requested size: 390.25534pt x 147.11899pt.
-<chapters/notes/04/images/IGVview.PNG, id=1539, 355.82938pt x 245.41687pt>
+<chapters/notes/04/images/IGVview.PNG, id=1565, 355.82938pt x 245.41687pt>
 File: chapters/notes/04/images/IGVview.PNG Graphic file (type png)
 <use chapters/notes/04/images/IGVview.PNG>
 Package pdftex.def Info: chapters/notes/04/images/IGVview.PNG  used on input li
 ne 103.
 (pdftex.def)             Requested size: 216.81pt x 149.5318pt.
-<chapters/notes/04/images/TileView.PNG, id=1540, 412.03937pt x 340.27126pt>
+<chapters/notes/04/images/TileView.PNG, id=1566, 412.03937pt x 340.27126pt>
 File: chapters/notes/04/images/TileView.PNG Graphic file (type png)
 <use chapters/notes/04/images/TileView.PNG>
 Package pdftex.def Info: chapters/notes/04/images/TileView.PNG  used on input l
@@ -1128,7 +1128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-<chapters/notes/04/images/IGVReadsView.PNG, id=1552, 722.19812pt x 376.40625pt>
+<chapters/notes/04/images/IGVReadsView.PNG, id=1578, 722.19812pt x 376.40625pt>
 
 File: chapters/notes/04/images/IGVReadsView.PNG Graphic file (type png)
 <use chapters/notes/04/images/IGVReadsView.PNG>
@@ -1137,7 +1137,7 @@ ut line 131.
 (pdftex.def)             Requested size: 303.53267pt x 158.19867pt.
 [36 <./chapters/notes/04/images/IGVview.PNG> <./chapters/notes/04/images/TileVi
 ew.PNG>]
-<chapters/notes/04/images/igvtools.PNG, id=1565, 446.16687pt x 188.705pt>
+<chapters/notes/04/images/igvtools.PNG, id=1590, 446.16687pt x 188.705pt>
 File: chapters/notes/04/images/igvtools.PNG Graphic file (type png)
 <use chapters/notes/04/images/igvtools.PNG>
 Package pdftex.def Info: chapters/notes/04/images/igvtools.PNG  used on input l
@@ -1145,13 +1145,13 @@ ine 151.
 (pdftex.def)             Requested size: 260.17464pt x 110.04211pt.
  [37 <./chapters/notes/04/images/IGVReadsView.PNG> <./chapters/notes/04/images/
 igvtools.PNG>]
-<chapters/notes/04/images/inversion.png, id=1575, 934.49126pt x 417.56pt>
+<chapters/notes/04/images/inversion.png, id=1600, 934.49126pt x 417.56pt>
 File: chapters/notes/04/images/inversion.png Graphic file (type png)
 <use chapters/notes/04/images/inversion.png>
 Package pdftex.def Info: chapters/notes/04/images/inversion.png  used on input 
 line 205.
 (pdftex.def)             Requested size: 216.81pt x 96.87779pt.
-<chapters/notes/04/images/inversion_igv.png, id=1576, 667.49374pt x 474.77374pt
+<chapters/notes/04/images/inversion_igv.png, id=1601, 667.49374pt x 474.77374pt
 >
 File: chapters/notes/04/images/inversion_igv.png Graphic file (type png)
 <use chapters/notes/04/images/inversion_igv.png>
@@ -1165,13 +1165,13 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 204--208
 
 [38 <./chapters/notes/04/images/inversion.png> <./chapters/notes/04/images/inve
 rsion_igv.png>]
-<chapters/notes/04/images/tandem.png, id=1585, 927.465pt x 416.55624pt>
+<chapters/notes/04/images/tandem.png, id=1610, 927.465pt x 416.55624pt>
 File: chapters/notes/04/images/tandem.png Graphic file (type png)
 <use chapters/notes/04/images/tandem.png>
 Package pdftex.def Info: chapters/notes/04/images/tandem.png  used on input lin
 e 223.
 (pdftex.def)             Requested size: 216.81pt x 97.37587pt.
-<chapters/notes/04/images/tandem_igv.png, id=1586, 701.62125pt x 470.75874pt>
+<chapters/notes/04/images/tandem_igv.png, id=1611, 701.62125pt x 470.75874pt>
 File: chapters/notes/04/images/tandem_igv.png Graphic file (type png)
 <use chapters/notes/04/images/tandem_igv.png>
 Package pdftex.def Info: chapters/notes/04/images/tandem_igv.png  used on input
@@ -1182,13 +1182,13 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 222--226
 [][] 
  []
 
-<chapters/notes/04/images/inverted.png, id=1588, 972.63374pt x 470.75874pt>
+<chapters/notes/04/images/inverted.png, id=1613, 972.63374pt x 470.75874pt>
 File: chapters/notes/04/images/inverted.png Graphic file (type png)
 <use chapters/notes/04/images/inverted.png>
 Package pdftex.def Info: chapters/notes/04/images/inverted.png  used on input l
 ine 239.
 (pdftex.def)             Requested size: 216.81pt x 104.93205pt.
-<chapters/notes/04/images/inverted_igv.png, id=1589, 717.68124pt x 493.845pt>
+<chapters/notes/04/images/inverted_igv.png, id=1614, 717.68124pt x 493.845pt>
 File: chapters/notes/04/images/inverted_igv.png Graphic file (type png)
 <use chapters/notes/04/images/inverted_igv.png>
 Package pdftex.def Info: chapters/notes/04/images/inverted_igv.png  used on inp
@@ -1202,32 +1202,32 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 238--242
 [39 <./chapters/notes/04/images/tandem.png> <./chapters/notes/04/images/tandem_
 igv.png> <./chapters/notes/04/images/inverted.png> <./chapters/notes/04/images/
 inverted_igv.png>]
-<chapters/notes/04/images/pos1.PNG, id=1601, 533.49312pt x 235.37938pt>
+<chapters/notes/04/images/pos1.PNG, id=1626, 533.49312pt x 235.37938pt>
 File: chapters/notes/04/images/pos1.PNG Graphic file (type png)
 <use chapters/notes/04/images/pos1.PNG>
 Package pdftex.def Info: chapters/notes/04/images/pos1.PNG  used on input line 
 259.
 (pdftex.def)             Requested size: 346.89731pt x 153.05583pt.
-<chapters/notes/04/images/pos2.PNG, id=1603, 269.50688pt x 280.54813pt>
+<chapters/notes/04/images/pos2.PNG, id=1628, 269.50688pt x 280.54813pt>
 File: chapters/notes/04/images/pos2.PNG Graphic file (type png)
 <use chapters/notes/04/images/pos2.PNG>
 Package pdftex.def Info: chapters/notes/04/images/pos2.PNG  used on input line 
 270.
 (pdftex.def)             Requested size: 260.17464pt x 270.83853pt.
  [40 <./chapters/notes/04/images/pos1.PNG>]
-<chapters/notes/04/images/cov3.PNG, id=1613, 404.51125pt x 40.15pt>
+<chapters/notes/04/images/cov3.PNG, id=1638, 404.51125pt x 40.15pt>
 File: chapters/notes/04/images/cov3.PNG Graphic file (type png)
 <use chapters/notes/04/images/cov3.PNG>
 Package pdftex.def Info: chapters/notes/04/images/cov3.PNG  used on input line 
 281.
 (pdftex.def)             Requested size: 433.62pt x 43.0397pt.
-<chapters/notes/04/images/pos3.PNG, id=1614, 681.54625pt x 241.90375pt>
+<chapters/notes/04/images/pos3.PNG, id=1639, 681.54625pt x 241.90375pt>
 File: chapters/notes/04/images/pos3.PNG Graphic file (type png)
 <use chapters/notes/04/images/pos3.PNG>
 Package pdftex.def Info: chapters/notes/04/images/pos3.PNG  used on input line 
 289.
 (pdftex.def)             Requested size: 216.81pt x 76.95306pt.
-<chapters/notes/04/images/pos3passages.jpg, id=1615, 1473.505pt x 743.77875pt>
+<chapters/notes/04/images/pos3passages.jpg, id=1640, 1473.505pt x 743.77875pt>
 File: chapters/notes/04/images/pos3passages.jpg Graphic file (type jpg)
 <use chapters/notes/04/images/pos3passages.jpg>
 Package pdftex.def Info: chapters/notes/04/images/pos3passages.jpg  used on inp
@@ -1245,21 +1245,21 @@ Chapter 5.
 [43
 
 ]
-<chapters/notes/05/images/heterogeneity.png, id=1637, 487.8225pt x 211.79124pt>
+<chapters/notes/05/images/heterogeneity.png, id=1662, 487.8225pt x 211.79124pt>
 
 File: chapters/notes/05/images/heterogeneity.png Graphic file (type png)
 <use chapters/notes/05/images/heterogeneity.png>
 Package pdftex.def Info: chapters/notes/05/images/heterogeneity.png  used on in
 put line 48.
 (pdftex.def)             Requested size: 303.53267pt x 131.78104pt.
-<chapters/notes/05/images/branching.png, id=1638, 729.72626pt x 361.35pt>
+<chapters/notes/05/images/branching.png, id=1663, 729.72626pt x 361.35pt>
 File: chapters/notes/05/images/branching.png Graphic file (type png)
 <use chapters/notes/05/images/branching.png>
 Package pdftex.def Info: chapters/notes/05/images/branching.png  used on input 
 line 68.
 (pdftex.def)             Requested size: 303.53267pt x 150.30482pt.
  [44 <./chapters/notes/05/images/heterogeneity.png>]
-<chapters/notes/05/images/treatment.png, id=1647, 619.31375pt x 368.37625pt>
+<chapters/notes/05/images/treatment.png, id=1672, 619.31375pt x 368.37625pt>
 File: chapters/notes/05/images/treatment.png Graphic file (type png)
 <use chapters/notes/05/images/treatment.png>
 Package pdftex.def Info: chapters/notes/05/images/treatment.png  used on input 
@@ -1267,14 +1267,14 @@ line 85.
 (pdftex.def)             Requested size: 260.17464pt x 154.76193pt.
  [45 <./chapters/notes/05/images/branching.png> <./chapters/notes/05/images/tre
 atment.png>]
-<chapters/notes/05/images/response.png, id=1659, 509.905pt x 417.56pt>
+<chapters/notes/05/images/response.png, id=1684, 509.905pt x 417.56pt>
 File: chapters/notes/05/images/response.png Graphic file (type png)
 <use chapters/notes/05/images/response.png>
 Package pdftex.def Info: chapters/notes/05/images/response.png  used on input l
 ine 96.
 (pdftex.def)             Requested size: 303.53267pt x 248.57552pt.
  [46 <./chapters/notes/05/images/response.png>]
-<chapters/notes/05/images/af_properties.png, id=1669, 460.72125pt x 302.12875pt
+<chapters/notes/05/images/af_properties.png, id=1695, 460.72125pt x 302.12875pt
 >
 File: chapters/notes/05/images/af_properties.png Graphic file (type png)
 <use chapters/notes/05/images/af_properties.png>
@@ -1282,13 +1282,13 @@ Package pdftex.def Info: chapters/notes/05/images/af_properties.png  used on in
 put line 158.
 (pdftex.def)             Requested size: 216.81pt x 142.1757pt.
  [47 <./chapters/notes/05/images/af_properties.png>]
-<chapters/notes/05/images/a.png, id=1677, 1090.0725pt x 634.37pt>
+<chapters/notes/05/images/a.png, id=1703, 1090.0725pt x 634.37pt>
 File: chapters/notes/05/images/a.png Graphic file (type png)
 <use chapters/notes/05/images/a.png>
 Package pdftex.def Info: chapters/notes/05/images/a.png  used on input line 182
 .
 (pdftex.def)             Requested size: 346.89731pt x 201.87001pt.
-<chapters/notes/05/images/b.png, id=1678, 927.465pt x 439.6425pt>
+<chapters/notes/05/images/b.png, id=1704, 927.465pt x 439.6425pt>
 File: chapters/notes/05/images/b.png Graphic file (type png)
 <use chapters/notes/05/images/b.png>
 Package pdftex.def Info: chapters/notes/05/images/b.png  used on input line 183
@@ -1300,13 +1300,13 @@ Package pdftex.def Info: chapters/notes/05/images/b.png  used on input line 183
 LaTeX Warning: Reference `fig:cov_beta' on page 50 undefined on input line 216.
 
 
-<chapters/notes/05/images/beta.png, id=1694, 275.0275pt x 211.79124pt>
+<chapters/notes/05/images/beta.png, id=1719, 275.0275pt x 211.79124pt>
 File: chapters/notes/05/images/beta.png Graphic file (type png)
 <use chapters/notes/05/images/beta.png>
 Package pdftex.def Info: chapters/notes/05/images/beta.png  used on input line 
 220.
 (pdftex.def)             Requested size: 173.44534pt x 133.56815pt.
-<chapters/notes/05/images/sample1.png, id=1695, 661.47125pt x 204.765pt>
+<chapters/notes/05/images/sample1.png, id=1720, 661.47125pt x 204.765pt>
 File: chapters/notes/05/images/sample1.png Graphic file (type png)
 <use chapters/notes/05/images/sample1.png>
 Package pdftex.def Info: chapters/notes/05/images/sample1.png  used on input li
@@ -1314,20 +1314,20 @@ ne 234.
 (pdftex.def)             Requested size: 303.53267pt x 93.9587pt.
 [50 <./chapters/notes/05/images/beta.png> <./chapters/notes/05/images/sample1.p
 ng>]
-<chapters/notes/05/images/sample2.png, id=1711, 668.4975pt x 197.73875pt>
+<chapters/notes/05/images/sample2.png, id=1736, 668.4975pt x 197.73875pt>
 File: chapters/notes/05/images/sample2.png Graphic file (type png)
 <use chapters/notes/05/images/sample2.png>
 Package pdftex.def Info: chapters/notes/05/images/sample2.png  used on input li
 ne 248.
 (pdftex.def)             Requested size: 303.53267pt x 89.78722pt.
-<chapters/notes/05/images/adm.png, id=1714, 331.2375pt x 421.575pt>
+<chapters/notes/05/images/adm.png, id=1739, 331.2375pt x 421.575pt>
 File: chapters/notes/05/images/adm.png Graphic file (type png)
 <use chapters/notes/05/images/adm.png>
 Package pdftex.def Info: chapters/notes/05/images/adm.png  used on input line 2
 66.
 (pdftex.def)             Requested size: 216.81pt x 275.93744pt.
  [51 <./chapters/notes/05/images/sample2.png>]
-<chapters/notes/05/images/PR_2741.png, id=1723, 514.92375pt x 442.65375pt>
+<chapters/notes/05/images/PR_2741.png, id=1748, 514.92375pt x 442.65375pt>
 File: chapters/notes/05/images/PR_2741.png Graphic file (type png)
 <use chapters/notes/05/images/PR_2741.png>
 Package pdftex.def Info: chapters/notes/05/images/PR_2741.png  used on input li
@@ -1339,13 +1339,13 @@ Chapter 6.
 [54
 
 ]
-<chapters/notes/06/images//image2.png, id=1741, 523.9575pt x 400.49625pt>
+<chapters/notes/06/images//image2.png, id=1766, 523.9575pt x 400.49625pt>
 File: chapters/notes/06/images//image2.png Graphic file (type png)
 <use chapters/notes/06/images//image2.png>
 Package pdftex.def Info: chapters/notes/06/images//image2.png  used on input li
 ne 57.
 (pdftex.def)             Requested size: 216.81pt x 165.72006pt.
-<chapters/notes/06/images//image3.png, id=1742, 522.95375pt x 401.5pt>
+<chapters/notes/06/images//image3.png, id=1767, 522.95375pt x 401.5pt>
 File: chapters/notes/06/images//image3.png Graphic file (type png)
 <use chapters/notes/06/images//image3.png>
 Package pdftex.def Info: chapters/notes/06/images//image3.png  used on input li
@@ -1358,13 +1358,13 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 56--60
 
 [55 <./chapters/notes/06/images//image2.png> <./chapters/notes/06/images//image
 3.png>]
-<chapters/notes/06/images//image4.png, id=1752, 328.22626pt x 227.85126pt>
+<chapters/notes/06/images//image4.png, id=1777, 328.22626pt x 227.85126pt>
 File: chapters/notes/06/images//image4.png Graphic file (type png)
 <use chapters/notes/06/images//image4.png>
 Package pdftex.def Info: chapters/notes/06/images//image4.png  used on input li
 ne 111.
 (pdftex.def)             Requested size: 216.81pt x 150.50745pt.
-<chapters/notes/06/images//image5.png, id=1753, 216.81pt x 218.8175pt>
+<chapters/notes/06/images//image5.png, id=1778, 216.81pt x 218.8175pt>
 File: chapters/notes/06/images//image5.png Graphic file (type png)
 <use chapters/notes/06/images//image5.png>
 Package pdftex.def Info: chapters/notes/06/images//image5.png  used on input li
@@ -1376,7 +1376,7 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 110--114
  []
 
 [56]
-<chapters/notes/06/images//image6.png, id=1759, 364.36125pt x 240.9pt>
+<chapters/notes/06/images//image6.png, id=1784, 364.36125pt x 240.9pt>
 File: chapters/notes/06/images//image6.png Graphic file (type png)
 <use chapters/notes/06/images//image6.png>
 Package pdftex.def Info: chapters/notes/06/images//image6.png  used on input li
@@ -1384,7 +1384,7 @@ ne 147.
 (pdftex.def)             Requested size: 216.81pt x 143.34277pt.
  [57 <./chapters/notes/06/images//image4.png> <./chapters/notes/06/images//imag
 e5.png>]
-<chapters/notes/06/images//pathways.png, id=1767, 430.60875pt x 327.2225pt>
+<chapters/notes/06/images//pathways.png, id=1792, 430.60875pt x 327.2225pt>
 File: chapters/notes/06/images//pathways.png Graphic file (type png)
 <use chapters/notes/06/images//pathways.png>
 Package pdftex.def Info: chapters/notes/06/images//pathways.png  used on input 
@@ -1392,14 +1392,14 @@ line 166.
 (pdftex.def)             Requested size: 173.44534pt x 131.80539pt.
  [58 <./chapters/notes/06/images//image6.png> <./chapters/notes/06/images//path
 ways.png>]
-<chapters/notes/06/images//image7.png, id=1777, 286.06876pt x 408.52625pt>
+<chapters/notes/06/images//image7.png, id=1802, 286.06876pt x 408.52625pt>
 File: chapters/notes/06/images//image7.png Graphic file (type png)
 <use chapters/notes/06/images//image7.png>
 Package pdftex.def Info: chapters/notes/06/images//image7.png  used on input li
 ne 200.
 (pdftex.def)             Requested size: 173.44534pt x 247.69211pt.
  [59] [60 <./chapters/notes/06/images//image7.png>]
-<chapters/notes/06/images//image8.png, id=1796, 316.18124pt x 420.57124pt>
+<chapters/notes/06/images//image8.png, id=1822, 316.18124pt x 420.57124pt>
 File: chapters/notes/06/images//image8.png Graphic file (type png)
 <use chapters/notes/06/images//image8.png>
 Package pdftex.def Info: chapters/notes/06/images//image8.png  used on input li
@@ -1407,40 +1407,40 @@ ne 233.
 (pdftex.def)             Requested size: 173.44534pt x 230.71167pt.
 
 [61 <./chapters/notes/06/images//image8.png>]
-<chapters/notes/06/images//image9.png, id=1804, 266.9975pt x 327.2225pt>
+<chapters/notes/06/images//image9.png, id=1830, 266.9975pt x 327.2225pt>
 File: chapters/notes/06/images//image9.png Graphic file (type png)
 <use chapters/notes/06/images//image9.png>
 Package pdftex.def Info: chapters/notes/06/images//image9.png  used on input li
 ne 256.
 (pdftex.def)             Requested size: 216.81pt x 265.72282pt.
-<chapters/notes/06/images//image10.png, id=1807, 317.185pt x 326.21875pt>
+<chapters/notes/06/images//image10.png, id=1833, 317.185pt x 326.21875pt>
 File: chapters/notes/06/images//image10.png Graphic file (type png)
 <use chapters/notes/06/images//image10.png>
 Package pdftex.def Info: chapters/notes/06/images//image10.png  used on input l
 ine 280.
 (pdftex.def)             Requested size: 216.81pt x 222.99059pt.
  [62 <./chapters/notes/06/images//image9.png>]
-<chapters/notes/06/images//image11.png, id=1817, 402.50375pt x 561.09625pt>
+<chapters/notes/06/images//image11.png, id=1842, 402.50375pt x 561.09625pt>
 File: chapters/notes/06/images//image11.png Graphic file (type png)
 <use chapters/notes/06/images//image11.png>
 Package pdftex.def Info: chapters/notes/06/images//image11.png  used on input l
 ine 299.
 (pdftex.def)             Requested size: 216.81pt x 302.23404pt.
  [63 <./chapters/notes/06/images//image10.png>]
-<chapters/notes/06/images//image12.png, id=1825, 703.62875pt x 320.19624pt>
+<chapters/notes/06/images//image12.png, id=1850, 703.62875pt x 320.19624pt>
 File: chapters/notes/06/images//image12.png Graphic file (type png)
 <use chapters/notes/06/images//image12.png>
 Package pdftex.def Info: chapters/notes/06/images//image12.png  used on input l
 ine 314.
 (pdftex.def)             Requested size: 216.81pt x 98.65884pt.
  [64 <./chapters/notes/06/images//image11.png>]
-<chapters/notes/06/images//image13.png, id=1833, 356.33125pt x 343.2825pt>
+<chapters/notes/06/images//image13.png, id=1858, 356.33125pt x 343.2825pt>
 File: chapters/notes/06/images//image13.png Graphic file (type png)
 <use chapters/notes/06/images//image13.png>
 Package pdftex.def Info: chapters/notes/06/images//image13.png  used on input l
 ine 334.
 (pdftex.def)             Requested size: 130.08731pt x 125.32063pt.
-<chapters/notes/06/images//image14.png, id=1834, 165.2355pt x 144.54pt>
+<chapters/notes/06/images//image14.png, id=1859, 165.2355pt x 144.54pt>
 File: chapters/notes/06/images//image14.png Graphic file (type png)
 <use chapters/notes/06/images//image14.png>
 Package pdftex.def Info: chapters/notes/06/images//image14.png  used on input l
@@ -1448,7 +1448,7 @@ ine 347.
 (pdftex.def)             Requested size: 216.81pt x 189.65532pt.
  [65 <./chapters/notes/06/images//image12.png> <./chapters/notes/06/images//ima
 ge13.png>]
-<chapters/notes/06/images//image15.png, id=1845, 721.69624pt x 580.1675pt>
+<chapters/notes/06/images//image15.png, id=1870, 721.69624pt x 580.1675pt>
 File: chapters/notes/06/images//image15.png Graphic file (type png)
 <use chapters/notes/06/images//image15.png>
 Package pdftex.def Info: chapters/notes/06/images//image15.png  used on input l
@@ -1456,7 +1456,7 @@ ine 360.
 (pdftex.def)             Requested size: 303.53267pt x 244.00508pt.
  [66 <./chapters/notes/06/images//image14.png>] [67 <./chapters/notes/06/images
 //image15.png>]
-<chapters/notes/06/images//image16.png, id=1861, 913.4125pt x 682.55pt>
+<chapters/notes/06/images//image16.png, id=1886, 913.4125pt x 682.55pt>
 File: chapters/notes/06/images//image16.png Graphic file (type png)
 <use chapters/notes/06/images//image16.png>
 Package pdftex.def Info: chapters/notes/06/images//image16.png  used on input l
@@ -1466,7 +1466,7 @@ ine 398.
 (./chapters/notes/07/tumor_evolution3.tex [68 <./chapters/notes/06/images//imag
 e16.png>] [69]
 Chapter 7.
-<chapters/notes/07/images//quiet_genome.png, id=1874, 845.1575pt x 525.965pt>
+<chapters/notes/07/images//quiet_genome.png, id=1899, 845.1575pt x 525.965pt>
 File: chapters/notes/07/images//quiet_genome.png Graphic file (type png)
 <use chapters/notes/07/images//quiet_genome.png>
 Package pdftex.def Info: chapters/notes/07/images//quiet_genome.png  used on in
@@ -1475,13 +1475,13 @@ put line 15.
 [70
 
  <./chapters/notes/07/images//quiet_genome.png>]
-<chapters/notes/07/images//SNVs.png, id=1882, 182.6825pt x 377.41pt>
+<chapters/notes/07/images//SNVs.png, id=1907, 182.6825pt x 377.41pt>
 File: chapters/notes/07/images//SNVs.png Graphic file (type png)
 <use chapters/notes/07/images//SNVs.png>
 Package pdftex.def Info: chapters/notes/07/images//SNVs.png  used on input line
  53.
 (pdftex.def)             Requested size: 86.72267pt x 179.16219pt.
-<chapters/notes/07/images//peaks.png, id=1883, 550.055pt x 366.36874pt>
+<chapters/notes/07/images//peaks.png, id=1908, 550.055pt x 366.36874pt>
 File: chapters/notes/07/images//peaks.png Graphic file (type png)
 <use chapters/notes/07/images//peaks.png>
 Package pdftex.def Info: chapters/notes/07/images//peaks.png  used on input lin
@@ -1489,14 +1489,14 @@ e 53.
 (pdftex.def)             Requested size: 216.81pt x 144.4094pt.
  [71 <./chapters/notes/07/images//SNVs.png> <./chapters/notes/07/images//peaks.
 png>]
-<chapters/notes/07/images//tpes.png, id=1893, 1077.02374pt x 363.3575pt>
+<chapters/notes/07/images//tpes.png, id=1918, 1077.02374pt x 363.3575pt>
 File: chapters/notes/07/images//tpes.png Graphic file (type png)
 <use chapters/notes/07/images//tpes.png>
 Package pdftex.def Info: chapters/notes/07/images//tpes.png  used on input line
  95.
 (pdftex.def)             Requested size: 303.53267pt x 102.40472pt.
  [72 <./chapters/notes/07/images//tpes.png>]
-<chapters/notes/07/images//comparative.png, id=1901, 560.0925pt x 344.28625pt>
+<chapters/notes/07/images//comparative.png, id=1926, 560.0925pt x 344.28625pt>
 File: chapters/notes/07/images//comparative.png Graphic file (type png)
 <use chapters/notes/07/images//comparative.png>
 Package pdftex.def Info: chapters/notes/07/images//comparative.png  used on inp
@@ -1518,27 +1518,27 @@ Underfull \hbox (badness 4543) in paragraph at lines 29--29
 [75
 
 ] [76]
-<chapters/notes/08/images//wg.png, id=1931, 752.8125pt x 438.63875pt>
+<chapters/notes/08/images//wg.png, id=1956, 752.8125pt x 438.63875pt>
 File: chapters/notes/08/images//wg.png Graphic file (type png)
 <use chapters/notes/08/images//wg.png>
 Package pdftex.def Info: chapters/notes/08/images//wg.png  used on input line 1
 26.
 (pdftex.def)             Requested size: 260.17464pt x 151.59825pt.
  [77 <./chapters/notes/08/images//wg.png>]
-<chapters/notes/08/images//time.png, id=1942, 568.1225pt x 337.26pt>
+<chapters/notes/08/images//time.png, id=1967, 568.1225pt x 337.26pt>
 File: chapters/notes/08/images//time.png Graphic file (type png)
 <use chapters/notes/08/images//time.png>
 Package pdftex.def Info: chapters/notes/08/images//time.png  used on input line
  149.
 (pdftex.def)             Requested size: 303.53267pt x 180.19301pt.
  [78 <./chapters/notes/08/images//time.png>]
-<chapters/notes/08/images//norm.png, id=1952, 459.7175pt x 351.3125pt>
+<chapters/notes/08/images//norm.png, id=1977, 459.7175pt x 351.3125pt>
 File: chapters/notes/08/images//norm.png Graphic file (type png)
 <use chapters/notes/08/images//norm.png>
 Package pdftex.def Info: chapters/notes/08/images//norm.png  used on input line
  170.
 (pdftex.def)             Requested size: 173.44534pt x 132.54594pt.
-<chapters/notes/08/images//quantity1.png, id=1954, 648.4225pt x 473.77pt>
+<chapters/notes/08/images//quantity1.png, id=1979, 648.4225pt x 473.77pt>
 File: chapters/notes/08/images//quantity1.png Graphic file (type png)
 <use chapters/notes/08/images//quantity1.png>
 Package pdftex.def Info: chapters/notes/08/images//quantity1.png  used on input
@@ -1546,20 +1546,20 @@ Package pdftex.def Info: chapters/notes/08/images//quantity1.png  used on input
 (pdftex.def)             Requested size: 216.81pt x 158.41211pt.
  [79 <./chapters/notes/08/images//norm.png> <./chapters/notes/08/images//quanti
 ty1.png>]
-<chapters/notes/08/images//quantity2.png, id=1964, 593.21625pt x 487.8225pt>
+<chapters/notes/08/images//quantity2.png, id=1989, 593.21625pt x 487.8225pt>
 File: chapters/notes/08/images//quantity2.png Graphic file (type png)
 <use chapters/notes/08/images//quantity2.png>
 Package pdftex.def Info: chapters/notes/08/images//quantity2.png  used on input
  line 197.
 (pdftex.def)             Requested size: 303.53267pt x 249.61241pt.
  [80 <./chapters/notes/08/images//quantity2.png>]
-<chapters/notes/08/images//case1a.png, id=1973, 548.0475pt x 392.46625pt>
+<chapters/notes/08/images//case1a.png, id=1998, 548.0475pt x 392.46625pt>
 File: chapters/notes/08/images//case1a.png Graphic file (type png)
 <use chapters/notes/08/images//case1a.png>
 Package pdftex.def Info: chapters/notes/08/images//case1a.png  used on input li
 ne 244.
 (pdftex.def)             Requested size: 173.44534pt x 124.2084pt.
-<chapters/notes/08/images//case1b.png, id=1974, 681.54625pt x 388.45125pt>
+<chapters/notes/08/images//case1b.png, id=1999, 681.54625pt x 388.45125pt>
 File: chapters/notes/08/images//case1b.png Graphic file (type png)
 <use chapters/notes/08/images//case1b.png>
 Package pdftex.def Info: chapters/notes/08/images//case1b.png  used on input li
@@ -1572,7 +1572,7 @@ Overfull \hbox (24.00002pt too wide) in paragraph at lines 243--247
 
 [81 <./chapters/notes/08/images//case1a.png> <./chapters/notes/08/images//case1
 b.png>]
-<chapters/notes/08/images//case2.png, id=1985, 816.04875pt x 369.38pt>
+<chapters/notes/08/images//case2.png, id=2010, 816.04875pt x 369.38pt>
 File: chapters/notes/08/images//case2.png Graphic file (type png)
 <use chapters/notes/08/images//case2.png>
 Package pdftex.def Info: chapters/notes/08/images//case2.png  used on input lin
@@ -1581,132 +1581,144 @@ e 272.
 ) (./chapters/notes/09/extra-vescicles.tex [82 <./chapters/notes/08/images//cas
 e2.png>]
 Chapter 9.
-<chapters/notes/09/images//ev1.png, id=1994, 997.7275pt x 478.78876pt>
+
+Overfull \hbox (0.16296pt too wide) in paragraph at lines 7--8
+\T1/cmr/m/n/10 Extracellular vesi-cles are membrane-enclosed nanoscale par-ti-c
+les re-leased from es-sen-tially all prokary-
+ []
+
+<chapters/notes/09/images//ev1.png, id=2019, 997.7275pt x 478.78876pt>
 File: chapters/notes/09/images//ev1.png Graphic file (type png)
 <use chapters/notes/09/images//ev1.png>
 Package pdftex.def Info: chapters/notes/09/images//ev1.png  used on input line 
-16.
+15.
 (pdftex.def)             Requested size: 216.81pt x 104.04073pt.
-
-Overfull \hbox (3.49548pt too wide) in paragraph at lines 8--19
-\T1/cmr/m/n/10 ^^PExtracellular vesi-cles are membrane-enclosed nanoscale par-t
-i-cles re-leased from es-sen-tially all prokary-
- []
-
 [83
 
  <./chapters/notes/09/images//ev1.png>]
-<chapters/notes/09/images//origin1.png, id=2003, 452.69125pt x 400.49625pt>
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[]\T1/cmr/m/n/10 Adhesion
+ []
+
+<chapters/notes/09/images//origin1.png, id=2030, 452.69125pt x 400.49625pt>
 File: chapters/notes/09/images//origin1.png Graphic file (type png)
 <use chapters/notes/09/images//origin1.png>
 Package pdftex.def Info: chapters/notes/09/images//origin1.png  used on input l
-ine 39.
+ine 94.
 (pdftex.def)             Requested size: 184.9429pt x 163.61786pt.
-<chapters/notes/09/images//origin2.png, id=2004, 430.60875pt x 439.6425pt>
+<chapters/notes/09/images//origin2.png, id=2031, 430.60875pt x 439.6425pt>
 File: chapters/notes/09/images//origin2.png Graphic file (type png)
 <use chapters/notes/09/images//origin2.png>
 Package pdftex.def Info: chapters/notes/09/images//origin2.png  used on input l
-ine 39.
+ine 94.
 (pdftex.def)             Requested size: 184.9429pt x 188.82791pt.
- [84 <./chapters/notes/09/images//origin1.png> <./chapters/notes/09/images//ori
-gin2.png>]
-<chapters/notes/09/images//cancer1.png, id=2014, 734.745pt x 374.90062pt>
+[84] [85 <./chapters/notes/09/images//origin1.png> <./chapters/notes/09/images/
+/origin2.png>]
+<chapters/notes/09/images//cancer1.png, id=2056, 734.745pt x 374.90062pt>
 File: chapters/notes/09/images//cancer1.png Graphic file (type png)
 <use chapters/notes/09/images//cancer1.png>
 Package pdftex.def Info: chapters/notes/09/images//cancer1.png  used on input l
-ine 77.
+ine 170.
 (pdftex.def)             Requested size: 216.81pt x 110.62332pt.
- [85]
-Underfull \hbox (badness 10000) in paragraph at lines 86--92
-
- []
-
-<chapters/notes/09/images//cancer2.png, id=2020, 762.85pt x 520.94624pt>
+ [86 <./chapters/notes/09/images//cancer1.png>]
+<chapters/notes/09/images//cancer2.png, id=2067, 762.85pt x 520.94624pt>
 File: chapters/notes/09/images//cancer2.png Graphic file (type png)
 <use chapters/notes/09/images//cancer2.png>
 Package pdftex.def Info: chapters/notes/09/images//cancer2.png  used on input l
-ine 95.
+ine 199.
 (pdftex.def)             Requested size: 216.81pt x 148.05788pt.
-[86 <./chapters/notes/09/images//cancer1.png> <./chapters/notes/09/images//canc
-er2.png>]) (./chapters/notes/10/methylation.tex [87]
+ [87 <./chapters/notes/09/images//cancer2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+[]\T1/cmr/m/n/10 Ultracentrifugation (UCFG): heav-i-est
+ []
+
+<chapters/notes/09/images//supervised_devo.png, id=2076, 881.2925pt x 412.54124
+pt>
+File: chapters/notes/09/images//supervised_devo.png Graphic file (type png)
+<use chapters/notes/09/images//supervised_devo.png>
+Package pdftex.def Info: chapters/notes/09/images//supervised_devo.png  used on
+ input line 255.
+(pdftex.def)             Requested size: 303.53267pt x 142.08768pt.
+<chapters/notes/09/images//unsupervised_deco.png, id=2078, 872.25874pt x 344.28
+625pt>
+File: chapters/notes/09/images//unsupervised_deco.png Graphic file (type png)
+<use chapters/notes/09/images//unsupervised_deco.png>
+Package pdftex.def Info: chapters/notes/09/images//unsupervised_deco.png  used 
+on input line 265.
+(pdftex.def)             Requested size: 303.53267pt x 119.80328pt.
+[88 <./chapters/notes/09/images//supervised_devo.png>])
+(./chapters/notes/10/methylation.tex [89 <./chapters/notes/09/images//unsupervi
+sed_deco.png>]
 Chapter 10.
-[88
+[90
 
 ]
-<chapters/notes/10/images//cancerMet.png, id=2036, 500.87125pt x 538.01pt>
+<chapters/notes/10/images//cancerMet.png, id=2102, 500.87125pt x 538.01pt>
 File: chapters/notes/10/images//cancerMet.png Graphic file (type png)
 <use chapters/notes/10/images//cancerMet.png>
 Package pdftex.def Info: chapters/notes/10/images//cancerMet.png  used on input
- line 54.
+ line 56.
 (pdftex.def)             Requested size: 216.81pt x 232.88315pt.
-<chapters/notes/10/images//methods.png, id=2037, 734.745pt x 369.38pt>
+ [91 <./chapters/notes/10/images//cancerMet.png>]
+<chapters/notes/10/images//methods.png, id=2112, 734.745pt x 369.38pt>
 File: chapters/notes/10/images//methods.png Graphic file (type png)
 <use chapters/notes/10/images//methods.png>
 Package pdftex.def Info: chapters/notes/10/images//methods.png  used on input l
-ine 81.
+ine 87.
 (pdftex.def)             Requested size: 346.89731pt x 174.39769pt.
- [89 <./chapters/notes/10/images//cancerMet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
-
- []
-
-[90 <./chapters/notes/10/images//methods.png>]
-<chapters/notes/10/images//comp.png, id=2050, 804.00375pt x 428.60126pt>
+ [92 <./chapters/notes/10/images//methods.png>]
+<chapters/notes/10/images//comp.png, id=2123, 804.00375pt x 428.60126pt>
 File: chapters/notes/10/images//comp.png Graphic file (type png)
 <use chapters/notes/10/images//comp.png>
 Package pdftex.def Info: chapters/notes/10/images//comp.png  used on input line
- 129.
+ 124.
 (pdftex.def)             Requested size: 433.62pt x 231.15347pt.
-<chapters/notes/10/images//workflow.png, id=2051, 756.8275pt x 291.0875pt>
+<chapters/notes/10/images//workflow.png, id=2125, 756.8275pt x 291.0875pt>
 File: chapters/notes/10/images//workflow.png Graphic file (type png)
 <use chapters/notes/10/images//workflow.png>
 Package pdftex.def Info: chapters/notes/10/images//workflow.png  used on input 
-line 150.
+line 133.
 (pdftex.def)             Requested size: 346.89731pt x 133.42216pt.
- [91 <./chapters/notes/10/images//comp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[92 <./chapters/notes/10/images//workflow.png>]) [93] [94
+ [93 <./chapters/notes/10/images//comp.png>] [94 <./chapters/notes/10/images//w
+orkflow.png>]) [95] [96
 
 ]
 (./chapters/papers/01/role-non-coding-cancer.tex
 Chapter 11.
-[95
+[97
 
-] [96] [97] [98]) (./chapters/papers/02/cancer-genomics-2-gen-seq.tex
-[99] [100]
+] [98] [99] [100]) (./chapters/papers/02/cancer-genomics-2-gen-seq.tex
+[101] [102]
 Chapter 12.
-[101
+[103
 
-] [102] [103]) (./chapters/papers/03/igv.tex [104] [105]
+] [104] [105]) (./chapters/papers/03/igv.tex [106] [107]
 Chapter 13.
-) (./chapters/papers/04/tumour-heterogeneity-resistance.tex [106
+) (./chapters/papers/04/tumour-heterogeneity-resistance.tex [108
 
 ]
 Chapter 14.
-[107
+[109
 
-] [108] [109]) (./chapters/papers/05/clonal-hierarchy.tex [110] [111]
+] [110] [111]) (./chapters/papers/05/clonal-hierarchy.tex [112] [113]
 Chapter 15.
-[112
+[114
 
-] [113]
+] [115]
 Overfull \hbox (7.99419pt too wide) in paragraph at lines 81--81
 []\T1/cmr/bx/n/12 Comparative anal-y-sis re-veals dif-fer-ent mech-a-nisms of t
 u-mour dereg-
  []
 
-[114] [115] [116]) (./chapters/papers/06/tpes.tex [117]
+[116] [117] [118]) (./chapters/papers/06/tpes.tex [119]
 Chapter 16.
-) (./chapters/papers/07/spia.tex [118
+) (./chapters/papers/07/spia.tex [120
 
-] [119]
+] [121]
 Chapter 17.
-[120
+[122
 
-]) [121] [122] (./build/principal.aux)
+]) [123] [124] (./build/principal.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1714,13 +1726,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 3B2D521683FDE029F1EC1BCCB0B45D03;47463.
+(rerunfilecheck)             Checksum: 04D697AD6E914E4DBF58A6BE4FD766A3;48879.
  ) 
 Here is how much of TeX's memory you used:
- 25190 strings out of 478238
- 471827 string characters out of 5850456
- 771729 words of memory out of 5000000
- 42387 multiletter control sequences out of 15000+600000
+ 25260 strings out of 478238
+ 473520 string characters out of 5850456
+ 771653 words of memory out of 5000000
+ 42407 multiletter control sequences out of 15000+600000
  489195 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,17n,82p,1158b,968s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1746,10 +1758,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share
 ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public
 /cm-super/sfti0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1
 000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on ./build/principal.pdf (123 pages, 9478064 bytes).
+Output written on ./build/principal.pdf (125 pages, 9685256 bytes).
 PDF statistics:
- 2421 PDF objects out of 2487 (max. 8388607)
- 2057 compressed objects within 21 object streams
- 540 named destinations out of 1000 (max. 500000)
- 2361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2516 PDF objects out of 2984 (max. 8388607)
+ 2145 compressed objects within 22 object streams
+ 588 named destinations out of 1000 (max. 500000)
+ 2411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
