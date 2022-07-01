@@ -353,96 +353,112 @@
 \contentsline {subsubsection}{\numberline {16.2.2.2}Tumour does not match normal}{115}{subsubsection.16.2.2.2}%
 \contentsline {subsection}{\numberline {16.2.3}Filtering}{116}{subsection.16.2.3}%
 \contentsline {chapter}{\numberline {17}Somatic copy number calling}{117}{chapter.17}%
-\contentsline {part}{III\hspace {1em}Papers}{118}{part.3}%
-\contentsline {chapter}{\numberline {18}Role of non-coding sequence variants in cancer}{119}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Abstract}{119}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Introduction}{119}{subsection.18.1.1}%
-\contentsline {section}{\numberline {18.2}Genomic sequence variants}{119}{section.18.2}%
-\contentsline {section}{\numberline {18.3}Non-coding element annotation}{120}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Cis regulatory regions}{120}{subsection.18.3.1}%
-\contentsline {subsection}{\numberline {18.3.2}Distal regulatory elements}{120}{subsection.18.3.2}%
-\contentsline {subsection}{\numberline {18.3.3}RNA-seq}{120}{subsection.18.3.3}%
-\contentsline {subsection}{\numberline {18.3.4}Transcribed pseudogenes}{120}{subsection.18.3.4}%
-\contentsline {subsection}{\numberline {18.3.5}Evolutionary conservation}{121}{subsection.18.3.5}%
-\contentsline {section}{\numberline {18.4}Roles for somatic variants in cancer}{121}{section.18.4}%
-\contentsline {subsection}{\numberline {18.4.1}Gain of TF-binding sites}{121}{subsection.18.4.1}%
-\contentsline {subsection}{\numberline {18.4.2}Fusion events due to genomic rearrangements}{121}{subsection.18.4.2}%
-\contentsline {subsection}{\numberline {18.4.3}ncRNAs and their binding sites}{121}{subsection.18.4.3}%
-\contentsline {subsection}{\numberline {18.4.4}Role of pseudogenes in modulating the expression of a parental gene}{122}{subsection.18.4.4}%
-\contentsline {section}{\numberline {18.5}Roles for germline variants in cancer}{122}{section.18.5}%
-\contentsline {subsection}{\numberline {18.5.1}Promoter mutations}{122}{subsection.18.5.1}%
-\contentsline {subsection}{\numberline {18.5.2}SNPs in enhancers}{122}{subsection.18.5.2}%
-\contentsline {subsection}{\numberline {18.5.3}Variants in introns}{122}{subsection.18.5.3}%
-\contentsline {subsection}{\numberline {18.5.4}SNPs in ncRNA and their binding sites}{122}{subsection.18.5.4}%
-\contentsline {subsection}{\numberline {18.5.5}Others}{122}{subsection.18.5.5}%
-\contentsline {section}{\numberline {18.6}Interplay between germline and somatic variants}{122}{section.18.6}%
-\contentsline {section}{\numberline {18.7}Computational methods for identifying variants}{123}{section.18.7}%
-\contentsline {section}{\numberline {18.8}Experimental approaches for functional validation}{123}{section.18.8}%
-\contentsline {chapter}{\numberline {19}Advances in understanding cancer genomics through second-generation sequencing}{125}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Abstract}{125}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}Introduction}{125}{subsection.19.1.1}%
-\contentsline {section}{\numberline {19.2}Cancer-specific consideration}{125}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}Characteristics of cancer samples for genomic analysis}{126}{subsection.19.2.1}%
-\contentsline {subsection}{\numberline {19.2.2}Structural variability of cancer genomes}{126}{subsection.19.2.2}%
-\contentsline {section}{\numberline {19.3}Experimental approaches}{126}{section.19.3}%
-\contentsline {subsection}{\numberline {19.3.1}Whole genome sequencing}{126}{subsection.19.3.1}%
-\contentsline {subsection}{\numberline {19.3.2}Exome sequencing}{126}{subsection.19.3.2}%
-\contentsline {subsection}{\numberline {19.3.3}Transcriptome sequencing}{127}{subsection.19.3.3}%
-\contentsline {section}{\numberline {19.4}Detecting classes of genome alterations}{127}{section.19.4}%
-\contentsline {subsection}{\numberline {19.4.1}Somatic nucleotide substitutions and small insertion and deletion mutations}{127}{subsection.19.4.1}%
-\contentsline {subsection}{\numberline {19.4.2}Copy number}{127}{subsection.19.4.2}%
-\contentsline {subsection}{\numberline {19.4.3}Chromosomal rearrangements}{127}{subsection.19.4.3}%
-\contentsline {subsection}{\numberline {19.4.4}Microbe-discovery methods}{128}{subsection.19.4.4}%
-\contentsline {section}{\numberline {19.5}Computational issues}{128}{section.19.5}%
-\contentsline {subsection}{\numberline {19.5.1}Alignment and assembly}{128}{subsection.19.5.1}%
-\contentsline {subsection}{\numberline {19.5.2}mutations detection}{128}{subsection.19.5.2}%
-\contentsline {subsection}{\numberline {19.5.3}Validation of mutation and rearrangement calls}{128}{subsection.19.5.3}%
-\contentsline {chapter}{\numberline {20}Integrative genomics viewer}{130}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Introduction}{130}{section.20.1}%
-\contentsline {chapter}{\numberline {21}Tumour heterogeneity and resistance to cancer therapies}{131}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Abstract}{131}{section.21.1}%
-\contentsline {subsection}{\numberline {21.1.1}Introduction}{131}{subsection.21.1.1}%
-\contentsline {section}{\numberline {21.2}Causes of intratumoral heterogeneity}{131}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Genomic instability}{131}{subsection.21.2.1}%
-\contentsline {subsection}{\numberline {21.2.2}The clonal evolution and selection hypothesis}{132}{subsection.21.2.2}%
-\contentsline {section}{\numberline {21.3}The spectrum of tumour heterogeneity}{132}{section.21.3}%
-\contentsline {subsection}{\numberline {21.3.1}Spatial heterogeneity}{132}{subsection.21.3.1}%
-\contentsline {subsubsection}{\numberline {21.3.1.1}Heterogeneity at a single disease site}{132}{subsubsection.21.3.1.1}%
-\contentsline {subsubsection}{\numberline {21.3.1.2}Comparison of spatially distinct disease sites}{132}{subsubsection.21.3.1.2}%
-\contentsline {subsection}{\numberline {21.3.2}Temporal heterogeneity}{133}{subsection.21.3.2}%
-\contentsline {subsubsection}{\numberline {21.3.2.1}Genomic complexity might increase with exposure to targeted therapies}{133}{subsubsection.21.3.2.1}%
-\contentsline {subsubsection}{\numberline {21.3.2.2}Longitudinal sampling provides insight into temporal heterogeneity}{133}{subsubsection.21.3.2.2}%
-\contentsline {subsubsection}{\numberline {21.3.2.3}Residual drug-tolerant cells can foster temporal heterogeneity}{133}{subsubsection.21.3.2.3}%
-\contentsline {section}{\numberline {21.4}Noninvasive monitoring of heterogeneity}{134}{section.21.4}%
-\contentsline {subsection}{\numberline {21.4.1}Analysis of ctDNA}{134}{subsection.21.4.1}%
-\contentsline {section}{\numberline {21.5}Overcoming heterogeneity}{134}{section.21.5}%
-\contentsline {chapter}{\numberline {22}Unravelling the clonal hierarchy of somatic genomic aberrations}{136}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Introduction}{136}{section.22.1}%
-\contentsline {subsection}{\numberline {22.1.1}Abstract}{136}{subsection.22.1.1}%
-\contentsline {subsection}{\numberline {22.1.2}Background}{136}{subsection.22.1.2}%
-\contentsline {section}{\numberline {22.2}Results}{137}{section.22.2}%
-\contentsline {subsection}{\numberline {22.2.1}Clonality assessment of aberrations from sequencing reads}{137}{subsection.22.2.1}%
-\contentsline {subsection}{\numberline {22.2.2}Inferring the order of mutations in a tumour sample}{138}{subsection.22.2.2}%
-\contentsline {subsection}{\numberline {22.2.3}In silico and in situ experimental validation}{138}{subsection.22.2.3}%
-\contentsline {subsection}{\numberline {22.2.4}Comparative analysis reveals different mechanisms of tumour deregulation}{138}{subsection.22.2.4}%
-\contentsline {subsection}{\numberline {22.2.5}Clonal hierarchy of genomic aberrations}{139}{subsection.22.2.5}%
-\contentsline {section}{\numberline {22.3}Materials and methods}{139}{section.22.3}%
-\contentsline {subsection}{\numberline {22.3.1}CLONET pipeline}{139}{subsection.22.3.1}%
-\contentsline {subsection}{\numberline {22.3.2}CLONET on exome and targeted sequencing data}{139}{subsection.22.3.2}%
-\contentsline {subsection}{\numberline {22.3.3}Expected distribution of the allelic fraction of a genomic segment}{139}{subsection.22.3.3}%
-\contentsline {subsection}{\numberline {22.3.4}Estimated proportion of neutral reads for a genomic segment}{140}{subsection.22.3.4}%
-\contentsline {subsection}{\numberline {22.3.5}From neutral to non-aberrant reads}{140}{subsection.22.3.5}%
-\contentsline {subsection}{\numberline {22.3.6}From aberrant reads to aberrant cells}{140}{subsection.22.3.6}%
-\contentsline {subsection}{\numberline {22.3.7}Uncertainty assessment and its propagation to clonality estimates}{141}{subsection.22.3.7}%
-\contentsline {subsection}{\numberline {22.3.8}Clonality of bi-allelic deletion}{141}{subsection.22.3.8}%
-\contentsline {chapter}{\numberline {23}TPES: timor purity estimation from SNVs}{142}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Abstract}{142}{section.23.1}%
-\contentsline {subsection}{\numberline {23.1.1}Introduction}{142}{subsection.23.1.1}%
-\contentsline {section}{\numberline {23.2}Materials and methods}{142}{section.23.2}%
-\contentsline {chapter}{\numberline {24}SNP panel identification assay (SPIA): a genetic-based assay for the identification of cell lines}{144}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Abstract}{144}{section.24.1}%
-\contentsline {subsection}{\numberline {24.1.1}Introduction}{144}{subsection.24.1.1}%
-\contentsline {section}{\numberline {24.2}Material and methods}{144}{section.24.2}%
-\contentsline {subsection}{\numberline {24.2.1}Genotype distance}{144}{subsection.24.2.1}%
-\contentsline {subsection}{\numberline {24.2.2}SNP panel selection procedure}{145}{subsection.24.2.2}%
-\contentsline {subsection}{\numberline {24.2.3}SPIA probabilistic test on cell line genotype distance}{145}{subsection.24.2.3}%
+\contentsline {section}{\numberline {17.1}Introduction}{117}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Copy number mutations}{117}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.2}Effect of CNVs}{117}{subsection.17.1.2}%
+\contentsline {section}{\numberline {17.2}Circular binary segmentation}{117}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Introduction}{117}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Input}{117}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}An example}{117}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Null hypothesis}{118}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.5}DNAcopy}{118}{subsection.17.2.5}%
+\contentsline {subsection}{\numberline {17.2.6}Changing parameters}{119}{subsection.17.2.6}%
+\contentsline {subsection}{\numberline {17.2.7}Visualizing CNVs}{119}{subsection.17.2.7}%
+\contentsline {subsubsection}{\numberline {17.2.7.1}IGV}{119}{subsubsection.17.2.7.1}%
+\contentsline {subsubsection}{\numberline {17.2.7.2}Histogram}{119}{subsubsection.17.2.7.2}%
+\contentsline {subsubsection}{\numberline {17.2.7.3}Browsing a CNV across many individual}{119}{subsubsection.17.2.7.3}%
+\contentsline {section}{\numberline {17.3}CNV calling in WES}{119}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Applying CBS}{119}{subsection.17.3.1}%
+\contentsline {part}{III\hspace {1em}Papers}{120}{part.3}%
+\contentsline {chapter}{\numberline {18}Role of non-coding sequence variants in cancer}{121}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Abstract}{121}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Introduction}{121}{subsection.18.1.1}%
+\contentsline {section}{\numberline {18.2}Genomic sequence variants}{121}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Non-coding element annotation}{122}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Cis regulatory regions}{122}{subsection.18.3.1}%
+\contentsline {subsection}{\numberline {18.3.2}Distal regulatory elements}{122}{subsection.18.3.2}%
+\contentsline {subsection}{\numberline {18.3.3}RNA-seq}{122}{subsection.18.3.3}%
+\contentsline {subsection}{\numberline {18.3.4}Transcribed pseudogenes}{122}{subsection.18.3.4}%
+\contentsline {subsection}{\numberline {18.3.5}Evolutionary conservation}{123}{subsection.18.3.5}%
+\contentsline {section}{\numberline {18.4}Roles for somatic variants in cancer}{123}{section.18.4}%
+\contentsline {subsection}{\numberline {18.4.1}Gain of TF-binding sites}{123}{subsection.18.4.1}%
+\contentsline {subsection}{\numberline {18.4.2}Fusion events due to genomic rearrangements}{123}{subsection.18.4.2}%
+\contentsline {subsection}{\numberline {18.4.3}ncRNAs and their binding sites}{123}{subsection.18.4.3}%
+\contentsline {subsection}{\numberline {18.4.4}Role of pseudogenes in modulating the expression of a parental gene}{124}{subsection.18.4.4}%
+\contentsline {section}{\numberline {18.5}Roles for germline variants in cancer}{124}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}Promoter mutations}{124}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}SNPs in enhancers}{124}{subsection.18.5.2}%
+\contentsline {subsection}{\numberline {18.5.3}Variants in introns}{124}{subsection.18.5.3}%
+\contentsline {subsection}{\numberline {18.5.4}SNPs in ncRNA and their binding sites}{124}{subsection.18.5.4}%
+\contentsline {subsection}{\numberline {18.5.5}Others}{124}{subsection.18.5.5}%
+\contentsline {section}{\numberline {18.6}Interplay between germline and somatic variants}{124}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Computational methods for identifying variants}{125}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Experimental approaches for functional validation}{125}{section.18.8}%
+\contentsline {chapter}{\numberline {19}Advances in understanding cancer genomics through second-generation sequencing}{127}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Abstract}{127}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}Introduction}{127}{subsection.19.1.1}%
+\contentsline {section}{\numberline {19.2}Cancer-specific consideration}{127}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Characteristics of cancer samples for genomic analysis}{128}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Structural variability of cancer genomes}{128}{subsection.19.2.2}%
+\contentsline {section}{\numberline {19.3}Experimental approaches}{128}{section.19.3}%
+\contentsline {subsection}{\numberline {19.3.1}Whole genome sequencing}{128}{subsection.19.3.1}%
+\contentsline {subsection}{\numberline {19.3.2}Exome sequencing}{128}{subsection.19.3.2}%
+\contentsline {subsection}{\numberline {19.3.3}Transcriptome sequencing}{129}{subsection.19.3.3}%
+\contentsline {section}{\numberline {19.4}Detecting classes of genome alterations}{129}{section.19.4}%
+\contentsline {subsection}{\numberline {19.4.1}Somatic nucleotide substitutions and small insertion and deletion mutations}{129}{subsection.19.4.1}%
+\contentsline {subsection}{\numberline {19.4.2}Copy number}{129}{subsection.19.4.2}%
+\contentsline {subsection}{\numberline {19.4.3}Chromosomal rearrangements}{129}{subsection.19.4.3}%
+\contentsline {subsection}{\numberline {19.4.4}Microbe-discovery methods}{130}{subsection.19.4.4}%
+\contentsline {section}{\numberline {19.5}Computational issues}{130}{section.19.5}%
+\contentsline {subsection}{\numberline {19.5.1}Alignment and assembly}{130}{subsection.19.5.1}%
+\contentsline {subsection}{\numberline {19.5.2}mutations detection}{130}{subsection.19.5.2}%
+\contentsline {subsection}{\numberline {19.5.3}Validation of mutation and rearrangement calls}{130}{subsection.19.5.3}%
+\contentsline {chapter}{\numberline {20}Integrative genomics viewer}{132}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Introduction}{132}{section.20.1}%
+\contentsline {chapter}{\numberline {21}Tumour heterogeneity and resistance to cancer therapies}{133}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Abstract}{133}{section.21.1}%
+\contentsline {subsection}{\numberline {21.1.1}Introduction}{133}{subsection.21.1.1}%
+\contentsline {section}{\numberline {21.2}Causes of intratumoral heterogeneity}{133}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Genomic instability}{133}{subsection.21.2.1}%
+\contentsline {subsection}{\numberline {21.2.2}The clonal evolution and selection hypothesis}{134}{subsection.21.2.2}%
+\contentsline {section}{\numberline {21.3}The spectrum of tumour heterogeneity}{134}{section.21.3}%
+\contentsline {subsection}{\numberline {21.3.1}Spatial heterogeneity}{134}{subsection.21.3.1}%
+\contentsline {subsubsection}{\numberline {21.3.1.1}Heterogeneity at a single disease site}{134}{subsubsection.21.3.1.1}%
+\contentsline {subsubsection}{\numberline {21.3.1.2}Comparison of spatially distinct disease sites}{134}{subsubsection.21.3.1.2}%
+\contentsline {subsection}{\numberline {21.3.2}Temporal heterogeneity}{135}{subsection.21.3.2}%
+\contentsline {subsubsection}{\numberline {21.3.2.1}Genomic complexity might increase with exposure to targeted therapies}{135}{subsubsection.21.3.2.1}%
+\contentsline {subsubsection}{\numberline {21.3.2.2}Longitudinal sampling provides insight into temporal heterogeneity}{135}{subsubsection.21.3.2.2}%
+\contentsline {subsubsection}{\numberline {21.3.2.3}Residual drug-tolerant cells can foster temporal heterogeneity}{135}{subsubsection.21.3.2.3}%
+\contentsline {section}{\numberline {21.4}Noninvasive monitoring of heterogeneity}{136}{section.21.4}%
+\contentsline {subsection}{\numberline {21.4.1}Analysis of ctDNA}{136}{subsection.21.4.1}%
+\contentsline {section}{\numberline {21.5}Overcoming heterogeneity}{136}{section.21.5}%
+\contentsline {chapter}{\numberline {22}Unravelling the clonal hierarchy of somatic genomic aberrations}{138}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Introduction}{138}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}Abstract}{138}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}Background}{138}{subsection.22.1.2}%
+\contentsline {section}{\numberline {22.2}Results}{139}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Clonality assessment of aberrations from sequencing reads}{139}{subsection.22.2.1}%
+\contentsline {subsection}{\numberline {22.2.2}Inferring the order of mutations in a tumour sample}{140}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {22.2.3}In silico and in situ experimental validation}{140}{subsection.22.2.3}%
+\contentsline {subsection}{\numberline {22.2.4}Comparative analysis reveals different mechanisms of tumour deregulation}{140}{subsection.22.2.4}%
+\contentsline {subsection}{\numberline {22.2.5}Clonal hierarchy of genomic aberrations}{141}{subsection.22.2.5}%
+\contentsline {section}{\numberline {22.3}Materials and methods}{141}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}CLONET pipeline}{141}{subsection.22.3.1}%
+\contentsline {subsection}{\numberline {22.3.2}CLONET on exome and targeted sequencing data}{141}{subsection.22.3.2}%
+\contentsline {subsection}{\numberline {22.3.3}Expected distribution of the allelic fraction of a genomic segment}{141}{subsection.22.3.3}%
+\contentsline {subsection}{\numberline {22.3.4}Estimated proportion of neutral reads for a genomic segment}{142}{subsection.22.3.4}%
+\contentsline {subsection}{\numberline {22.3.5}From neutral to non-aberrant reads}{142}{subsection.22.3.5}%
+\contentsline {subsection}{\numberline {22.3.6}From aberrant reads to aberrant cells}{142}{subsection.22.3.6}%
+\contentsline {subsection}{\numberline {22.3.7}Uncertainty assessment and its propagation to clonality estimates}{143}{subsection.22.3.7}%
+\contentsline {subsection}{\numberline {22.3.8}Clonality of bi-allelic deletion}{143}{subsection.22.3.8}%
+\contentsline {chapter}{\numberline {23}TPES: timor purity estimation from SNVs}{144}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Abstract}{144}{section.23.1}%
+\contentsline {subsection}{\numberline {23.1.1}Introduction}{144}{subsection.23.1.1}%
+\contentsline {section}{\numberline {23.2}Materials and methods}{144}{section.23.2}%
+\contentsline {chapter}{\numberline {24}SNP panel identification assay (SPIA): a genetic-based assay for the identification of cell lines}{146}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Abstract}{146}{section.24.1}%
+\contentsline {subsection}{\numberline {24.1.1}Introduction}{146}{subsection.24.1.1}%
+\contentsline {section}{\numberline {24.2}Material and methods}{146}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Genotype distance}{146}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}SNP panel selection procedure}{147}{subsection.24.2.2}%
+\contentsline {subsection}{\numberline {24.2.3}SPIA probabilistic test on cell line genotype distance}{147}{subsection.24.2.3}%
