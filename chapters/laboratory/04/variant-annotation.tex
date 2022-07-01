@@ -1,1 +1,84 @@
 \chapter{Variant annotation}
+
+\section{Introduction}
+Variant annotation is a crucial step in linking sequence variants with changes in phenotype.
+Annotation results can have a strong influence on the ultimate conclusions of disease studies.
+Incorrect or incomplete annotations can cause researchers both to overlook potentially disease-relevant DNA variants and to dilute interesting variants in a pool of false positives.
+The annotation capabilities depend on the pipeline, the variant caller and on the filtering threshold used.
+
+
+	\subsection{Annotation databases}
+	Different databases can be used for annotation.
+
+		\subsubsection{Genomic data repositories}
+		Genomic data repositories include:
+
+		\begin{multicols}{4}
+			\begin{itemize}
+				\item $1000$ genomes.
+				\item ExAC.
+				\item gnomAD: exome and genome.
+				\item dbSNP.
+			\end{itemize}
+		\end{multicols}
+
+		\subsubsection{Variant-disease databases}
+		Variant-disease databases include:
+
+		\begin{multicols}{3}
+			\begin{itemize}
+				\item ClinVar: variation and phenotype.
+				\item Gencode.
+				\item HGMD: mutations.
+				\item COSMIC: human cancer.
+				\item OMIM: mendelian.
+			\end{itemize}
+		\end{multicols}
+
+		\subsubsection{Conservation and pathogenicity prediction databases}
+		Conservation and pathogenicity prediction databases provide computational methods for prediction and include:
+
+		\begin{multicols}{3}
+			\begin{itemize}
+				\item SIFT: impact of missense variants.
+				\item PolyPhen2: deleteriousness of change.
+				\item GERP$++$: sequence conservation.
+			\end{itemize}
+		\end{multicols}
+
+\section{SnpEff}
+
+	\subsection{Introduction}
+	SnpEff is a variant effect predictor program categorizing each variant based on its relationship to coding sequenced in the genome and how it may change the coding sequence and affect the gene product.
+
+	\subsection{Set of transcripts}
+	Variant annotation depends on the set of transcripts used as the bases for annotation.
+	Widely used annotation databases such as ENSEMBL, RefSeq and UCSC contain sets of transcripts that can be used for variant annotation.
+
+	\subsection{Populating the VCF}
+	SnpEff take information from the provided annotation database and populate a VCF file by adding it itno the INFO field name ANN.
+	Data fields are encoded separated by the pipe sign $|$ and the order of fields is written in the VCF header.
+	More than $4GB$ are necessary to run a full annotation.
+	Depending on the database a more or less complete annotation will be obtained.
+
+	\subsection{Common annotations}
+	Some common annotations include:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Putative\_impact or impact: a simple estimation of putative impact or deleteriousness, can take values HIGH, MODERATE, LOW, MODIFIER.
+			\item Gene name: common gene name HGNC.
+				Optionally it can use the closest gene when the variant is intergenic.
+			\item Feature type: with type of feature, for example, transcript, motif or miRNA.
+				It is preferred to use Sequence Ontology SO terms, but custom ones are allowed.
+			\item Feature ID: this may be the transcript ID, the motif ID, the miRNA, ChipSeq peak or histone mark for example.
+				Some features may not have a unique ID.
+			\item Byotipe: a description on whether the transcript is coding or non-coding.
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{SnpSift}
+	Each gene can be present in many transcript evrsions, so the estimated impact is different.
+	SnpSift helps filter large genomic datasets in order to find the most significant variants.
+	Complex expression to filter and combine can be used while annotation.
+	All fields in ANN can be managed.
