@@ -1,1 +1,118 @@
+\graphicspath{{chapters/laboratory/06/images}}
 \chapter{Somatic variant calling}
+
+\section{Introduction}
+
+	\subsection{Genomic alterations}
+	Cancer is driven by genomic alterations, among which:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Single nucleotide aberrations.
+			\item Short insertions or deletions (indels).
+			\item Copy number variations CNVs.
+			\item Larger structural variations SVs.
+		\end{itemize}
+	\end{multicols}
+
+	Somatic variant calling consider single nucleotide aberrations, which can be distinguished in:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Single nucleotide polymorphisms SNPs: mutations shared amongst a population.
+				These are aberrations expected at a particular position for any member in the species.
+				The are well-characterized and catalogued in dbSNP.
+			\item Single nucleotide variations SNVs: private mutations.
+				They occur at low frequency and are not common.
+				They typically are non-synonymous mutations that result in amino acid change, impacting protein sequence and function.
+				They are somatic mutations and typically tumour-specific.
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{Methods}
+	There are more than $15$ algorithms that perform somatic variant calling, which could be divided into three categories:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Allele counting.
+			\item Probabilistic methods that use a Bayesian model to quantify statistical uncertainty.
+				They assign priors based on observed allele frequency of multiple samples to compute it.
+			\item Heuristic approaches based on thresholds for read depth, base quality, variant allele frequency and statistical significance.
+		\end{itemize}
+	\end{multicols}
+
+	\subsection{Choosing a caller}
+	Substantial discrepancies exist among the calls from different callers.
+	Callers appear to be less concordant for calling somatic SNVs than germline SNPs.
+	Sensitivity and specificity vary across callers and along the genome within any caller.
+	This depends on factors like:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Depth of sequence coverage in tumour and matched normal.
+			\item The local sequencing error rate.
+			\item The allelic fraction of the mutation.
+			\item The evidence thresholds used to declare a mutation.
+		\end{itemize}
+	\end{multicols}
+
+	MuTect claims to be more sensitive than other methods for low-allelic-fraction and low read support events while remaining highly specific.
+	Multiple variant callers are needed in a pipeline to reduce false negatives.
+
+	\subsection{JointSNVMix and VarScan2}
+	JointSNVMix and VarScan2 implement the Fisher's exact test.
+	The count allele data from normal and tumour sample and compare them using a two-tailed Fisher's exact test.
+	If the counts are significantly different the position is labelled as a variant position $p$-value $< 0.001$.
+	It the two-tailed for the Fisher's exact test $p$-value $<0.0001$ the association between groups and outcomes is considered to be extremely statistically significant.
+
+\section{Varscan 2}
+
+	\subsection{Introduction}
+	VarScan2 calls somatic variants, SNPs and indels using an heuristic method and a statistical test based on the number of aligned reads supporting each allele.
+
+	\subsection{Calling variants}
+
+		\subsubsection{Tumour matches normal}
+		If tumour matches normal:
+
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item If tumour an normal match the reference: call reference.
+				\item If tumour and normal do not match the reference: all germline.
+			\end{itemize}
+		\end{multicols}
+
+		\subsubsection{Tumour does not match normal}
+		If tumour does not match normal the significance of allele frequency difference is computed by Fisher's exact test.
+		Then:
+
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item If difference is significant ($p$-$value < threshold$):
+
+					\begin{itemize}
+						\item If normal matches reference: call somatic.
+						\item If normal is heterozygous: call loss of heterozygosity.
+						\item If tumour and normal are variant but different: call unknown.
+					\end{itemize}
+
+				\item If difference is not significant: tumour and normal reads counts are combined for each allele, the $p$-$value$ is recalculated and germline is called.
+			\end{itemize}
+		\end{multicols}
+
+	\subsection{Filtering}
+	Pre-processing in the mapping phase and SNV filtering help to minimize false positives:
+
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Absent in dbSNP.
+			\item Exclude LOH events.
+			\item Retain non-synonymous coding SNVs.
+			\item TUmour total reads and variant reads $\ge 3$.
+			\item Mapping quality $\ge 40$ and SNV quality $\ge 20$.
+			\item Max SNV calls $<3$ within a given window of $10bp$ around the site.
+			\item SNV farther than a given distance $10bp$ from a predicted indel of a certain quality $\ge 50$.
+			\item Stand balance or bias.
+			\item Concordance across various SNV callers.
+		\end{itemize}
+	\end{multicols}
