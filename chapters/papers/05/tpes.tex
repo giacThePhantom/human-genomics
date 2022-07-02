@@ -1,5 +1,5 @@
 \graphicspath{{chapters/papers/05/images}}
-\chapter{TPES: timor purity estimation from SNVs}\label{ch:tpes}
+\chapter{TPES: tumour purity estimation from SNVs}\label{ch:tpes}
 
 \section{Abstract}
 Tumour purity is the proportion of cancer cells in a tumour sample.
@@ -18,7 +18,7 @@ Moreover in the case of subclonal events the VAF is altered.
 Clonal monoallelic SNVs in a diploid segment are suited for TP estimation and are named p-SNV.
 Given a set of p-SNVs, TP could be computed as:
 
-$$\frac{observerd\ VAF(pSNP)}{expected\ VAF}$$
+$$\frac{observerd\ VAF(pSNV)}{expected\ VAF}$$
 
 Where $obvserved\ VAF$ is computed from the tumour data while $expected\ VAF$ is the value expected from a pure tumour sample accounting for reference mapping bias.
 p-SNVs are selected with a conservative procedure.
@@ -26,7 +26,7 @@ To minimize the number of false positive p-SNVs for each sample, TPES introduces
 In the first SNVs are selected from copy-number neutral segments applying a conservative filter on the Log R value of each genomic segment.
 Moreover the log R is adjusted for ploidy and SNV are retained only with a number of reads mapping the alternative base and AG above and below threshold.
 Chromosome $X$ and $Y$ are excluded to avoid gender stratification.
-This nominates a set of heterzygous copy-number neutral SNPv.
+This nominates a set of heterozygous copy-number neutral SNVs.
 The second filter TPES removes putative subclonal mutations.
 Observed VAF distribution is smoothed by kernel density estimation.
 Local maxima of the underlying distribution can be observed.

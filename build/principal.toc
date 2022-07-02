@@ -471,7 +471,7 @@
 \contentsline {subsection}{\numberline {21.3.6}From aberrant reads to aberrant cells}{144}{subsection.21.3.6}%
 \contentsline {subsection}{\numberline {21.3.7}Uncertainty assessment and its propagation to clonality estimates}{144}{subsection.21.3.7}%
 \contentsline {subsection}{\numberline {21.3.8}Clonality of bi-allelic deletion}{144}{subsection.21.3.8}%
-\contentsline {chapter}{\numberline {22}TPES: timor purity estimation from SNVs}{146}{chapter.22}%
+\contentsline {chapter}{\numberline {22}TPES: tumour purity estimation from SNVs}{146}{chapter.22}%
 \contentsline {section}{\numberline {22.1}Abstract}{146}{section.22.1}%
 \contentsline {subsection}{\numberline {22.1.1}Introduction}{146}{subsection.22.1.1}%
 \contentsline {section}{\numberline {22.2}Materials and methods}{146}{section.22.2}%
