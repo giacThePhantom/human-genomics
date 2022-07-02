@@ -418,17 +418,17 @@
 \contentsline {subsection}{\numberline {19.2.2}Structural variability of cancer genomes}{130}{subsection.19.2.2}%
 \contentsline {section}{\numberline {19.3}Experimental approaches}{130}{section.19.3}%
 \contentsline {subsection}{\numberline {19.3.1}Whole genome sequencing}{130}{subsection.19.3.1}%
-\contentsline {subsection}{\numberline {19.3.2}Exome sequencing}{130}{subsection.19.3.2}%
+\contentsline {subsection}{\numberline {19.3.2}Exome sequencing}{131}{subsection.19.3.2}%
 \contentsline {subsection}{\numberline {19.3.3}Transcriptome sequencing}{131}{subsection.19.3.3}%
 \contentsline {section}{\numberline {19.4}Detecting classes of genome alterations}{131}{section.19.4}%
 \contentsline {subsection}{\numberline {19.4.1}Somatic nucleotide substitutions and small insertion and deletion mutations}{131}{subsection.19.4.1}%
 \contentsline {subsection}{\numberline {19.4.2}Copy number}{131}{subsection.19.4.2}%
-\contentsline {subsection}{\numberline {19.4.3}Chromosomal rearrangements}{131}{subsection.19.4.3}%
+\contentsline {subsection}{\numberline {19.4.3}Chromosomal rearrangements}{132}{subsection.19.4.3}%
 \contentsline {subsection}{\numberline {19.4.4}Microbe-discovery methods}{132}{subsection.19.4.4}%
 \contentsline {section}{\numberline {19.5}Computational issues}{132}{section.19.5}%
 \contentsline {subsection}{\numberline {19.5.1}Alignment and assembly}{132}{subsection.19.5.1}%
-\contentsline {subsection}{\numberline {19.5.2}mutations detection}{132}{subsection.19.5.2}%
-\contentsline {subsection}{\numberline {19.5.3}Validation of mutation and rearrangement calls}{132}{subsection.19.5.3}%
+\contentsline {subsection}{\numberline {19.5.2}Mutations detection}{132}{subsection.19.5.2}%
+\contentsline {subsection}{\numberline {19.5.3}Validation of mutation and rearrangement calls}{133}{subsection.19.5.3}%
 \contentsline {chapter}{\numberline {20}Tumour heterogeneity and resistance to cancer therapies}{134}{chapter.20}%
 \contentsline {section}{\numberline {20.1}Abstract}{134}{section.20.1}%
 \contentsline {subsection}{\numberline {20.1.1}Introduction}{134}{subsection.20.1.1}%

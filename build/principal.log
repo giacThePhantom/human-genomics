@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  1 JUL 2022 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  2 JUL 2022 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1794,7 +1794,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 64339AD74635EF75233E046E56852951;64108.
+(rerunfilecheck)             Checksum: CB66053092FE5A1C0C9DD3F44A368288;64108.
  ) 
 Here is how much of TeX's memory you used:
  25602 strings out of 478238
@@ -1828,7 +1828,7 @@ blic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
 frm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></u
 sr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-
 dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on ./build/principal.pdf (150 pages, 10008427 bytes).
+Output written on ./build/principal.pdf (150 pages, 10008922 bytes).
 PDF statistics:
  3228 PDF objects out of 3580 (max. 8388607)
  2817 compressed objects within 29 object streams
