@@ -10,14 +10,14 @@
 	\subsection{Background}
 	Cancer arises from clones that undergo intense evolutionary selection during disease progression.
 	This process may lead to subclonal divergence resulting in genetic and molecular heterogeneity.
-	Several methods have been developed to quantify DNA admixture and ploidy from SNP array data that use the relative abundance of specific allele signal ($B$ allele frequency) and the tumour over normal signal ratio or Log R to measure the complexity of the cellular population.
-	Using germline heterozyfous SNP loci or informative SNPs tumour purity and ploidy are estimated analyzing allelic fraction values.
+	Several methods have been developed to quantify DNA admixture and ploidy from SNP array data that use the relative abundance of specific allele signal ($B$ allele frequency) and the tumour over normal signal ratio or $\log_2 R$ to measure the complexity of the cellular population.
+	Using germline heterozygous SNP loci or informative SNPs tumour purity and ploidy are estimated analysing allelic fraction values.
 	Subclonal alterations will appear as outliers from the computed admixture and ploidy.
-	Global methods are well-suited for tumour samples with homogenous genomic aberrations.
+	Global methods are well-suited for tumour samples with homogeneous genomic aberrations.
 	This approaches are suboptimal with tumour samples with high heterogeneity.
 	Local optimization creates estimates of purity and ploidy from few clonal events.
 	The AF values of informative SNPs in a somatic deletion result from the composition of signal from non-tumour cells, tumour cells without the deletion and tumour cells harbouring the deletion.
-	Modelling the probability distribution of the observerd AF, a local estimate of the DNA admixture is computed, accounting for both normal cell admixture and subclonal tumour cell population.
+	Modelling the probability distribution of the observed AF, a local estimate of the DNA admixture is computed, accounting for both normal cell admixture and subclonal tumour cell population.
 	After the estimation for all deletions across the genome only selected regions contribute to the computation of the tumour sample global admixture.
 
 \section{Results}
@@ -25,43 +25,55 @@
 	\subsection{Clonality assessment of aberrations from sequencing reads}
 	The reads mapped into a genomic window can be partitioned into a set containing reads that equally represent parental chromosomes and a set containing reads from only one parent chromosome.
 	There are four steps that from neutral read counts, allow inference of clonality of any genomic window.
-	First the percentage of neutral reads within a genomic segment are estimated independently of its Log R value.
-	Then the Log R value is used to relate the neutral reads with a local estimate of DNA admixture.
+	First the percentage of neutral reads within a genomic segment are estimated independently of its $\log_2 R$ value.
+	Then the $\log_2 R$ value is used to relate the neutral reads with a local estimate of DNA admixture.
 	Local estimates are aggregated to estimate global admixture and clonality of somatic copy number aberrations.
 	Aneuploidy genomes are identified and the analysis corrected accordingly.
 	The analysis  is then extended to point mutations and structural rearrangements.
-	For each genomic semgent $Seg$ the expected $AF$ of the informative SNP has a bimodal distribution that relates to the composition of the DNA sample.
+	For each genomic segment $Seg$ the expected $AF$ of the informative SNP has a bimodal distribution that relates to the composition of the DNA sample.
 	The distance between the two modes is proportional to the percentage of neutral reads $\beta$.
 	The expected distribution of the $AF$ varies accordingly with $\beta$ and $N_{ref}$, the proportion of reference base reads in the allele represented by active reads.
 	For each input segment $Seg$, optimization based on swarm intelligence finds a $\beta$ that minimizes the difference between the expected and the observed $AF$ distribution.
-	Then the Log R of $Seg$ allows computing a local estimate of the admixture.
-	If $Seg$ defines a mono-allelic deletion, $\beta$ corresponds to the percentage of reads deriving from cells that do not Harbor the deletion and relates to a local estimate of the percentage of admixed cells:
+	Then the $\log_2 R$ of $Seg$ allows computing a local estimate of the admixture.
 
-	$$Adm.local = \frac{\beta}{2-\beta}$$
+		\subsubsection{Mono-allelic deletions}
+		If $Seg$ defines a mono-allelic deletion, $\beta$ corresponds to the percentage of reads deriving from cells that do not harbour the deletion and relates to a local estimate of the percentage of admixed cells:
 
-	Local admixture values are clustered and the lowest median determines the global admixture of the sample.
-	The more the local admixture value differs from the global the more $Seg$ is subclonal.
-	The clonality of $Seg$ or $Cl_{Seg}$ is computed as the percentage of tumour cells in a sample harbouring $Seg$.
-	If $Seg$ is a gain $Adm.local$ extends by rescaling the percentage of neutral reads $\beta$ to recover the percentage of reads sequenced from cell that does not harbour the gain of $Seg$.
-	Bi-allelic deletions are treated separately.
-	If the deletion is clonal its $AF$ has binomial distribution $\beta=1$ and represents DNA admixture.
-	In case of subclonality $\beta$ is proportional to the percentage of tumour cells that do not harbour the deletion.
-	Aneuplidy causes a shift in the Log R vs $\beta$ space.
-	In any segment with an empty active reads set each allele has the same number of copies and $\beta=1$.
-	The ploidy of a sample is the shift in the Log R values of the neutral segment that best accounts for the observed Log R values.
-	Log R data are corrected for ploidy and Adm.global to achieve better estimates of the segment copy number.
-	Clonality estimates build on the assumption that reads supporting the alternative allele are representative of the amount of tumour DNA harbouring the mutation.
-	The proportion of reads supporting the alternative allele of a pure and clonal hemizygous PM (point mutations) has symmetric binomial distribution.
-	Adm.global represents the percentage of reads from admixed cells that have to be ignored to compute the correct value of AP (proportion of reads supporting the alternative allele)
-	A PM is subclonal when its corrected AP has a low probability to be clonal.
-	The same principle applies to REARRs (structural rearrangements).
-	The total number of reads that span both sides of a breakpoint defining a REARR is a proxy of the number of cells harbouring the rearrangement.
-	The difference between the expected and observed proportion of reads supporting the alternative allele is proportional  to the subclonality of the considered REARR.
+		$$Adm.local = \frac{\beta}{2-\beta}$$
+
+		Local admixture values are clustered and the lowest median determines the global admixture of the sample.
+		The more the local admixture value differs from the global the more $Seg$ is subclonal.
+		The clonality of $Seg$ or $Cl_{Seg}$ is computed as the percentage of tumour cells in a sample harbouring $Seg$.
+
+		\subsubsection{Gain of copy}
+		If $Seg$ is a gain $Adm.local$ extends by rescaling the percentage of neutral reads $\beta$ to recover the percentage of reads sequenced from cell that does not harbour the gain of $Seg$.
+
+		\subsubsection{Bi-allelic deletions}
+		Bi-allelic deletions are treated separately.
+		If the deletion is clonal its $AF$ has binomial distribution $\beta=1$ and represents DNA admixture.
+		In case of subclonality $\beta$ is proportional to the percentage of tumour cells that do not harbour the deletion.
+
+		\subsubsection{Ploidy}
+		Aneuplidy causes a shift in the $log_2 R$ vs $\beta$ space.
+		In any segment with an empty active reads set each allele has the same number of copies and $\beta=1$.
+		The ploidy of a sample is the shift in the $\log_2 R$ values of the neutral segment that best accounts for the observed $\log_2 R$ values.
+		$\log_2 R$ data are corrected for ploidy and Adm.global to achieve better estimates of the segment copy number.
+
+		\subsubsection{Clonality estimates}
+		Clonality estimates build on the assumption that reads supporting the alternative allele are representative of the amount of tumour DNA harbouring the mutation.
+		The proportion of reads supporting the alternative allele of a pure and clonal hemizygous PM (point mutations) has symmetric binomial distribution.
+		Adm.global represents the percentage of reads from admixed cells that have to be ignored to compute the correct value of AP (proportion of reads supporting the alternative allele)
+		A PM is subclonal when its corrected AP has a low probability to be clonal.
+
+		\subsubsection{Structural rearrangments}
+		The same principle applies to REARRs (structural rearrangements).
+		The total number of reads that span both sides of a breakpoint defining a REARR is a proxy of the number of cells harbouring the rearrangement.
+		The difference between the expected and observed proportion of reads supporting the alternative allele is proportional  to the subclonality of the considered REARR.
 
 	\subsection{Inferring the order of mutations in a tumour sample}
 	The assessment of the clonality of each somatic aberration enables the deconvolution of the sequence of oncogenic events that occur during tumour initiation and progression.
 	Assuming that clonal alterations pre-dates subclonal alterations within the same tumour, pairs of genes aberrant in the sample and across multiple tumours are considered to determine the directionality of the clonal-subclonal hierarchy.
-	To minimize the number of of false posistives (clonal called subclonal) the estimation uncertaninty around $\beta$ is computed and propagated to clonality values.
+	To minimize the number of of false positives (clonal called subclonal) the estimation uncertainty around $\beta$ is computed and propagated to clonality values.
 	This enables robust comparison of aberration clonality across different tumour sample data.
 	If a clonal aberration $A_1$ and a subclonal $A_2$ occur within the same sample $S$, $A_1$ has been acquired before $A_2$ in $S$ and $A_1$ precedes $A_2$ in $S$.
 	The same dependency has to be found consistently across samples to derive the rule that links $A_1$ and $A_2$.
@@ -69,24 +81,24 @@
 
 	\subsection{In silico and in situ experimental validation}
 	To assess if the coverage depth typical for large scale sequencing experiments has an effect on clonality estimates miSeq ultra-deep sequencing data was queried.
-	Excellent agreement in downstram clonality calls for deletion was observed.
+	Excellent agreement in downstream clonality calls for deletion was observed.
 	CLONET did not assign clonality values to aberrations in which MiSeq does not confirm AP values.
-	Next studying PMs and assessing high correlation of AP values between WGS adn MiSeq data, suggesting that the study coverage dose not significantly impact the ability to assess aberration clonality.
-	In order to validate the clonality status of complex structural genomic aberrations, in situ tests was used.
-	The ability to assess rearrangemnt clonality was demonstrated focusing on well-characterized REARRs.
+	Next studying PMs and assessing high correlation of AP values between WGS and MiSeq data, suggesting that the study coverage dose not significantly impact the ability to assess aberration clonality.
+	In order to validate the clonality status of complex structural genomic aberrations, in situ tests were used.
+	The ability to assess rearrangement clonality was demonstrated focusing on well-characterized REARRs.
 	Perfect agreement was evident.
 	Also subclonal bi-allelic deletion was validated by fluorescence.
 	The prediction highlights a small subclonal bi-allelic deletion within a larger clonal mono-allelic deletion, suggesting that selective evolutionary pressure is acting on the genomic region.
 
 	\subsection{Comparative analysis reveals different mechanisms of tumour deregulation}
-	The mean number of events classified as clonal or subclonal by means of the proportion test with FDR correction.
+	The mean number of events classified as clonal or subclonal is identified by means of the proportion test with FDR correction.
 	Deletions are more heterogeneous than gains in prostate and lung cancer, while melanoma had the opposite behaviour.
 	Comparing the proportion of clonal/subclonal losses and gains the prostate and lung samples are statistically indistinguishable.
 	This suggests that temporally distinct mechanisms lead to loss and gain across the three tumour types.
 	Prostate cancer in terms of PMs exhibits more subclonal events than melanoma, suggesting a more central role of PMs in melanoma oncogenesis compared with prostate cancer.
 	Aggregated values reflect only part of the story: great variability in the percentage of clonal events within a single combination of tumour and aberration is observed.
 	Then the distribution along the genome of the variability in the clonality status of aberrations was assessed.
-	Commonality beween the three tumour types in some regions can be observed.
+	Commonality between the three tumour types in some regions can be observed.
 	Then the capability of clonality analysis to highlight tumour specific mechanism of deregulation was investigated.
 	Considering PTEN deletion, which is involved in many cancer types, it was seen how the timing of the alteration is different and may point to differential roles for pathway inactivation.
 	The focal and subclonal deletion in prostate samples suggests that evolutionary pressure is acting later and may promote cancer progression at a later stage.
@@ -121,9 +133,9 @@
 	To avoid germline background effects, genes that intersect significant with known germline copy number variants were filtered out.
 
 	\subsection{CLONET on exome and targeted sequencing data}
-	The analysis of samples with few SCNAs provided that informative SNPs read counts and Log R values are available is enabled.
+	The analysis of samples with few SCNAs provided that informative SNPs read counts and $\log_2 R$ values are available is enabled.
 	Individual specific informative SNPs can be identified from matched normal DNA samples.
-	Appropriate Log R values can be optained for exome genome segments with platform specific strategies and provided to CLONET as input.
+	Appropriate $\log_2 R$ values can be obtained for exome genome segments with platform specific strategies and provided to CLONET as input.
 	Array-based segmented data or SCNA segments directly inferred from exome data with recent well-performing tools.
 	CLONET combines segment input with exome-derived read counts to estimate purity and ploidy.
 	Then subclonal aberrations are called based on sequencing data.
@@ -140,7 +152,7 @@
 	$P(r_n = \beta\cdot k)$ is assumed to follow a binomial distribution with trials $\beta\cdot cov$ and probability of success $ps$.
 	All active reads support the reference or the alternative base.
 	$N_{ref}$ is the proportion of informative SNPs within the aberration that carry the SNP reference base in the allele represented by the active reads.
-	$P(r_a = (1-\beta)\cdot k)$ follows a categorical distribution with values equal to $N_{ref}$.
+	$P(r_a = (1-\beta)\cdot k)$ follows a categorical distribution with values equal to $N_{ref}$ if $r_a = (1-\beta)k$ and equal to $(1-Nref)$ if $r_a = 0$.
 
 	$$P(r = k|cov, \beta, N_{ref}, ps) = (1-N_{ref})\cdot B(k|\beta\cdot cov, ps) + N_{ref}\cdot B(k-(1-\beta)\cdot cov | \beta\cdot cov, ps)$$
 
@@ -152,9 +164,9 @@
 	Optimization can allow for the identification of values $\beta$ and $N_{ref}$ for each segment using the Kolmogorov-Smirnov for the likelihood that $I$ are a sample of the distribution and a particle swarm optimization finds a candidate $\hat{\beta}$ and $\hat{N}_{ref}$ that best represents the distribution of the allelic fraction of the SNPs in $I$.
 
 	\subsection{From neutral to non-aberrant reads}
-	Consider a $Seg$ if the $Log\ R$ value of $Seg$ support a SCNA $C$, reads that cover $Seg$ from cells harbouring $C$ are considered aberrant.
+	Consider a $Seg$ if the $\log_2 R$ value of $Seg$ support a SCNA $C$, reads that cover $Seg$ from cells harbouring $C$ are considered aberrant.
 	If $Seg$ is a candidate mono-allelic deletion $\beta$ corresponds to the percentage of reads that cover $Seg$ and are sequenced from cells harbouring both alleles.
-	If the Log R value supports a gain with $cn >2$, $\beta$ has to be rescaled to obtain the percentage of sequenced cells that have copy number $cn$.
+	If the $\log_2 R$ value supports a gain with $cn >2$, $\beta$ has to be rescaled to obtain the percentage of sequenced cells that have copy number $cn$.
 	If $cn$ is odd, the number of neutral reads is the sum of the neutral from admixed plus the neutral of the gain.
 	$\beta_{cn}$ of reads from cells with $cn$ is computed from $\beta$ by removing neutral reads due to the gain:
 
@@ -178,14 +190,14 @@
 	The value of $\epsilon$ varies upon the mean coverage and the number of informative SNPs.
 	The mean coverage controls the ability to discern the two modes of the AF distribution.
 	Higher $\beta$ requires higher coverage.
-	The procedure to infer the value of $\beta$ is independent from its Log R value.
+	The procedure to infer the value of $\beta$ is independent from its $\log_2 R$ value.
 	Segments aggregate into cluster corresponding to copy number and define a clonality status.
 	Restricting to putative somatic mono-allelic deletions, $B_{min}$ with the lowest median of $\beta$ would represent $100\%$ clonal deletions.
 	$B$ is the set of $\beta$ values of all the putative somatic mono-allelic deletions.
-	$B_{min}$ is the smallest subset of $B$ such that $min(B)$ in $B_{min}$ and for all $\beta'$ in $B$ and not not in $B_{min}$, $max(B_{min})+err(max(B_{min})) < \beta'-err(\beta')$.
+	$B_{min}$ is the smallest subset of $B$ such that $min(B)$ in $B_{min}$ and for all $\beta'$ in $B$ and not in $B_{min}$, $max(B_{min})+err(max(B_{min})) < \beta'-err(\beta')$.
 	The median value is selected as candidate $Adm.global$.
 	Given a somatic copy number $C$ in a sample, the local and global admixtures are computed.
-	The clonality $Cl_C$ of $C$ is the percentage of tumor cells in a sample harbouring $C$:
+	The clonality $Cl_C$ of $C$ is the percentage of tumour cells in a sample harbouring $C$:
 
 	$$Cl_C = \frac{1-Adm.local_C}{1-Adm.global}$$
 
